@@ -17,3 +17,8 @@
        by header. */
     scroll-margin-top: 4rem;
 }
+
+.container a {
+    color: rgb(18, 78, 189);
+    font-weight: inherit;
+}

@@ -47,8 +47,8 @@ export default function HomePage() {
                     I am a
                     <ul style={{'margin-top': '0.5rem'}}>
                         <li><Link href="#education">Student</Link></li>
-                        <li><Link href="#employment">Software Developr</Link></li>
-                        <li><Link href="#hobbies">Creator of things</Link></li>
+                        <li><Link href="#employment">Software Developer</Link></li>
+                        <li><Link href="#hobbies">Creator of <i>things</i></Link></li>
                     </ul>
 
                     <br/>
@@ -71,7 +71,47 @@ export default function HomePage() {
                         I study a double degree in <b>Computer Science </b>
                         and <b>Data Science</b>.
                     </p>
+
+                    <div>
+                        {/* Dropdown */}
+                        Why Computer Science?
+
+                        <Dropdown>
+                            I learned to code in my free time during high school and realised pretty quickly
+                            that I wanted to do this in University if given the chance.
+
+                            <br/><br/>
+
+                            Over the years I've learned some more practical reasons regarding the utility
+                            that a career in CS can supply for myself and society.
+
+                            {/* Stuff about it being the most powerful tool available to humanity, about it giving you an
+                            understanding of how the world works at lower levels of abstration (this also applies to physics!). */}
+                        </Dropdown>
+                    </div>
+
                     <br/>
+
+                    <div>
+                        Why Data Science?
+
+                        <Dropdown>
+                            I enjoyed physics enough in high school that I was tempted to pick it.
+
+                            However, by that time I had spent a couple years playing with (ML-based)
+                            AI which I could see as a rapidly improving extension
+                            to <a href="https://karpathy.medium.com/software-2-0-a64152b37c35">software</a>.
+                            I decided to go all in on software rather than split my degree in two.
+
+                            <br/><br/>
+
+                            Similar to CS, during my degree I have learned the value of data science
+                            outside of what I originally knew.
+                            For DS, this means the ability to extract knowledge from observation
+                            and reason about its uncertainty (i.e. science).
+                        </Dropdown>
+                    </div>
+
                     <p>
                         If you are an employer and want to know how I am performing, some more details 
                         are probably on my <a href="https://www.linkedin.com/in/matty-hempstead-89a980191/">LinkedIn</a>.
