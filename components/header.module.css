@@ -1,0 +1,62 @@
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    height: 3em;
+    width: 100%;
+
+    background-color: rgb(184, 184, 184);
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container > div {
+    /* border: 3px solid black; */
+
+    /* padding: 5px; */
+    /* height: 100%; */
+    flex-basis: 1;
+
+}
+
+.container a {
+    text-decoration: none;
+    color: black;
+}
+
+.container > div:nth-child(1) {
+    padding-left: 1.5em;
+    /* background-color: rgb(51, 51, 175); */
+}
+
+.container > div:nth-child(1) > a {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+
+.container > div:nth-child(2) {
+    /* background-color: rgb(48, 110, 72); */
+}
+
+.container > div:nth-child(2) > span {
+    padding: 0rem 1.0rem 0 1.0rem;
+    /* border: 1px black solid; */
+}
+
+.container > div:nth-child(3) {
+    /* background-color: rgb(39, 63, 48); */
+    padding-right: 1rem;
+}
+
+.container > div:nth-child(3) a {
+    /* width: 1.5em; */
+    font-size: 1.5rem;
+    padding: 0rem 0.5rem 0 0.5rem;
+}

@@ -1,0 +1,19 @@
+.container {
+    max-width: 38rem;
+    padding-top: 1rem;
+
+    margin: 3rem auto 6rem auto;
+}
+
+.container li {
+    margin-top: 0.5rem;
+}
+
+.container h2 {
+    color: rgb(77, 77, 77);
+    margin-top: 4rem;
+
+    /* Anchor links will have margin above them so they are not covered
+       by header. */
+    scroll-margin-top: 4rem;
+}

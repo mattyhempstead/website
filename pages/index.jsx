@@ -1,0 +1,177 @@
+import { useState } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+
+import Head from 'next/head';
+import Layout from '/components/layout';
+import Dropdown from '/components/dropdown';
+
+import styles from '../styles/index.module.css';
+
+
+export default function HomePage() {
+    const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
+    
+    const [likes, setLikes] = useState(0);
+    
+    function handleClick() {
+        setLikes(likes + 1);
+    }
+    
+    return (
+        <>
+            <Head>
+                <title>Website</title>
+            </Head>
+
+            <Layout>
+                <div className={styles.page}>
+                    <h1>
+                        Hello.
+                        <Image
+                            src="/images/alien-dance.gif"
+                            width={220/4}
+                            height={328/4}
+                            alt="Alien Dancing"
+                        />
+                    </h1>
+
+
+                    <br />
+
+                    <p>
+                        Welcome to the website that I am willing to show people.
+                    </p>
+                    <br/>
+
+                    I am a
+                    <ul style={{'margin-top': '0.5rem'}}>
+                        <li><Link href="#education">Student</Link></li>
+                        <li><Link href="#employment">Software Developr</Link></li>
+                        <li><Link href="#hobbies">Creator of things</Link></li>
+                    </ul>
+
+                    <br/>
+
+                    <p>
+                        I've added some stuff below about me.
+                    </p>
+                    {/* If you want  */}
+
+
+                    <h2 id="education">
+                        Education
+                    </h2>
+
+                    <p>
+                        I am a student at University of Sydney.
+                    </p>
+
+                    <p>
+                        I study a double degree in <b>Computer Science </b>
+                        and <b>Data Science</b>.
+                    </p>
+                    <br/>
+                    <p>
+                        If you are an employer and want to know how I am performing, some more details 
+                        are probably on my <a href="https://www.linkedin.com/in/matty-hempstead-89a980191/">LinkedIn</a>.
+                    </p>
+
+
+
+                    <h2 id="employment">
+                        Employment
+                    </h2>
+
+                    <div>
+                        I've worked at a few pretty diverse companies alongside my university studies.
+
+                        <ul>
+                            {/* Add logos to the left of each point.
+                            Canva can use real logo, envisage and others can use other logos. */}
+
+                            <li>
+                                A software contractor.
+
+                                <Dropdown>
+                                    Here I did some frontend work (where I learned React and the Node ecosystem)
+                                    and some backend database work (where I learned SQL and Databases).
+                                    Also Git / Jira and other software management tools.
+
+                                    This was my first work experience and taught me lots.
+                                    Also where I was first persuaded into using Linux by my coworkers.
+                                </Dropdown>
+                            </li>
+
+                            <li>
+                                A medical research lab at University of Sydney.
+                                
+                                <Dropdown>
+                                    Here I did some full stack work for the lab.
+
+                                    The work here was much more pragmatic, as I was one of a few developers
+                                    and was responsible for a portion of the system.
+                                    Django, ORMs, Web Dev, Google Sheets, and others.
+                                </Dropdown>
+                            </li>
+
+                            <li>
+                                A graphic design platform (Canva!)
+                                
+                                <Dropdown>
+                                    This was my first internship (which oddly came after 2 part time positions).
+                                    Here I was a 
+                                </Dropdown>
+
+                            </li>
+                        </ul>
+
+                        <p>
+                            More details are probably on 
+                            my <a href="https://www.linkedin.com/in/matty-hempstead-89a980191/">LinkedIn</a>.
+                        </p>
+                    </div>
+
+
+                    <h2 id="hobbies">
+                        Enjoyment
+                    </h2>
+
+                    I tend to spend much of my free time
+                    
+                    <ul>
+                        <li>Making things</li>
+                        <li>Thinking of more things to make</li>
+                        <li>Learning stuff, often for the purpose of allowing me to make more things</li>
+                        <li>Trying to improve my mindset, largely for the purpose of making more things</li>
+                    </ul>
+
+                    <br/>
+
+                    <div>
+                        Historically I have been pretty hopeless at documenting what I make,
+                        but now that there appears to be more of a benefit from doing so I figured
+                        I should <i>make</i> a website (this one) that attempts it.
+                    </div>
+
+                    <p>
+                        To see projects that are more presentable, 
+                        go <Link href="/projects">here</Link>.
+                    </p>
+
+                    <p>
+                        To see an archive of historical projects,
+                        go <Link href="/more-projects">here</Link>.
+                    </p>
+
+
+                    {/* <div>
+                        {Array(100).fill(<p>e</p>)}
+                    </div>  */}
+
+                </div>
+
+            </Layout>
+        </>
+    );
+}

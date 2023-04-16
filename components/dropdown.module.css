@@ -1,0 +1,47 @@
+/* .dropdown {
+    display: block;
+} */
+.dropdown {
+    transition: height 0.3s ease; /* animate the height when it changes */
+}
+
+.dropdownButton {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropdownIcon {
+    transition: transform 0.3s ease;
+    user-select: none;
+}
+
+.dropdownIcon svg {
+    fill: black;
+    width: 0.7rem;
+    height: 0.7rem;
+}
+
+.dropdownIcon.open {
+    transform: rotate(90deg);
+
+}
+
+.dropdownContent {
+    padding: 10px;
+    border-top: none;
+    min-width: 100px;
+    /* animation: fade-in 0.3s ease; */
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
