@@ -131,15 +131,20 @@ export default function HomePage() {
                             Canva can use real logo, envisage and others can use other logos. */}
 
                             <li>
-                                A software contractor.
+                                A software contracting company.
 
                                 <Dropdown>
+                                    I think I learned more in my first job than my entire degree, at least
+                                    regarding the skills for practical software development.
+                                    <br/><br/>
                                     Here I did some frontend work (where I learned React and the Node ecosystem)
-                                    and some backend database work (where I learned SQL and Databases).
-                                    Also Git / Jira and other software management tools.
-
-                                    This was my first work experience and taught me lots.
-                                    Also where I was first persuaded into using Linux by my coworkers.
+                                    and some backend database work (where I learned SQL and DBMS).
+                                    <br/><br/>
+                                    This was also my first exposure to using Git, Jira and other software 
+                                    management tools. I was also persuaded into using Linux
+                                    by my coworkers, which I still use to this day.
+                                    <br/><br/>
+                                    <i>React, Node, SQL, .NET, SaaS interaction</i>
                                 </Dropdown>
                             </li>
 
@@ -147,11 +152,19 @@ export default function HomePage() {
                                 A medical research lab at University of Sydney.
                                 
                                 <Dropdown>
-                                    Here I did some full stack work for the lab.
-
-                                    The work here was much more pragmatic, as I was one of a few developers
-                                    and was responsible for a portion of the system.
-                                    Django, ORMs, Web Dev, Google Sheets, and others.
+                                    In my second job I was one of the developers responsible for creating
+                                    and managing software for a lab in the university.
+                                    <br/><br/>
+                                    The role of a lab is arguably to produce papers, and it turns out that such
+                                    a job requirements the management of a number of different objects
+                                    (grants, papers, people, collaborations, expenses). Not to mention any
+                                    industry-specific software at each stage of the data pipelines.
+                                    <br/><br/>
+                                    My job primarily revolved around connecting data sources like spreadsheets
+                                    (Google Sheets) and DBMSs which held these objects, and then building interfaces
+                                    so that lab members could interact with the data in useful ways.
+                                    <br/><br/>
+                                    <i>Django, ORMs, SQL, Web Dev, Google Sheets (API), etc.</i>
                                 </Dropdown>
                             </li>
 
@@ -159,8 +172,20 @@ export default function HomePage() {
                                 A graphic design platform (Canva!)
                                 
                                 <Dropdown>
-                                    This was my first internship (which oddly came after 2 part time positions).
-                                    Here I was a 
+                                    This was my first internship and work experience at a large (&gt;1k&nbsp;employees)
+                                    company. This was notable for me as the first role where I was responsible for a small
+                                    portion of a huge system, rather than a large portion of a small system.
+                                    <br/><br/>
+                                    By this point I had work experience as both a frontend and backend developer,
+                                    so I decided to apply for infrastructure engineer in order to broaden my
+                                    knowledge and try something new. In the end I was placed on the Cloud Security
+                                    team, which additionally allowed me to dip into the area of cybersecurity.
+                                    <br/><br/>
+                                    In the internship I worked on improving Canva's internally used secrets manager,
+                                    and also performed some day-to-day maintainance of other Cloud Security software
+                                    used by Canva.
+                                    <br/><br/>
+                                    <i>Golang, AWS, Secrets Managers (Vault by Hashicorp)</i>
                                 </Dropdown>
 
                             </li>
