@@ -82,8 +82,8 @@ export default function HomePage() {
 
                             <br/><br/>
 
-                            Over the years I've learned some more practical reasons regarding the utility
-                            that a career in CS can supply for myself and society.
+                            Since then I've discovered many practical benefits that CS can offer to both myself
+                            and society, although I don't think I need to convince any readers here.
 
                             {/* Stuff about it being the most powerful tool available to humanity, about it giving you an
                             understanding of how the world works at lower levels of abstration (this also applies to physics!). */}
@@ -108,7 +108,7 @@ export default function HomePage() {
                             Similar to CS, during my degree I have learned the value of data science
                             outside of what I originally knew.
                             For DS, this means the ability to extract knowledge from observation
-                            and reason about its uncertainty (i.e. science).
+                            and reason about its uncertainty (i.e. <i>science</i>).
                         </Dropdown>
                     </div>
 
