@@ -3,21 +3,22 @@
 } */
 .dropdown {
     transition: height 0.3s ease; /* animate the height when it changes */
+    padding-left: 0.1rem;
 }
 
 .dropdownButton {
     display: flex;
     align-items: center;
     cursor: pointer;
+    user-select: none;
 }
 
 .dropdownIcon {
     transition: transform 0.3s ease;
-    user-select: none;
 }
 
 .dropdownIcon svg {
-    fill: black;
+    fill: rgb(92, 92, 92);
     width: 0.7rem;
     height: 0.7rem;
 }
@@ -28,10 +29,13 @@
 }
 
 .dropdownContent {
-    padding: 10px;
-    border-top: none;
     min-width: 100px;
-    /* animation: fade-in 0.3s ease; */
+    animation: fade-in 0.3s ease;
+
+    padding: 5px 10px 3px 9px;
+    margin: 0px 0px 10px 5px;
+
+    border-left: 2px solid rgb(216, 216, 216);
 }
 
 @keyframes fade-in {
