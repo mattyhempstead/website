@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>Soil Shoveller</title>
+<body background="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAUVBMVEVeQCxfQSxrSTRgQS1qSTRtTDVjQy5oSDF4UjlxTTZsSjRtSjNwTzViQy5oSDB1UDd4UzhbOyhhQjBuRzJnRS9kRi9zTThvTThbQS1kQi9sTDHWf3x2AAACv0lEQVRYhe2WXZbkIAiFQQVF/Mmkk+rO7H+hc61+mxc3UJ46VUk+ChUuRJIx8ndy4jNd+T3GIFJ6qluu4dpxwpOU9CaOI9daFXfpIqbLvzwnHzsOByrfeTAn+H5CykO8dqLqqSYJtuNrBTkFZQ4p4ZNCDSE8RAO2OYe647QeJiXmG+BtgSFEHN7/yDtOFNc4mVnxaPlPKTNR7yMFgC3X523xMPG1bC5VYHCNGjnGHafZJqeT6XkerPM9KCLKb0zWdpyszB4fXQ8w1hf8R828fr35jpOUYpH1oV8CmxMbwxX3bM3yjpNImReE1THOPuc0s4YN8rDWmqYdJ7FZJrGeeroXDLM5c4+K3cvpsuNw4GUynwJZSDX7WlMO7u0o7tlkx+HASvki5R8IzocmbWUqt+N4Ab3qji8HCPSqL1oiy+HGbbwblmrfL6s7/nYwSz577j/30lrGHf2dywBDdpzcEdWSoBSOqphEjvKH/XjZS4KY7DjK0qx2qOpExaneAr0TcpQlVcwnO065ukCe/cx/kVztsYcKkdy/tZvqjpPfGfriLqEUfyCYNc9Ke0fhIE07TomcOXoV8QmVQPeRz0ijY8WI/b3j1Im7ojui0vNK+WAUzJ8ldupL+TuOK1LV/IPWgzRbO6Y98SHs1+YLE245lJ2Qn/7EvGYZ2YpV4GseS/ltx2liZ8eKL1ar/m50JohUP4652I6jK9daChrVtQLcsdvcBHE/S2hLhztOWTTA4uFZjolpVGtNaKWpoN5FZMfRUOCzlit27OloSJlW70wKbk3qjhOkGRTFxTG1ApuKgCmSjTeXLYsdRwxQo5cV5WSvF4QPsaBpZ3cXbNJ3nO6x0lMn4ox2BwMbzjc7Ao5CFNnx37fz2Tn2fou9YDKkdx7+foeha204fc4Hn/PB53zwOR98zgef88HnfPA5H/zH/wGWgHtFsNTiUwAAAABJRU5ErkJggg==">
+</head>
+<body>
+<div align='center' style="color:#F1F1F1">
+
+<h1>Soil Shoveller</h1>
+
+<p>my favourite type of dirt</p>
+
+<img onclick="clickOne()" src="https://web.archive.org/web/20170715200616if_/http://thecripplegate.com/wp-content/uploads/2014/02/mans-wisdom.jpg">
+
+<p id="text">text</p>
+
+<br>
+
+<button id='clickMore' onclick='buyClick()'></button> <br>
+
+<br>
+
+<button id='lampBuy0' onclick='buyGen(0)'></button> <br>
+<button id='lampBuy1' onclick='buyGen(1)'></button> <br>
+<button id='lampBuy2' onclick='buyGen(2)'></button> <br>
+<button id='lampBuy3' onclick='buyGen(3)'></button> <br>
+<button id='lampBuy4' onclick='buyGen(4)'></button> <br>
+<button id='lampBuy5' onclick='buyGen(5)'></button> <br>
+<button id='lampBuy6' onclick='buyGen(6)'></button> <br>
+<button id='lampBuy7' onclick='buyGen(7)'></button> <br>
+<button id='lampBuy8' onclick='buyGen(8)'></button> <br>
+<button id='lampBuy9' onclick='buyGen(9)'></button> <br>
+<button id='lampBuy10' onclick='buyGen(10)'></button> <br>
+<button id='lampBuy11' onclick='buyGen(11)'></button> <br>
+
+<p>
+Soil is the mixture of minerals, organic matter, gases, liquids, and the countless organisms that together support life on earth. Soil is a natural body known as the pedosphere and which performs four important functions: it is a medium for plant growth; it is a means of water storage, supply and purification; it is a modifier of the atmosphere of Earth; it is a habitat for organisms; all of which, in turn, modify the soil.
+</p>
+</div>
+      
+
+          
+<script>
+var soil = 0;
+var sps = 0;
+var click = 1;
+var clickCost = 100;
+var statClicked = 0;
+var statGained = 0;
+var statSpent = 0;
+var statTopSoil = 0;
+var statSecsPlayed = 0;
+var statMinsPlayed = 0;
+var lampGens = [
+  //[Name, Cost, cps, Owned]
+    ["Plastic Spoon", 15, 0.1 , 0],
+    ["Metal Spoon", 100, 0.5, 0],
+    ["Soil Digger", 500, 2, 0],
+    ["Soil Excavator", 1000, 5 , 0],
+    ["Soil Bulldozer", 2500, 10, 0],
+    ["Buff Russian Guy", 10000, 50 , 0],
+    ["Tunnelling Bear", 25000, 100 , 0],
+    ["Ground Hog on Crack", 50000, 500, 0],
+    ["Efficiency V Diamond Shovel", 100000, 1000 , 0],
+    ["Saint Paul the Shoveller", 500000, 5000 , 0],
+    ["Afganistani Sweat Shop", 1000000, 10000 , 0],
+    ["Child Labour", 2500000, 20000 , 0]
+]
+
+function clickOne() {
+    soil += click;
+    statClicked += click;
+    statGained += click;
+    render();
+}
+
+function buyClick() {
+    if (soil >= clickCost) {
+        soil -= clickCost;
+        statSpent += clickCost;
+        clickCost *= 3;
+        click *= 2;
+        render();
+    }
+}
+
+function update() {
+    statSecsPlayed ++;
+    if (statSecsPlayed >= 60) {
+        statSecsPlayed = 0;
+        statMinsPlayed ++;   
+    }
+    sps = 0;
+    for (var i=0; i<lampGens.length; i++) {
+        sps += lampGens[i][2] * lampGens[i][3];
+    }
+    statGained += sps;
+    soil += sps;
+    if (statTopSoil < soil) statTopSoil = soil;
+}
+
+function buyGen(gen) {
+    if (soil >= lampGens[gen][1]) {
+        soil -= lampGens[gen][1];
+        statSpent += lampGens[gen][1];
+        lampGens[gen][1] *= 1.15;
+        lampGens[gen][3]++;
+        render();
+    }
+}
+
+function render() {
+	document.getElementById("text").innerHTML = "Soil: " + soil.toFixed(1) + "<br>";
+	document.getElementById("text").innerHTML += "Soil per second: " + sps.toFixed(1) + "<br><br>";
+	for (var i=0; i<lampGens.length; i++) {
+	    document.getElementById("text").innerHTML += lampGens[i][0] + ": " + lampGens[i][3] + "<br>";
+	    document.getElementById("lampBuy" + i).innerHTML = 'Buy "' + lampGens[i][0] + '": ' + lampGens[i][2] + " soil/sec - " + lampGens[i][1].toFixed(0) + " soil";
+    }
+    document.getElementById("clickMore").innerHTML = "Double your clicking power for " + clickCost.toFixed(0) + " soil | Current Soil per click is " + click;
+	document.getElementById("text").innerHTML += "<br>Statistics:";
+	document.getElementById("text").innerHTML += "<br>Soil shovelled by hand = " + statClicked;
+	document.getElementById("text").innerHTML += "<br>Soil shovelled overall = " + statGained.toFixed(0);
+	document.getElementById("text").innerHTML += "<br>Soil spent = " + statSpent.toFixed(0);
+	document.getElementById("text").innerHTML += "<br>Most soil owned = " + statTopSoil.toFixed(1);
+	document.getElementById("text").innerHTML += "<br>Time played = " + statMinsPlayed + " minutes, " + statSecsPlayed + " seconds";
+}
+
+window.setInterval(function(){
+    update();
+    render();
+}, 1000);
+</script>
+</body>

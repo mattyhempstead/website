@@ -1,0 +1,56 @@
+
+.flexGrid {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    /* justify-content: space-between; */
+    justify-content: center;
+
+    margin-top: 3rem;
+}
+
+
+.flexGrid .projectCard {
+    /* width: 100%; */
+    width: 18rem;
+    /* height: 8rem; */
+
+    margin: 0.2rem;
+    border: 0.3rem solid black;
+
+    /* flex: 0 1 calc(33.33% - 10px); */
+
+    justify-content: center;
+
+
+    background-color: rgb(190, 190, 190);
+    color: black;
+}
+
+.projectCardText {
+    padding: 0.5rem;
+}
+
+.projectCardText h3 {
+    margin: 0;
+}
+
+.projectCardText p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.projectCardText p:nth-child(2) {
+    color: rgb(99, 99, 99);
+    font-size: 0.95em;
+    /* font-weight: bold; */
+}
+
+.projectCardImg {
+    position: relative;
+    width: 100%;
+    height: calc(18rem * 9/16);
+}
+
+

@@ -17,19 +17,20 @@ import styles from './header.module.css';
 export default function Header() {
     return <nav className={styles.container}>
         <div>
-            <Link href="/">Matty Hempstead</Link>
+            {/* <Link href="/">Matty Hempstead</Link> */}
+            <a href="/">mattyhempstead.com</a>
         </div>
         <div>
             <span>
-                <Link href="/">Home</Link>
+                <a href="/">home</a>
             </span>
 
             <span>
-                <Link href="/projects">Projects</Link>
+                <a href="/projects">projects</a>
             </span>
 
             <span>
-                <Link href="/more-projects">More Projects</Link>
+                <a href="/more-projects">featured</a>
             </span>
         </div>
 

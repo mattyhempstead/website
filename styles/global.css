@@ -4,6 +4,8 @@ body {
     margin-top: 3rem;
     
     font-family: sans-serif;
+
+    overflow-y: scroll;
 }
 
 a {
