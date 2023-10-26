@@ -1,0 +1,29 @@
+
+.iframe {
+    /* border: 5px solid red; */
+
+    width: 42rem;
+    height: 42rem;
+}
+
+
+p.date {
+    margin-top: -0.5rem;
+    margin-bottom: 2rem;
+
+    font-style: italic;
+}
+
+.list {
+    margin: 0.0rem;
+}
+
+.list li {
+    margin: 0.4rem;
+}
+
+
+.video {
+    text-align: center;
+}
+

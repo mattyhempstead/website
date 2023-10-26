@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Cat Simulator 2015</title>
+    </head>
+    <body>
+		<div align='center' style="color:#000000">
+		
+			<h1>Cat Simulator 2015</h1>
+			
+			<canvas id="myCanvas" width="512" height="512" onclick="nextCat()"></canvas>
+			
+			<p id="text"></p>
+		
+		</div>
+
+		<script>
+		
+			var canvas = document.getElementById('myCanvas');
+			var context = canvas.getContext('2d');
+
+			var catted = -1;
+			var catCurrent = -1;
+			var catAmount = 9;
+			var catPics = [];
+			for(var i=0; i<catAmount; i++) {
+				var catPic = new Image();
+				catPic.src = "cats/cat" + i + ".jpg";
+				catPics.push(catPic);
+			}
+		
+			function nextCat() {
+				catted ++;
+				
+				randNum = 0;
+				while (true) {
+					randNum = Math.floor(Math.random() * catAmount);
+					if (randNum != catCurrent) break;
+				}
+				catCurrent = randNum;
+				
+				context.drawImage(catPics[catCurrent], 0, 0, canvas.width, canvas.height);
+				document.getElementById("text").innerHTML = "<br>Times catted: " + catted;
+				
+				console.log("Catted cat no." + catCurrent);
+			}
+			
+			nextCat();
+			catPics[catCurrent].onload = function(){
+				context.drawImage(catPics[catCurrent], 0, 0, canvas.width, canvas.height);
+			};
+
+		</script>
+		
+    </body>
+</html>

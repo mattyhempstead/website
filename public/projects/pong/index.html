@@ -1,0 +1,37 @@
+<html>
+
+<body>
+    <div id="content">
+    <!-- Start of game content -->
+        <div align='center'>
+            <br>
+            <!-- 160:90 / 320:180 / 800:450 / 960:540 / 1120:630 / 1280:720-->
+            <canvas id="myCanvas" style="border:2px solid white;" width="0" height="0"></canvas>
+            <script type="text/javascript" src="main_script.js"></script>
+            <br>
+            <p id="text">
+                <select id="playerSelect">
+                    <option value="pve">Player VS Computer</option>
+                    <option value="pvp">Player VS Player</option>
+                </select>
+                <br>
+                <select id="resSelect">
+                    <option id="1280" value="720">1280 x 720</option>
+                    <option id="1120" value="630">1120 x 630</option>
+                    <option id="960" value="540">960 x 540</option>
+                    <option id="800" value="450">800 x 450</option>
+                    <option id="640" value="360">640 x 360</option>
+                    <option id="480" value="270">480 x 270</option>
+                    <option id="320" value="180">320 x 180</option>
+                    <option id="160" value="90">160 x 90</option>
+                </select>
+                <br><br>
+                <input type="button" onclick="initiate()" value="Start Pong">
+            </p>
+            <br>
+        </div>
+        
+    <!-- End of game content -->
+    </div>
+</body>
+</html>

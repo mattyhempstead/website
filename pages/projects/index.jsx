@@ -52,8 +52,8 @@ export default function Projects() {
                             title="There are a few projects that appear to have been lost :'("
                         >
                         Many of these were made in my first few years of coding (before
-                        I discovered Github) and whose only location was until recently was the 
-                        Desktop folder of a Windows partition that would have inevitably been
+                        I discovered Github) and whose only location was until recently was 
+                        an unused Windows partition that would have inevitably been
                         destroyed at one point.
                         </span>
 
@@ -64,14 +64,14 @@ export default function Projects() {
 
                         <br/><br/>
 
-                        <span
+                        {/* <span
                             title="So really, this archive exists more for me than anyone else."
                         >
                         Also, lots of these are really not "projects" in the sense I was inspired for
                         a few hours and put something small together, but rather than abandoning 
                         them I'd rather just have everything in a place where I am OK with 
                         low quality.
-                        </span>
+                        </span> */}
 
 
                     </p>
@@ -84,8 +84,8 @@ export default function Projects() {
                             link="/projects/soil-shoveller"
                             image="/projects/soil-shoveller/thumbnail.jpg"
                             title="Soil Shoveller"
-                            desc="A really bad Cookie Clicker clone. Also one of the first things I ever coded."
-                            date="circa 2015"
+                            desc="A really bad Cookie Clicker clone. Also probably one of the first things I ever coded."
+                            date="2015"
                         />
 
                         <ProjectCard
@@ -97,11 +97,35 @@ export default function Projects() {
                         />
 
                         <ProjectCard
-                            link="/projects/test"
-                            image="/images/alien-dance.gif"
-                            title="Sample Project"
-                            desc="This is a sample project description."
-                            date="2023-10-19"
+                            link="/projects/pong"
+                            image="/projects/pong/thumbnail.png"
+                            title="Pong"
+                            desc="My first pong."
+                            date="2015"
+                        />
+
+                        <ProjectCard
+                            link="/projects/cat-simulator-2015"
+                            image="/projects/cat-simulator-2015/thumbnail.jpg"
+                            title="Cat Simulator 2015"
+                            desc="very likely underwhelming"
+                            date="2015"
+                        />
+
+                        <ProjectCard
+                            link="/projects/superboyboy"
+                            image="/projects/superboyboy/thumbnail.png"
+                            title="Super Boy Boy"
+                            desc="A 2D platformer game from high school."
+                            date="2016"
+                        />
+
+                        <ProjectCard
+                            link="/projects/fb-soccer-python"
+                            image="/projects/fb-soccer-python/thumbnail.png"
+                            title="FB Soccer Python"
+                            desc="A python clone of the Facebook messenger soccer game."
+                            date="2016"
                         />
 
                     </div>
