@@ -7,7 +7,7 @@ import styles from './index.module.css';
 
 
 
-const ProjectCard = ({ link, image, title, desc, date }) => {
+const ProjectCard = ({ link, image, title, desc, date, builtWith }) => {
     return (
         <a href={link}>
             <div className={styles.projectCard}>
@@ -20,8 +20,9 @@ const ProjectCard = ({ link, image, title, desc, date }) => {
                 </div>
                 <div className={styles.projectCardText}>
                     <h3>{title}</h3>
-                    <p><i>{date}</i></p>
+                    <p>{date}</p>
                     <p>{desc}</p>
+                    <p>{builtWith}</p>
                 </div>
             </div>
         </a>
@@ -43,8 +44,8 @@ export default function Projects() {
                     <h1>Projects</h1>
 
                     <p>
-                        An archive of some of my projects going all the way back to when I first taught
-                        myself to code in ~2015.
+                        An archive of some of the projects I mostly finished going all the way back to
+                        when I first taught myself to code in ~2015.
 
                         <br/><br/>
 
@@ -86,6 +87,7 @@ export default function Projects() {
                             title="Soil Shoveller"
                             desc="A really bad Cookie Clicker clone. Also probably one of the first things I ever coded."
                             date="2015"
+                            builtWith="HTML + CSS + JS"
                         />
 
                         <ProjectCard
@@ -94,6 +96,7 @@ export default function Projects() {
                             title="Evolution Simulator v1"
                             desc="The first version of my evolution simulations."
                             date="2015"
+                            builtWith="HTML + CSS + JS"
                         />
 
                         <ProjectCard
@@ -102,6 +105,7 @@ export default function Projects() {
                             title="Pong"
                             desc="My first pong."
                             date="2015"
+                            builtWith="HTML + CSS + JS"
                         />
 
                         <ProjectCard
@@ -110,6 +114,7 @@ export default function Projects() {
                             title="Cat Simulator 2015"
                             desc="very likely underwhelming"
                             date="2015"
+                            builtWith="HTML + CSS + JS"
                         />
 
                         <ProjectCard
@@ -118,6 +123,7 @@ export default function Projects() {
                             title="Super Boy Boy"
                             desc="A 2D platformer game from high school."
                             date="2016"
+                            builtWith="Python + pygame"
                         />
 
                         <ProjectCard
@@ -126,6 +132,7 @@ export default function Projects() {
                             title="FB Soccer Python"
                             desc="A python clone of the Facebook messenger soccer game."
                             date="2016"
+                            builtWith="Python + pygame"
                         />
 
                     </div>
