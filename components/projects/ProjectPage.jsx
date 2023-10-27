@@ -18,7 +18,11 @@ function IFrame({ src, className }) {
     const reloadIFrame = () => {
         if (iframeRef.current) {
             iframeRef.current.contentWindow.location.reload();
+
+            // TODO: Dynamically resize based on iframe contents
+            // console.log(iframeRef.current.contentDocument.documentElement.scrollHeight)
         }
+
     }
 
     return (
@@ -26,6 +30,8 @@ function IFrame({ src, className }) {
             className={`${styles.iframeContainer} ${className}`}
         >
             <div>
+                {/* TODO: Add a left or centre aligned title for iframe */}
+
                 <span onClick={reloadIFrame} title="Reload">
                     <FontAwesomeIcon icon={faArrowsRotate} />
                 </span>
