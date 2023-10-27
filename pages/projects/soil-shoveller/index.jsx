@@ -7,11 +7,10 @@ import styles from './index.module.css';
 
 export default function Project() {
 
-    return <ProjectPage title="Soil Shoveller">
-
-        <h1>Soil Shoveller</h1>
-        <p className={styles.date}>circa 2015</p>
-
+    return <ProjectPage
+        title = "Soil Shoveller"
+        date = "2015"
+    >
 
         <p>
             This game from 2015 might be the first program I ever completed and shared with others.

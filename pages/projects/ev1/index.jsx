@@ -7,11 +7,10 @@ import styles from './index.module.css';
 
 export default function Project() {
 
-    return <ProjectPage title="Evolution Simulation 1">
-
-        <h1>Evolution Simulator v1</h1>
-        <p className={styles.date}>circa 2015</p>
-
+    return <ProjectPage
+        title="Evolution Simulation v1"
+        date = "2015"
+    >
 
         <p>
             While learning to code, a quickly growing passion of mine was simulations,

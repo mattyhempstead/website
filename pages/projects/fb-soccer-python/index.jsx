@@ -8,10 +8,10 @@ import styles from './index.module.css';
 
 export default function Project() {
 
-    return <ProjectPage title="FB Soccer Python Clone">
-
-        <h1>FB Soccer in Python</h1>
-        <p className={styles.date}>June 2016</p>
+    return <ProjectPage
+        title="FB Soccer Python Clone"
+        date = "June 2016"
+    >
 
         <p>
             A simple clone of the Facebook messenger soccer game I made in
@@ -21,7 +21,6 @@ export default function Project() {
         <p>
             Source code can be found on <a href="https://github.com/mattyhempstead/fb-soccer-python">Github</a>.
         </p>
-
 
 
         <br/>

@@ -7,10 +7,10 @@ import styles from './index.module.css';
 
 export default function Project() {
 
-    return <ProjectPage title="Cat Simulator">
-
-        <h1>Cat Simulator 2015</h1>
-        <p className={styles.date}>2014</p>
+    return <ProjectPage
+        title="Cat Simulator 2015"
+        date = "2015"
+    >
 
         <p>
             Not my finest work, but it might be the first game(?) I ever put on my website
@@ -21,7 +21,6 @@ export default function Project() {
             src="/projects/cat-simulator-2015/index.html"
             className={styles.iframe}
         />
-
 
 
 

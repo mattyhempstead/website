@@ -7,11 +7,10 @@ import styles from './index.module.css';
 
 export default function Project() {
 
-    return <ProjectPage title="Pong">
-
-        <h1>Pong</h1>
-        <p className={styles.date}>circa 2015 or 2016</p>
-
+    return <ProjectPage
+        title="Pong"
+        date = "2015 / 2016?"
+    >
         <p>
             Just a browser-based pong clone from my early years of programming.
             One of the first ever games I built using 2D graphics.

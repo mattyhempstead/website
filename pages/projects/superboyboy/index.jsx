@@ -7,10 +7,10 @@ import styles from './index.module.css';
 
 export default function Project() {
 
-    return <ProjectPage title="Super Boy Boy">
-
-        <h1>Super Boy Boy</h1>
-        <p className={styles.date}>May 2016</p>
+    return <ProjectPage
+        title="Super Boy Boy"
+        date = "May 2016"
+    >
 
         <p>
             A platformer game I made in high school with Python and <a href="https://www.pygame.org/wiki/about">pygame</a>.
