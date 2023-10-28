@@ -1,0 +1,35 @@
+
+
+<center>
+
+<p style="font-size:40px; display:block; margin-top:30px; margin-bottom:20px;">Image Pixel Sorter</p>
+
+
+
+<div style="display:block; margin-left:auto; margin-right:auto; margin-bottom:20px">
+
+	<button onclick="useCatSource()" style="width:70px; display:inline-block;">Use Cat</button>
+
+	<p style="font-size:20px; display:inline-block; margin: 1rem;"><b>OR</b></p>
+
+	<input id="file-input" type="file" name="filename" accept="image/gif, image/jpeg, image/png"
+		style="display:inline-block;" onchange="useFileSource()">
+</div>
+
+
+<canvas id="baseCanvas" width="50" height="50" style="border: 1px solid #000000;"></canvas>
+<canvas id="drawCanvas" width="50" height="50" style="border: 1px solid #000000;"></canvas>
+
+
+<p id="timer" style="display:block; font-size:18px; margin-bottom:20px;"></p>
+
+<p id="text" style="display:block; font-size:18px; margin-bottom:50px;">
+	Sorts the pixels in an image one by one based on the sum of red, green and blue in each pixel.
+</p>
+
+</center>
+
+
+<script src="./script.js"></script>
+
+

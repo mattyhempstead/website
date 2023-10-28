@@ -142,6 +142,24 @@ export default function Projects() {
                         date="2017 or 2018 ???"
                         builtWith="HTML + CSS + JS"
                     />
+
+                    <ProjectCard
+                        link="/projects/image-circle-tiler"
+                        image="/projects/image-circle-tiler/thumbnail.png"
+                        title="Image Circle Tiler"
+                        desc="A programmatic art image circle effect."
+                        date="2017 or 2018 ???"
+                        builtWith="HTML + CSS + JS"
+                    />
+
+                    <ProjectCard
+                        link="/projects/image-pixel-sorter"
+                        image="/projects/image-pixel-sorter/thumbnail.png"
+                        title="Image Pixel Sorter"
+                        desc="Have you ever wondered what it looks like to sort all the pixels in an image for some reason?"
+                        date="2017 or 2018 ???"
+                        builtWith="HTML + CSS + JS"
+                    />
                 </div>
 
 

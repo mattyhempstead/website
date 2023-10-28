@@ -1,0 +1,37 @@
+
+
+<center>
+
+<h1>Image Circle Tiler</h1>
+
+
+<div style="display:block; margin-left:auto; margin-right:auto; margin-bottom:20px;">
+
+	<button onclick="useCatSource()" style="width:70px; display:inline-block;">Use Cat</button>
+
+	<p style="font-size:20px; display:inline-block; margin: 1rem;"><b>OR</b></p>
+
+	<input id="file-input" type="file" name="filename" accept="image/gif, image/jpeg, image/png"
+		style="display:inline-block;" onchange="useFileSource()">
+
+</div>
+
+
+<canvas id="baseCanvas" width="50" height="50" style="border: 1px solid #000000;" ></canvas>
+<canvas id="drawCanvas" width="50" height="50" style="border: 1px solid #000000;"></canvas>
+
+<p id="timer" style="display:block; font-size:18px; margin-bottom:20px;"></p>
+
+<p id="text" style="display:block; font-size:18px; margin-bottom:50px;">
+	Tiles the image as circles.
+	<br/>
+	"right click → save as" to save as image.
+</p>
+
+
+<script src="script.js"></script>
+
+
+
+</center>
+
