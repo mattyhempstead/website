@@ -160,6 +160,15 @@ export default function Projects() {
                         date="2017 or 2018 ???"
                         builtWith="HTML + CSS + JS"
                     />
+
+                    <ProjectCard
+                        link="/projects/pi-estimator"
+                        image="/projects/pi-estimator/thumbnail.png"
+                        title="Pi Estimator"
+                        desc="A cool visualisation of one method to estimate π."
+                        date="2017 or 2018 ???"
+                        builtWith="HTML + CSS + JS"
+                    />
                 </div>
 
 

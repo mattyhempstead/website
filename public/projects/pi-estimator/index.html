@@ -1,0 +1,31 @@
+
+
+<center>
+
+<!-- <p style="font-size:50px; display:block; margin-top:30px; margin-bottom:20px;">Pi Estimator</p> -->
+
+<!-- <p>A program that will estimate a little bit of π.</p> -->
+
+<br>
+
+<!-- 160:90 / 320:180 / 800:450 / 960:540 / 1120:630 / 1280:720-->
+<canvas id="canvas" width=960 height=540 style="border: 2px solid #000000; margin-bottom:30px; user-select: none;"></canvas>
+
+<p
+	id="text"
+	style="display:block; font-size:18px; max-width:900px; margin-left:auto; margin-right:auto; text-align:left; margin-bottom:50px;"
+>
+	This program randomly places points inside the square above and counts how many points also happen to fall inside the quadrant of the circle with radius equals to the side length of the square (lets call this side length 'r').
+	<br><br>
+	Because the area of the square is r², and the area of the circle quadrant is πr²/4. We would expect the ratio of the numbers of points that land inside the circle quadrant to the number of points all up to be the same as the ratio πr²/4:r².
+	<br>
+	The r² term can then be cancelled out and we are left with an ratio that is ¼ of π.
+	<br><br>
+	The more points placed, the closer the ratio will be to its actual value and the better the approximation of π
+
+</p>
+
+</center>
+
+<script src="script.js"></script>
+
