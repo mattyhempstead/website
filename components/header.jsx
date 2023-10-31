@@ -36,19 +36,19 @@ export default function Header() {
 
         <div>
 
-            <a href="mailto:matty.hempstead@gmail.com">
+            <a href="mailto:matty.hempstead@gmail.com" title="Email">
                 <FontAwesomeIcon icon={faEnvelope} />
             </a>
 
-            <a href="https://github.com/mattyhempstead">
+            <a href="https://github.com/mattyhempstead" title="GitHub">
                 <FontAwesomeIcon icon={faGithub} />
             </a>
 
-            <a href="https://www.linkedin.com/in/matty-hempstead-89a980191/">
+            <a href="https://www.linkedin.com/in/matty-hempstead-89a980191/" title="LinkedIn">
                 <FontAwesomeIcon icon={faLinkedin} />
             </a>
 
-            <a href="https://www.facebook.com/mattyhempsteaddotcom/">
+            <a href="https://www.facebook.com/mattyhempsteaddotcom/" title="Facebook">
                 <FontAwesomeIcon icon={faFacebook} />
             </a>
 
