@@ -169,6 +169,16 @@ export default function Projects() {
                         date="2017 or 2018 ???"
                         builtWith="HTML + CSS + JS"
                     />
+
+                    <ProjectCard
+                        link="/projects/image-evolution"
+                        image="/projects/image-evolution/thumbnail.png"
+                        title="Image Evolution"
+                        desc="Genetic algorithm that evolves images made of triangles."
+                        date="2017 or 2018 ???"
+                        builtWith="HTML + CSS + JS"
+                    />
+
                 </div>
 
 

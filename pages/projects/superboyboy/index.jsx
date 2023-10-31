@@ -42,12 +42,11 @@ export default function Project() {
             better than source code for visual things.
         </p>
 
-        <div class={styles.video}>
+        <div className={styles.video}>
             <iframe
                 width="560" height="315"
                 src="https://www.youtube.com/embed/gGjgDWL3VS8?si=tVQftyfa4I9wNvOJ"
                 title="YouTube video player"
-                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
             />
             {/* <center><i>Playthrough demo of Super Boy Boy</i></center> */}

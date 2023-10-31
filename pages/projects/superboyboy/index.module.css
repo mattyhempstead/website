@@ -20,3 +20,6 @@
     text-align: center;
 }
 
+.video iframe {
+    border: 0;
+}

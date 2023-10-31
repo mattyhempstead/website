@@ -1,0 +1,57 @@
+<html>
+	<body>
+		<!-- Content loaded onto every page -->
+		<div id="universalContent"></div>
+		
+		<!-- Page specific body content -->
+		<div id="pageContent" style="padding-top:50px; text-align:center; font-size:30px; ">
+
+			<p style="margin-top:50px; margin-bottom:40px; font-size:30px; display:block; font-weight:bold">Evolving circles to resemble images</p>
+			
+			<!-- 160:90 / 320:180 / 800:450 / 960:540 / 1120:630 / 1280:720-->
+			<canvas id="canvas" width=800 height=450 style="border:2px solid #000000; margin-bottom:50px; "></canvas>
+
+			<p id="text" style="display:block; font-size:16px; margin-bottom:30px;">
+				Time: NULL
+			</p>
+
+			<p style="display:block; font-size:16px; margin-bottom:30px;">
+				This program slowly changes the position and colour of shapes to make them look more like an image.
+				Fitness is calculated by checking every single pixel in the 800x450 image and performing a 3D distance formula with the axis being the distance between the RGB values of the current image and the target image. The images with the lowest distance sum are kept and used in the next generation.
+			</p>
+		
+		</div>
+	</body>
+	
+	
+	<script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+	<script src="/jquery-1.9.0.min.js"></script>
+	<script> 
+		var pageKey = "image-evolution";
+		$("#universalContent").load("/universal.html", function() {
+			$.getScript("script.js");
+		});
+	</script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -29,6 +29,8 @@
     margin: 3rem auto 0 auto;
 
     border: 2px solid rgb(143, 143, 143);
+
+    box-shadow: 0px 0px 10px rgba(134, 134, 134);
 }
 
 .iframeContainer iframe {

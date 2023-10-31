@@ -15,15 +15,13 @@ export default function Project() {
 
         <p>
             A small web app that performs a live bubble sort of the pixels in an image by their brightness (sum of RGB).
-
-            Takes a few minutes - it's O(n^2) after all.
         </p>
 
         <p>
-            Not really sure why I made this.
+            It is unclear what inspired me to make this.
+            {/* Not entirely sure why I made this. */}
         </p>
 
-        <br/>
         <br/>
 
         <center>
@@ -39,6 +37,14 @@ export default function Project() {
             </p></i></center>
         </center>
 
+
+        <p style={{marginTop: "4rem"}}>
+            Application embedded below.
+            <br/>
+            Takes a few minutes - bubble sort is O(n^2) after all.
+            <br/>
+            <a href="https://youtu.be/fS3X7jCTIP4">Here</a> is a video demo to skip through if you don't want to wait.
+        </p>
 
         <ProjectPage.IFrame
             src="/projects/image-pixel-sorter/index.html"

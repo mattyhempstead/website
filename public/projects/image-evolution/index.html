@@ -1,0 +1,51 @@
+
+
+<h1 style="text-align: center;">Evolving triangles to resemble images</h1>
+
+<!-- 160:90 / 320:180 / 800:450 / 960:540 / 1120:630 / 1280:720-->
+<div style="text-align: center;">
+	<canvas 
+		id="canvas" width=900 height=600
+		style="border:2px solid #000000; margin-bottom:10px;"
+	></canvas>
+</div>
+
+<div style="text-align:center; max-width: 400; margin: auto;">
+	<p id="text" style="display:block; font-size:16px; margin-bottom:30px; text-align:left;">
+	</p>
+</div>
+
+<div id="text" style="display:block; font-size:18px; max-width:800px; margin-left:auto; margin-right:auto; text-align:left; margin-bottom:50px;">
+	<p>
+		This program slowly changes the position and colour of shapes to make them look more like a target image
+		using a generic algorithm.
+	</p>
+
+	<p>
+		Fitness is calculated by checking every single pixel in the 900x600 image and taking the mean Euclidian
+		distance between the colours the pixels in the current image and their target colour in 3D RGB colour space.
+	</p>
+
+	<p>
+		A genetic algorithm is used to minimize this fitness value.
+	</p>
+	<ul>
+		<li>Genotype are the triangles that make up the image (position + colour)</li>
+		<li>Phenotype is the image after superimposing all the triangles together</li>
+	</ul>
+
+	
+	<p>
+		At each generation, we do the following:
+	</p>
+	<ul>
+		<li>Select two genotypes at random from population</li>
+		<li>Perform crossover on their triangles using 1 split point to create child</li>
+		<li>Slightly mutate attributes of triangles in child (position & colour)</li>
+		<li>If chance prevails, add or remove a triangle from child</li>
+		<li>If the child is better, replace the worse performing parent in population with child</li>
+	</ul>
+
+</div>
+
+<script src="script.js"></script>
