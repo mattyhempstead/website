@@ -93,7 +93,7 @@ export default function Projects() {
                         link="/projects/ev1"
                         image="/projects/ev1/thumbnail.png"
                         title="Evolution Simulator v1"
-                        desc="The first version of my evolution simulations."
+                        desc="The first version of my agent-based evolution simulations."
                         date="2015"
                         builtWith="HTML + CSS + JS"
                     />
@@ -177,6 +177,15 @@ export default function Projects() {
                         desc="Genetic algorithm that evolves images made of triangles."
                         date="2017 or 2018 ???"
                         builtWith="HTML + CSS + JS"
+                    />
+
+                    <ProjectCard
+                        link="/projects/car-evolution-v1"
+                        image="/projects/car-evolution-v1/thumbnail.png"
+                        title="Car Evolution v1"
+                        desc="Genetic algorithm that evolves cars to drive around a track."
+                        date="August 2016"
+                        builtWith="Python + pygame"
                     />
 
                 </div>
