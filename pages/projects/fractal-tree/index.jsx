@@ -25,15 +25,15 @@ export default function Project() {
         <p>
             <b>How it works: </b>
             Trees are generated starting with a single root branch at the bottom.
-            Each branch will generate 1-4 slightly thinner child branches of random length and bend angles.
+            Each branch will generate 1-4 slightly thinner child branches of random length and relative bend angles.
             Branches start brown and gradient towards green as they get further from the root.
             After 12 branches, child branches will stop generating.
         </p>
 
-        <p>
-            It's probably not coincidence that such simple recursive rules are able to generate relatively
+        <p><i>
+            It's probably not coincidence that such simple recursive rules are able to generate
             realistic tree patterns.
-        </p>
+        </i></p>
 
         <ProjectPage.IFrame
             src="/projects/fractal-tree/index.html"

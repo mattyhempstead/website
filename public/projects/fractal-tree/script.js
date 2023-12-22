@@ -16,7 +16,15 @@ class Branch {
 	constructor(parentEnd, parentAngle, gen) {
 		//console.log("Branch Generation: " + gen);
 		this.gen = gen;
-		this.relativeAngle = parentAngle + (Math.random()-0.5)*branchAngle;
+
+		this.relativeAngle = parentAngle;
+		if (gen == 0) {
+			// Reduce relative angle magnitude of root
+			// Added in 2023
+			this.relativeAngle += (Math.random()-0.5)*branchAngle/2;
+		} else {
+			this.relativeAngle += (Math.random()-0.5)*branchAngle;
+		}
 		
 		this.branchLength = branchLength * Math.random() * (4/(this.gen+3));
 		this.startPos = {x:parentEnd.x, y:parentEnd.y};
