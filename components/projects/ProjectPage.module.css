@@ -3,9 +3,11 @@
     margin-top: 3rem;
     margin-bottom: 6rem;
     padding: 1rem;
+
+    line-height: 1.4rem;
 }
 
-.content h1, .content h2, .content p, .content ul {
+.content h1, .content h2, .content h3, .content h4, .content p, .content ul {
     max-width: 40rem;
     margin-left: auto;
     margin-right: auto;
