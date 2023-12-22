@@ -32,7 +32,7 @@ function IFrame({ src, className }) {
             <div>
                 {/* TODO: Add a left or centre aligned title for iframe */}
 
-                <span onClick={reloadIFrame} title="Reload">
+                <span onClick={reloadIFrame} title="Reload" style={{userSelect: 'none'}}>
                     <FontAwesomeIcon icon={faArrowsRotate} />
                 </span>
 
