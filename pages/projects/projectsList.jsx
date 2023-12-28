@@ -10,18 +10,6 @@
  */
 export const PROJECTS_LIST = [
     {
-        link: "/projects/car-evolution-v1",
-        image: "/projects/car-evolution-v1/thumbnail.png",
-        title: "Car Evolution v1",
-        desc: "Genetic algorithm that evolves cars to drive around a track.",
-        date: {
-            year: 2016,
-            month: 8,
-            string: "August 2016"
-        },
-        builtWith: "Python + pygame"
-    },
-    {
         link: "/projects/soil-shoveller",
         image: "/projects/soil-shoveller/thumbnail.jpg",
         title: "Soil Shoveller",
@@ -142,5 +130,28 @@ export const PROJECTS_LIST = [
         },
         builtWith: "HTML + CSS + JS"
     },
-
+    {
+        link: "/projects/car-evolution-v1",
+        image: "/projects/car-evolution-v1/thumbnail.png",
+        title: "Car Evolution v1",
+        desc: "Genetic algorithm that evolves cars to drive around a track.",
+        date: {
+            year: 2016,
+            month: 8,
+            string: "August 2016"
+        },
+        builtWith: "Python + pygame"
+    },
+    {
+        link: "/projects/song-visualiser-fourier",
+        image: "/projects/song-visualiser-fourier/thumbnail.png",
+        title: "Song Visualiser",
+        desc: "A song visualiser using a fourier transform that was written from scratch.",
+        date: {
+            year: 2018,
+            month: 12,
+            string: "December 2018"
+        },
+        builtWith: "Python + pygame"
+    },
 ];
