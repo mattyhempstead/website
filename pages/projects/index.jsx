@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -31,8 +32,54 @@ const ProjectCard = ({ link, image, title, desc, date, builtWith }) => {
 };
 
 
+function getProjectDateSortFn(newestFirst=true) {
+    // Sort by date created
+    // Ties are broken on title alphabetical
+    // Unknown dates get sort priority
+    const f = (a, b) => {
+        const yearDiff = a.date.year - b.date.year;
+        if (yearDiff != 0) return yearDiff;
+
+        // Months start at 1
+        // Use 0 if undefined (unknown months sort earlier)
+        const monthDiff = (a.date.month||0) - (b.date.month||0);
+        if (monthDiff != 0) return monthDiff;
+
+        // Alphabetical title if same date
+        return (a.title > b.title) ? 1 : -1;
+    };
+
+    // Swap order of params if oldest first
+    if (newestFirst) {
+        return f;
+    } else {
+        return ((a,b) => f(b,a));
+    }
+}
+
 
 export default function Projects() {
+
+    const [sortingMethod, setSortingMethod] = useState('default');
+    const [sortedProjects, setSortedProjects] = useState(PROJECTS_LIST);
+
+    useEffect(() => {
+        console.log("Changing sorting method", sortingMethod);
+
+        // Sort projects based on the selected method
+        if (sortingMethod === 'date-asc') {
+            const sortedByDate = [...PROJECTS_LIST].sort(getProjectDateSortFn(true));
+            setSortedProjects(sortedByDate);
+        } else if (sortingMethod === 'date-desc') {
+            const sortedByDate = [...PROJECTS_LIST].sort(getProjectDateSortFn(false));
+            setSortedProjects(sortedByDate);
+        } else {
+            setSortedProjects(PROJECTS_LIST); // Default order
+        }
+
+    }, [sortingMethod]); // Re-run the effect when sortingMethod changes
+
+
 
     return (<>
         <Head>
@@ -78,15 +125,27 @@ export default function Projects() {
                 </p>
 
 
+                <div className={styles.dropdownContainer}>
+                    <select
+                        value={sortingMethod}
+                        onChange={(e) => setSortingMethod(e.target.value)}
+                        className={styles.dropdown}
+                    >
+                        <option value="default">Default</option>
+                        <option value="date-desc">Date (newest first)</option>
+                        <option value="date-asc">Date (oldest first)</option>
+                    </select>
+                </div>
+
 
                 <div className={styles.flexGrid}>
-                    {PROJECTS_LIST.map(project => (
+                    {sortedProjects.map(project => (
                         <ProjectCard
                             link={project.link}
                             image={project.image}
                             title={project.title}
                             desc={project.desc}
-                            date={project.date}
+                            date={project.date.string}
                             builtWith={project.builtWith}
                         />
                     ))}
