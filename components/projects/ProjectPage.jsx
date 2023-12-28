@@ -54,7 +54,7 @@ function IFrame({ src, className }) {
     );
 }
 
-export default function ProjectPage({ title, date, children }) {
+export default function ProjectPage({ title, date, caption, children }) {
     return <>
         <Head>
             <title>{title}</title>
@@ -64,6 +64,7 @@ export default function ProjectPage({ title, date, children }) {
 
         <div className={styles.content}>
             <h1>{title}</h1>
+            {caption && <p className={styles.caption}>{caption}</p>}
             <p className={styles.date}>{date}</p>
 
             {children}

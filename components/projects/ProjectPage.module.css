@@ -76,3 +76,9 @@
     font-weight: bold;
     color: grey;
 }
+
+.content .caption {
+    font-style: italic;
+    color: grey;
+    margin-bottom: 1.5rem;
+}
