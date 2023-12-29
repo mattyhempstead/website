@@ -1,0 +1,86 @@
+
+.flexGrid {
+    /* display: flex; */
+
+    /* flex-wrap: wrap; */
+
+    /* justify-content: space-between; */
+    /* justify-content: center; */
+
+}
+
+
+.flexGrid .projectCard {
+    width: calc(100% - 0.6rem);
+
+    display: flex;
+    /* justify-content: left; */
+
+    /* width: 18rem; */
+    /* height: 8rem; */
+
+    /* margin: 0.2rem; */
+    border: 0.2rem solid black;
+
+    margin-bottom: 1.5rem;
+
+    /* flex: 0 1 calc(33.33% - 10px); */
+
+
+    background-color: rgb(190, 190, 190);
+    color: black;
+
+
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+}
+
+
+.projectCardImg {
+    background-color: rgb(228, 228, 228);
+    border-right: 1px solid rgb(32, 32, 32);
+   
+    flex: 0 0 10rem;
+    /* width: 10rem; */
+    height: 10rem;
+
+    /* display: inline-block; */
+
+    /* width: 50px;
+    height: 50px; */
+
+    position: relative;
+    /* height: calc(18rem * 9/16); */
+}
+
+
+
+.projectCardText {
+    /* padding: 0.7rem; */
+    /* display: inline-block; */
+
+    /* flex-grow: 1; */
+
+    /* width: calc(100% - 12rem); */
+}
+
+/* Title */
+/* .projectCardText h3 {
+    margin: 0;
+    font-size: 1.5rem;
+} */
+
+
+/* Desc */
+.projectCardText p:nth-child(3) {
+    /* font-size: 1.0rem; */
+    /* margin: 0.9rem 0 0 0; */
+}
+
+/* Build with */
+.projectCardText p:nth-child(4) {
+    /* font-size: 1.0rem; */
+    /* margin: 0.9rem 0 0 0; */
+    /* color: rgb(57, 100, 66); */
+    /* font-weight: bold; */
+}
+
