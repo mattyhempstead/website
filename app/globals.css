@@ -26,6 +26,9 @@ body {
     rgb(var(--background-start-rgb));
 } */
 
+body {
+    line-height: 1.6rem;
+}
 
 h1 {
     font-size: 2rem;

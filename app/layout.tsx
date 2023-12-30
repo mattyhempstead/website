@@ -27,8 +27,10 @@ export default function RootLayout({
             <body className={inter.className}>
                 <Header />
 
-                <div className='max-w-[40rem] mx-auto pt-8 pb-16'>
-                    {children}
+                <div className='px-4 pt-8 pb-16'>
+                    <div className='max-w-[40rem] mx-auto'>
+                        {children}
+                    </div>
                 </div>
             </body>
         </html>

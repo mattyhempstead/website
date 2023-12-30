@@ -4,9 +4,7 @@ import styles from './index.module.css';
 
 import { PROJECTS_LIST } from './projectsList';
 
-import type { Metadata } from 'next';
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 
 
@@ -35,8 +33,8 @@ const ProjectCard = ({ link, image, title, desc, date, builtWith }: ProjectCardP
                         <h3 className='text-2xl font-semibold'>{title}</h3>
                         <p className='pr-2 mt-0 italic text-gray-500'>{date}</p>
                     </div>
-                    <p className='mt-0 font-normal'>{desc}</p>
-                    <p className='mt-2 mb-0 font-bold text-green-800'>{builtWith}</p>
+                    <p className='mt-0 mb-2 font-normal'>{desc}</p>
+                    <p className='mt-0 mb-0 font-bold text-green-800'>{builtWith}</p>
                 </div>
             </div>
         </a>
