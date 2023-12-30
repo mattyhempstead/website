@@ -2,10 +2,6 @@
 
 import { useRef } from 'react';
 
-import Header from '@/components/header';
-import Head from 'next/head';
-import styles from './ProjectPage.module.css';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faUpRightFromSquare, faArrowsRotate, faA } from '@fortawesome/free-solid-svg-icons'
@@ -33,19 +29,20 @@ export function ProjectIFrame({ src, className }) {
                     w-[40rem] h-[40rem] mt-6
                     border-2 border-gray-400
                     flex-shrink-0 flex flex-col
-                    shadow-[0_0_0.5rem_rgba(134,134,134)]
+                    shadow-[0_0_0.3rem_rgba(134,134,134)]
                     ${className}
                 `}
             >
                 <div className={`
                     h-10 text-2xl flex justify-end items-center
-                    border-b-2 border-b-gray-400
+                    border-b-2 border-b-slate-400
+                    bg-slate-400
                 `}>
                     {/* TODO: Add a left or centre aligned title for iframe */}
 
                     <span
                         onClick={reloadIFrame} title="Reload"
-                        className='select-none mr-3 cursor-pointer'
+                        className='select-none mr-3 cursor-pointer text-black'
                     >
                         <FontAwesomeIcon icon={faArrowsRotate} />
                     </span>
@@ -62,7 +59,7 @@ export function ProjectIFrame({ src, className }) {
 
                 {/* <button onClick={toggleMaximized}>{isMaximized ? 'Minimize' : 'Maximize'}</button> */}
                 <iframe
-                    className='w-full border-0 flex-grow'
+                    className='w-full border-0 flex-grow bg-white'
                     ref={iframeRef}
                     src={src}
                     title="Embedded Content"
@@ -75,10 +72,10 @@ export function ProjectIFrame({ src, className }) {
 
 export function ProjectPage({ title, date, caption=null, children }) {
     return <>
-        <div className={styles.content}>
-            <h1 className='mb-6'>{title}</h1>
-            {caption && <p className={styles.caption}>{caption}</p>}
-            <p className={styles.date}>{date}</p>
+        <div className="">
+            <h1 className='mb-4 text-slate-100'>{title}</h1>
+            {caption && <p className="italic mb-4 text-slate-500">{caption}</p>}
+            <p className="italic font-bold mb-10 text-slate-600">{date}</p>
 
             {children}
         </div>

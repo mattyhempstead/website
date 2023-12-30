@@ -55,7 +55,7 @@ export default function Header() {
             </span>
         </div>
 
-        <div className='pr-4 flex justify-between w-40'>
+        <div className='pr-4 flex justify-between w-44'>
             <SocialsLink
                 href="mailto:matty.hempstead@gmail.com"
                 title="Email"

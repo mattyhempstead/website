@@ -24,10 +24,17 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className={inter.className}>
+            <body className={`
+                ${inter.className}
+                bg-slate-900 text-slate-400
+                [&_h1]:text-slate-200
+                [&_h2]:text-slate-200
+                [&_h3]:text-slate-200
+                [&_h4]:text-slate-200
+            `}>
                 <Header />
 
-                <div className='px-4 pt-8 pb-16'>
+                <div className='px-4 pt-12 pb-16'>
                     <div className='max-w-[40rem] mx-auto'>
                         {children}
                     </div>

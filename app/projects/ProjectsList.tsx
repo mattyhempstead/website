@@ -1,6 +1,5 @@
 'use client';
 
-import styles from './index.module.css';
 
 import { PROJECTS_LIST } from './projectsList';
 
@@ -20,13 +19,34 @@ type ProjectCardProps = {
 const ProjectCard = ({ link, image, title, desc, date, builtWith }: ProjectCardProps) => {
     return (
         <a href={link}>
-            <div className={styles.projectCard}>
-                <div className={styles.projectCardImg}>
+            <div className={`
+                flex mb-6 text-slate-300 bg-slate-800
+                border-[0.2rem] border-slate-950
+                shadow-[0_0_7px_rgba(0,0,0,0.5)]
+
+                hover:bg-slate-700
+                [&:hover_.project-card-image]:bg-[rgba(1,1,1,0.0)]
+            `}>
+                <div className={`
+                    bg-gray-100 h-40 relative flex-[0_0_10rem]
+                    border-r-[1px] border-gray-900
+                `}>
+                    {/* width: calc(100% - 0.6rem); */}
                     <Image
                         src={image}
                         alt={title}
                         layout="fill"
                     />
+
+                    {/* Overlay to make the images appear less bright/contrasting */}
+                    <div
+                        className={`
+                            project-card-image
+
+                            w-full h-full absolute bg-[rgba(1,1,1,0.2)]
+                            shadow-[inset_0_0_1rem_black]
+                        `}
+                    ></div>
                 </div>
                 <div className="flex-grow p-3">
                     <div className='flex justify-between'>
@@ -34,7 +54,7 @@ const ProjectCard = ({ link, image, title, desc, date, builtWith }: ProjectCardP
                         <p className='pr-2 mt-0 italic text-gray-500'>{date}</p>
                     </div>
                     <p className='mt-0 mb-2 font-normal'>{desc}</p>
-                    <p className='mt-0 mb-0 font-bold text-green-800'>{builtWith}</p>
+                    <p className='mt-0 mb-0 font-bold text-green-600'>{builtWith}</p>
                 </div>
             </div>
         </a>
@@ -96,7 +116,11 @@ export default function ProjectsList() {
             <select
                 value={sortingMethod}
                 onChange={(e) => setSortingMethod(e.target.value)}
-                className="p-1 mr-3 border-[1px] border-gray-400 rounded"
+                className={`
+                    p-1 mr-0 bg-gray-700 text-gray-300
+                    border-[1px] border-gray-400 rounded
+                    hover:bg-gray-600
+                `}
             >
                 <option value="default">Default</option>
                 <option value="date-desc">Date (newest first)</option>
@@ -105,7 +129,7 @@ export default function ProjectsList() {
         </div>
 
 
-        <div className={"mt-5 " + styles.flexGrid}>
+        <div className="mt-5 ">
             {sortedProjects.map(project => (
                 <ProjectCard
                     link={project.link}

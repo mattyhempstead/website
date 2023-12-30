@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function Projects() {
     return <>
         <div>
-            <h1>Projects</h1>
+            <h1 className='mb-6'>Projects</h1>
 
             <p>
                 An archive of some of the projects I mostly finished going all the way back to

@@ -12,16 +12,14 @@ export const metadata: Metadata = {
 
 export default function Page() {
     return <div>
-        <h1>
-            Hello.
-            <Image
-                src="/images/alien-dance.gif"
-                width={220/4}
-                height={328/4}
-                alt="Alien Dancing"
-            />
-        </h1>
+        <h1>Hello.</h1>
 
+        <Image
+            src="/images/alien-dance.gif"
+            width={220/4}
+            height={328/4}
+            alt="Alien Dancing"
+        />
 
         <br />
 

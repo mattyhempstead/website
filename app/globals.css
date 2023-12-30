@@ -26,6 +26,7 @@ body {
     rgb(var(--background-start-rgb));
 } */
 
+
 body {
     line-height: 1.6rem;
 }
@@ -60,9 +61,11 @@ p {
 }
 
 a {
-    color: rgb(48, 29, 221);
+    color: rgb(104, 243, 104);
     text-decoration: none;
-    font-weight: bold;
 }
 
-
+li {
+    list-style-type: disc;
+    margin-left: 1.75rem;
+}

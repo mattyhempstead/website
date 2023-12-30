@@ -20,12 +20,10 @@ export function ProjectVideo({ videoUrl, caption, className }: ProjectVideoProps
             src={videoUrl}
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
-            className="border-0 mx-auto w-[40rem] aspect-video"
+            className="border-0 mx-auto w-full aspect-video"
         />
-        {caption && <div className='italic mt-3 text-gray-700'>
+        {caption && <div className='italic mt-3 text-gray-500'>
             {caption}
         </div>}
     </div>
 }
-
-
