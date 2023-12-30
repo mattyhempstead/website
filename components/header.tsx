@@ -34,7 +34,7 @@ export default function Header() {
 
         <div className='pl-6'>
             {/* <Link href="/">Matty Hempstead</Link> */}
-            <a href="/" className='font-bold text-'>mattyhempstead.com</a>
+            <a href="/" className='font-bold text-lg'>mattyhempstead.com</a>
         </div>
 
         <div className=''>

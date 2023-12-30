@@ -1,5 +1,7 @@
 
 import { ProjectPage } from '@/components/projects/ProjectPage';
+import { ProjectVideo } from '@/components/projects/ProjectVideo';
+
 
 export const metadata = {
     title: "Song Visualiser",
@@ -41,20 +43,17 @@ export default function Project() {
         <h2>
             Video demo
         </h2>
-        <div className="text-center mb-10">
-            <iframe
-                src="https://www.youtube.com/embed/XZR_UIu4kRw?si=EcUgsjtZHs2pymKa"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
-                className='border-0 w-[560px] h-[315px] mx-auto'
-            />
-            <p
-                title="There are other songs that demonstrate this viz better, but I needed something that YouTube wouldn't take down.."
-                className="italic mt-2"
+
+        
+        <ProjectVideo
+            videoUrl = 'https://www.youtube.com/embed/XZR_UIu4kRw?si=EcUgsjtZHs2pymKa'
+            caption = {<div
+                title="There are other songs that demonstrate this viz better,
+                       but I needed something that YouTube wouldn't take down.."
             >
                 The first 60 seconds of "Exit the Premises" by Kevin MacLeod.
-            </p>
-        </div>
+            </div>}
+        />
 
         <p>
             At this point I could probably have gone much further with the visualisation and produced something

@@ -1,4 +1,5 @@
 import { ProjectPage } from '@/components/projects/ProjectPage';
+import { ProjectVideo } from '@/components/projects/ProjectVideo';
 
 export const metadata = {
     title: "Super Boy Boy",
@@ -27,7 +28,7 @@ export default function Project() {
         </p>
         <ul className="mt-0 mb-8 list-disc ml-8 [&>li]:mb-1">
             <li>
-                Mechanics inspired by <a href="https://en.wikipedia.org/wiki/Super_Meat_Boy">Super Meat Boy</a>
+                Game mechanics heavily "inspired" by <a href="https://en.wikipedia.org/wiki/Super_Meat_Boy">Super Meat Boy</a>
             </li>
             <li>
                 Music stolen from <a href="https://www.youtube.com/@h3h3productions">h3h3productions</a>
@@ -36,9 +37,9 @@ export default function Project() {
                 Ironic sound effects
             </li>
             <li>
-                And the Shrek font on the home screen? I think Shrek 
+                I think Shrek 
                 was <a href="https://media.tenor.com/-elkIMkKKAUAAAAC/shrek-is-love-shrek-is-life-shrek-meme.gif">memeing</a> quite 
-                hard at the time.
+                hard at the time which explains the Shrek font on the home screen.
             </li>
         </ul>
 
@@ -46,24 +47,15 @@ export default function Project() {
             The original source code can be found on <a href="https://github.com/mattyhempstead/super-boy-boy/">Github</a>.
         </p>
 
-        <p>
-            I've also recorded a quick video playthrough demo and embedded it below, because visual archives are much
+        <p className='mt-12'>
+            I've also recorded a quick video playthrough demo and embedded it below, visual archives are much
             better than source code for visual things.
         </p>
 
-        <div className="text-center">
-            <iframe
-                width="560" height="315"
-                className='border-0 mx-auto'
-                src="https://www.youtube.com/embed/gGjgDWL3VS8?si=tVQftyfa4I9wNvOJ"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
-            />
-            {/* <center><i>Playthrough demo of Super Boy Boy</i></center> */}
-        </div>
-
-
+        <ProjectVideo
+            videoUrl = 'https://www.youtube.com/embed/gGjgDWL3VS8?si=tVQftyfa4I9wNvOJ'
+            caption = {<div>Playthrough demo of Super Boy Boy</div>}
+        />
 
     </ProjectPage>
-
 }

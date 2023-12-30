@@ -1,4 +1,7 @@
+
 import { ProjectPage } from '@/components/projects/ProjectPage';
+import { ProjectVideo } from '@/components/projects/ProjectVideo';
+
 
 export const metadata = {
     title: "Car Evolution v1",
@@ -20,17 +23,10 @@ export default function Project() {
             Video demo
         </h2>
 
-        <div className="text-center mb-20">
-            <iframe
-                src="https://www.youtube.com/embed/AbXxIN6xxf8?si=v8czdNkSxJv4Y8gi"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
-                className="border-0 w-[560px] h-[315px]"
-            />
-            <p className='italic mt-2'>
-                90 minutes of the program running.
-            </p>
-        </div>
+        <ProjectVideo
+            videoUrl = 'https://www.youtube.com/embed/AbXxIN6xxf8?si=v8czdNkSxJv4Y8gi'
+            caption = {<div>90 minutes of the program running.</div>}
+        />
 
         <h3>
             Stages of Evolution
