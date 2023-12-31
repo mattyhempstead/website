@@ -9,32 +9,25 @@ import fs from "fs";
 import path from "path";
 import { ParsedUrlQuery } from "querystring";
 import { serialize } from "next-mdx-remote/serialize";
-import { ProjectVideo } from "@/components/projects/ProjectVideo";
+import ProjectVideo from "@/components/projects/ProjectVideo";
+import ProjectIFrame from "@/components/projects/ProjectIFrame";
 import React from "react";
+import { TFrontmatter } from "@/utils/TFrontmatter";
+import { PROJECTS_MARKDOWNS_PATH } from "@/utils/constants";
+import Image from "next/image";
 
-export const PROJECTS_MARKDOWNS_PATH = "data/projectsMarkdowns/";
-
+/**
+ * Components that you want to use in the mdx files.
+ */
 const embeddedComponents = {
   ProjectVideo,
+  ProjectIFrame,
+  Image,
 };
 
 interface IParams extends ParsedUrlQuery {
   projectSlug: string;
 }
-
-export type TFrontmatter = {
-  title: string;
-  link: string;
-  image: string;
-  desc: string;
-  caption?: string;
-  date: {
-    year: number;
-    month: number;
-    string: string;
-  };
-  builtWith: string;
-};
 
 export default function ProjectPage({
   source,
@@ -65,7 +58,7 @@ export const getStaticPaths = (async () => {
   console.log("Get static paths from " + PROJECTS_MARKDOWNS_PATH);
   const files = fs.readdirSync(PROJECTS_MARKDOWNS_PATH);
 
-  console.log(files);
+  console.log("List of mdx filenames: ", files);
   return {
     paths: files.map((filename) => ({
       params: {

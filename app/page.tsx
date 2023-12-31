@@ -35,7 +35,7 @@ export default function Page() {
         </li>
       </ul>
       <br />
-      <p>I've added some stuff below about me.</p>
+      <p>I&apos;ve added some stuff below about me.</p>
       {/* If you want  */}
       <h2 id="education">Education</h2>
       <p>I am a student at University of Sydney.</p>
@@ -52,9 +52,9 @@ export default function Page() {
           chance.
           <br />
           <br />
-          Since then I've discovered many practical benefits that CS can offer
-          to both myself and society, although I don't think I need to convince
-          any readers here.
+          Since then I&apos;ve discovered many practical benefits that CS can
+          offer to both myself and society, although I don&apos;t think I need
+          to convince any readers here.
           {/* Stuff about it being the most powerful tool available to humanity, about it giving you an
                 understanding of how the world works at lower levels of abstraction (this also applies to physics!). */}
         </Dropdown>
@@ -89,8 +89,8 @@ export default function Page() {
       </p>
       <h2 id="employment">Employment</h2>
       <div>
-        I've worked at a few pretty diverse companies alongside my university
-        studies.
+        I&apos;ve worked at a few pretty diverse companies alongside my
+        university studies.
         <ul>
           {/* Add logos to the left of each point.
                 Canva can use real logo, envisage and others can use other logos. */}
@@ -156,9 +156,9 @@ export default function Page() {
               me to dip into the area of cybersecurity.
               <br />
               <br />
-              In the internship I worked on improving Canva's internally used
-              secrets manager, and also performed some day-to-day maintenance of
-              other Cloud Security software used by Canva.
+              In the internship I worked on improving Canva&apos;s internally
+              used secrets manager, and also performed some day-to-day
+              maintenance of other Cloud Security software used by Canva.
               <br />
               <br />
               <i>Golang, AWS, Secrets Managers (Vault by Hashicorp)</i>
