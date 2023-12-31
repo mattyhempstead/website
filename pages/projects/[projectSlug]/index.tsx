@@ -10,6 +10,7 @@ import path from "path";
 import { ParsedUrlQuery } from "querystring";
 import { serialize } from "next-mdx-remote/serialize";
 import { ProjectVideo } from "@/components/projects/ProjectVideo";
+import React from "react";
 
 export const PROJECTS_MARKDOWNS_PATH = "data/projectsMarkdowns/";
 
@@ -21,21 +22,42 @@ interface IParams extends ParsedUrlQuery {
   projectSlug: string;
 }
 
+export type TFrontmatter = {
+  title: string;
+  link: string;
+  image: string;
+  desc: string;
+  caption?: string;
+  date: {
+    year: number;
+    month: number;
+    string: string;
+  };
+  builtWith: string;
+};
+
 export default function ProjectPage({
   source,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
+  if (!source) {
+    return <div>Loading...</div>;
+  }
   return (
-    <div className="">
-      {/* <h1 className="mb-4 text-slate-100">{title}</h1>
-      {caption && <p className="italic mb-4 text-slate-500">{caption}</p>} 
-      <p className="italic font-bold mb-10 text-slate-600">{date}</p> */}
-
-      {source ? (
-        <MDXRemote {...source} components={embeddedComponents} />
-      ) : (
-        <div>Could not find mdx source :(</div>
+    <>
+      <h1 className="mb-4 text-slate-100">
+        {source.frontmatter.title as string}
+      </h1>
+      {(source.frontmatter.caption as string) && (
+        <p className="italic mb-4 text-slate-500">
+          {source.frontmatter.caption as string}
+        </p>
       )}
-    </div>
+      <p className="italic font-bold mb-10 text-slate-600">
+        {source.frontmatter.date.string}
+      </p>
+
+      <MDXRemote {...source} components={embeddedComponents} />
+    </>
   );
 }
 
@@ -64,7 +86,10 @@ export const getStaticProps = (async (ctx: GetStaticPropsContext<IParams>) => {
     "utf-8"
   );
 
-  const mdxSource = await serialize(mdxString, {});
+  const mdxSource = await serialize<Record<string, unknown>, TFrontmatter>(
+    mdxString,
+    { parseFrontmatter: true }
+  );
 
   return {
     props: {
@@ -73,7 +98,7 @@ export const getStaticProps = (async (ctx: GetStaticPropsContext<IParams>) => {
   };
 }) satisfies GetStaticProps<
   {
-    source?: MDXRemoteSerializeResult;
+    source?: MDXRemoteSerializeResult<Record<string, unknown>, TFrontmatter>;
   },
   IParams
 >;
