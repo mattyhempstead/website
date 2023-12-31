@@ -26,11 +26,13 @@ export default function RootLayout({
         <html lang="en">
             <body className={`
                 ${inter.className}
-                bg-slate-900 text-slate-400
+                bg-slate-900 
+                text-slate-400
                 [&_h1]:text-slate-200
                 [&_h2]:text-slate-200
                 [&_h3]:text-slate-200
                 [&_h4]:text-slate-200
+                [&_code]:text-slate-300
             `}>
                 <Header />
 

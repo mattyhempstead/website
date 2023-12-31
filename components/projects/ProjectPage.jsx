@@ -23,10 +23,10 @@ export function ProjectIFrame({ src, className }) {
     }
 
     return (
-        <div className='flex justify-center mb-12'>
+        <div className='flex justify-center mt-8'>
             <div
                 className={`
-                    w-[40rem] h-[40rem] mt-6
+                    w-[40rem] h-[40rem]
                     border-2 border-gray-400
                     flex-shrink-0 flex flex-col
                     shadow-[0_0_0.3rem_rgba(134,134,134)]

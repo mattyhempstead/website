@@ -15,7 +15,7 @@ type ProjectVideoProps = {
  */
 export function ProjectVideo({ videoUrl, caption, className }: ProjectVideoProps) {
 
-    return <div className={`text-center mb-12 ${className || ''}`}>
+    return <div className={`text-center mt-4 ${className || ''}`}>
         <iframe
             src={videoUrl}
             title="YouTube video player"

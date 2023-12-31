@@ -76,6 +76,18 @@ export default function Project() {
 
 
 
+        <h2>
+            Later Versions
+        </h2>
+        <p>
+            Over the next few years I totally rewrote and improved the program three more times as I got
+            better at programming.
+            The most recent version (v4) is significantly more advanced and I intend to create a more versions
+            in the future.
+            Once I add the other versions to this website I'll link them here.
+        </p>
+
+
 
     </ProjectPage>
 

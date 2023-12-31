@@ -22,9 +22,8 @@ export default function Project() {
             {/* Not entirely sure why I made this. */}
         </p>
 
-        <br/>
 
-        <div className='text-center'>
+        <div className='text-center mt-12'>
             <Image
                 className="mx-auto shadow-[0_0_10px_black]"
                 src="/projects/image-pixel-sorter/interesting-meme.png"

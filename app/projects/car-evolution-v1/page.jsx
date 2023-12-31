@@ -18,7 +18,6 @@ export default function Project() {
             A program where cars with tiny brains evolve/learn to drive around a non-linear track.
         </p>
 
-        <br/>
         <h2>
             Video demo
         </h2>
@@ -28,9 +27,9 @@ export default function Project() {
             caption = {<div>90 minutes of the program running.</div>}
         />
 
-        <h3>
+        <h2>
             Stages of Evolution
-        </h3>
+        </h2>
 
         <p>
             The part I find most interesting about this simulation is the apparent distinct stages of evolution.
@@ -57,9 +56,9 @@ export default function Project() {
             I've outlined below some approximate stages I observed.
         </p>
 
-        <h4>
+        <h3>
             1. Travelling forward
-        </h4>
+        </h3>
         <p>
             Due to the randomly initialised brains, the first few generation of the simulation have relatively high 
             phenotypical variance.
@@ -86,9 +85,9 @@ export default function Project() {
             generations.
         </p>
 
-        <h4>
+        <h3>
             2. Bending left
-        </h4>
+        </h3>
 
         <p>
             Now that "the great filtering" has completed, the car that reigned supreme can begin the long journey
@@ -107,9 +106,9 @@ export default function Project() {
         </p>
 
         
-        <h4>
+        <h3>
             3. Avoiding the bend
-        </h4>
+        </h3>
 
         <p>
             Before long, the majority of the population is stuck hitting the inverse bend in the track.
@@ -129,9 +128,9 @@ export default function Project() {
             do after missing the bend and so directly into the wall below. But hey, this is progress!
         </p>
 
-        <h4>
+        <h3>
             4. Turning right
-        </h4>
+        </h3>
 
         <p>
             This next stage of evolution is quite slow, as until this point the cars lacked any means for the
@@ -152,9 +151,9 @@ export default function Project() {
         </p>
 
 
-        <h4>
+        <h3>
             5. Final bend
-        </h4>
+        </h3>
 
         <p>
             Before long, the right turning cars have sped up but are now hitting their
@@ -171,9 +170,9 @@ export default function Project() {
             Thus begins the race to the finish.
         </p>
 
-        <h4>
+        <h3>
             6. Race to the finish
-        </h4>
+        </h3>
 
         <p>
             The cars are now competing to be fast enough to complete a full cycle of the track.
@@ -190,13 +189,7 @@ export default function Project() {
             Congrats little car! 🎉
         </p>
 
-
-
-
         <br/>
-        <br/>
-        <br/>
-
 
         <h2>
             How it works
@@ -284,7 +277,6 @@ export default function Project() {
 
 
         <br/>
-        <br/>
 
 
         <h2>
@@ -328,13 +320,12 @@ export default function Project() {
         <h3>
             Source Code
         </h3>
-
         <p>
             Source code can be found on <a href="https://github.com/mattyhempstead/neural-network-cars/">Github</a>.
-            <br/>
-            <br/>
+        </p> 
+        <p>
             Note that this is a very early project (from 2016, which was ~1yr into learning to code),
-            so my programming style and abilities have hopefully improved since.
+            so my programming style and abilities have probably improved since.
         </p>
 
 
