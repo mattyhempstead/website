@@ -154,4 +154,16 @@ export const PROJECTS_LIST = [
         },
         builtWith: "Python + pygame"
     },
+    {
+        link: "/projects/double-pendulemon",
+        image: "/projects/double-pendulemon/thumbnail.png",
+        title: "Double Pendulemon",
+        desc: "A double pendulum simulation coded from scratch, with a sour twist.",
+        date: {
+            year: 2019,
+            month: 4,
+            string: "April 2019"
+        },
+        builtWith: "HTML + CSS + JS"
+    },
 ];

@@ -76,3 +76,8 @@ li {
     list-style-type: disc;
     margin-left: 1.75rem;
 }
+
+/* Nested lists should not have ul margins. */
+li ul {
+    margin-top: 0;
+}
