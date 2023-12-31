@@ -132,6 +132,7 @@ export default function ProjectsList() {
         <div className="mt-5 ">
             {sortedProjects.map(project => (
                 <ProjectCard
+                    key={project.title}
                     link={project.link}
                     image={project.image}
                     title={project.title}
