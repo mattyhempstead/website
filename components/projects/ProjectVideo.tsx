@@ -13,7 +13,7 @@ type ProjectVideoProps = {
  * To set the video width you can pass a className to the child like:
  * [&>iframe]:w-[30rem]
  */
-export function ProjectVideo({ videoUrl, caption, className }: ProjectVideoProps) {
+export default function ProjectVideo({ videoUrl, caption, className }: ProjectVideoProps) {
 
     return <div className={`text-center mt-4 ${className || ''}`}>
         <iframe

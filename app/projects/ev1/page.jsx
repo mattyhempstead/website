@@ -1,5 +1,5 @@
-
-import { ProjectPage, ProjectIFrame } from '@/components/projects/ProjectPage';
+import ProjectPage from '@/components/projects/ProjectPage';
+import ProjectIFrame from '@/components/projects/ProjectIFrame';
 
 export const metadata = {
     title: "Evolution Simulation v1",

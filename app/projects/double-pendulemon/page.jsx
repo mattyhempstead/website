@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
-import { ProjectPage, ProjectIFrame } from '@/components/projects/ProjectPage';
+import ProjectPage from '@/components/projects/ProjectPage';
+import ProjectIFrame from '@/components/projects/ProjectIFrame';
 
 export const metadata = {
     title: "Double Pendulemon",

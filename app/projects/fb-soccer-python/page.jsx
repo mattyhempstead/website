@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { ProjectPage } from '@/components/projects/ProjectPage';
+import ProjectPage from '@/components/projects/ProjectPage';
 
 export const metadata = {
     title: "FB Soccer Python Clone",

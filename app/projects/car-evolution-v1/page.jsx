@@ -1,6 +1,6 @@
 
-import { ProjectPage } from '@/components/projects/ProjectPage';
-import { ProjectVideo } from '@/components/projects/ProjectVideo';
+import ProjectPage from '@/components/projects/ProjectPage';
+import ProjectVideo from '@/components/projects/ProjectVideo';
 
 
 export const metadata = {

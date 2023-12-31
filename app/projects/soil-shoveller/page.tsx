@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 
-import { ProjectPage, ProjectIFrame } from '@/components/projects/ProjectPage';
+import ProjectPage from '@/components/projects/ProjectPage';
+import ProjectIFrame from '@/components/projects/ProjectIFrame';
 
 // TODO: Have a generateProjectMetadata function which reads projectList.jsx
 export const metadata: Metadata = {
