@@ -63,28 +63,24 @@ const ProjectCard = ({ link, image, title, desc, date, builtWith }: ProjectCardP
 
 
 function getProjectDateSortFn(newestFirst=true) {
-    // Sort by date created
+    // Sort by date created (order based on newestFirst)
     // Ties are broken on title alphabetical
     // Unknown dates get sort priority
-    const f = (a:any, b:any) => {
+
+    let dateOrderFlip = newestFirst ? 1 : -1;
+
+    return (a:any, b:any) => {
         const yearDiff = a.date.year - b.date.year;
-        if (yearDiff != 0) return yearDiff;
+        if (yearDiff != 0) return yearDiff * dateOrderFlip;
 
         // Months start at 1
         // Use 0 if undefined (unknown months sort earlier)
         const monthDiff = (a.date.month||0) - (b.date.month||0);
-        if (monthDiff != 0) return monthDiff;
+        if (monthDiff != 0) return monthDiff * dateOrderFlip;
 
         // Alphabetical title if same date
         return (a.title > b.title) ? 1 : -1;
     };
-
-    // Swap order of params if oldest first
-    if (newestFirst) {
-        return f;
-    } else {
-        return ((a:any,b:any) => f(b,a));
-    }
 }
 
 
