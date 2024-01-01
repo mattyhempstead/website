@@ -98,15 +98,18 @@ export default function ProjectsList() {
         console.log("Changing sorting method", sortingMethod);
 
         // Sort projects based on the selected method
+        let sortedProjects = [...PROJECTS_LIST];
+
         if (sortingMethod === 'date-asc') {
-            const sortedByDate = [...PROJECTS_LIST].sort(getProjectDateSortFn(true));
-            setSortedProjects(sortedByDate);
+            sortedProjects.sort(getProjectDateSortFn(true));
         } else if (sortingMethod === 'date-desc') {
-            const sortedByDate = [...PROJECTS_LIST].sort(getProjectDateSortFn(false));
-            setSortedProjects(sortedByDate);
+            sortedProjects.sort(getProjectDateSortFn(false));
+        } else if (sortingMethod === 'title-asc') {
+            sortedProjects.sort((a,b) => (a.title > b.title ? 1 : -1));
         } else {
-            setSortedProjects(PROJECTS_LIST); // Default order
+            // Default order
         }
+        setSortedProjects(sortedProjects);
 
     }, [sortingMethod]); // Re-run the effect when sortingMethod changes
 
@@ -125,6 +128,7 @@ export default function ProjectsList() {
                 <option value="default">Default</option>
                 <option value="date-desc">Date (newest first)</option>
                 <option value="date-asc">Date (oldest first)</option>
+                <option value="title-asc">Alphabetical</option>
             </select>
         </div>
 
