@@ -195,6 +195,18 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         },
         builtWith: "HTML + CSS + JS"
     },
+    "water": {
+        link: "/projects/water",
+        image: "/projects/water/thumbnail.png",
+        title: "Water",
+        desc: "A little interactive water puddle.",
+        date: {
+            year: 2019,
+            month: 4,
+            string: "April 2019"
+        },
+        builtWith: "HTML + CSS + JS"
+    },
 };
 
 
