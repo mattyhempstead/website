@@ -1,11 +1,11 @@
 import Image from 'next/image';
 
+import { getProjectMetadata } from '@/app/projects/projectsData';
+
 import ProjectPage from '@/components/projects/ProjectPage';
 import ProjectIFrame from '@/components/projects/ProjectIFrame';
 
-export const metadata = {
-    title: "Image Pixel Sorter",
-}
+export const metadata = getProjectMetadata("image-pixel-sorter");
 
 export default function Project() {
 

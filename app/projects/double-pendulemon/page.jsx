@@ -1,11 +1,11 @@
 import Image from 'next/image';
 
+import { getProjectMetadata } from '@/app/projects/projectsData';
+
 import ProjectPage from '@/components/projects/ProjectPage';
 import ProjectIFrame from '@/components/projects/ProjectIFrame';
 
-export const metadata = {
-    title: "Double Pendulemon",
-}
+export const metadata = getProjectMetadata("double-pendulemon");
 
 
 export default function Project() {

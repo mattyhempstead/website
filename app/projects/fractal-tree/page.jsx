@@ -1,9 +1,9 @@
+import { getProjectMetadata } from '@/app/projects/projectsData';
+
 import ProjectPage from '@/components/projects/ProjectPage';
 import ProjectIFrame from '@/components/projects/ProjectIFrame';
 
-export const metadata = {
-    title: "Fractal Tree",
-}
+export const metadata = getProjectMetadata("fractal-tree");
 
 export default function Project() {
 

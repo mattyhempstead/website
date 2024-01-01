@@ -1,9 +1,9 @@
+import { getProjectMetadata } from '@/app/projects/projectsData';
+
 import ProjectPage from '@/components/projects/ProjectPage';
 import ProjectIFrame from '@/components/projects/ProjectIFrame';
 
-export const metadata = {
-    title: "Cat Simulator 2015",
-}
+export const metadata = getProjectMetadata("cat-simulator-2015");
 
 export default function Project() {
 

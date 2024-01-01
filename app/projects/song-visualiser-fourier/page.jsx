@@ -1,9 +1,9 @@
+import { getProjectMetadata } from '@/app/projects/projectsData';
+
 import ProjectPage from '@/components/projects/ProjectPage';
 import ProjectVideo from '@/components/projects/ProjectVideo';
 
-export const metadata = {
-    title: "Song Visualiser",
-}
+export const metadata = getProjectMetadata("song-visualiser-fourier");
 
 export default function Project() {
 

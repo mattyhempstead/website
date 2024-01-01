@@ -1,9 +1,9 @@
+import { getProjectMetadata } from '@/app/projects/projectsData';
+
 import ProjectPage from '@/components/projects/ProjectPage';
 import ProjectIFrame from '@/components/projects/ProjectIFrame';
 
-export const metadata = {
-    title: "Pong",
-}
+export const metadata = getProjectMetadata("pong");
 
 export default function Project() {
 
@@ -37,5 +37,4 @@ export default function Project() {
         />
 
     </ProjectPage>
-
 }

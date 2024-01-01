@@ -1,9 +1,9 @@
+import { getProjectMetadata } from '@/app/projects/projectsData';
+
 import ProjectPage from '@/components/projects/ProjectPage';
 import ProjectIFrame from '@/components/projects/ProjectIFrame';
 
-export const metadata = {
-    title: "Pi Estimator",
-}
+export const metadata = getProjectMetadata("pi-estimator");
 
 export default function Project() {
 

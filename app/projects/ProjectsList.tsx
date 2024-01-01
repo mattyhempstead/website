@@ -1,7 +1,7 @@
 'use client';
 
 
-import { PROJECTS_LIST } from './projectsList';
+import { PROJECTS_DATA } from './projectsData';
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
@@ -88,13 +88,13 @@ function getProjectDateSortFn(newestFirst=true) {
 export default function ProjectsList() {
 
     const [sortingMethod, setSortingMethod] = useState('default');
-    const [sortedProjects, setSortedProjects] = useState(PROJECTS_LIST);
+    const [sortedProjects, setSortedProjects] = useState(Object.values(PROJECTS_DATA));
 
     useEffect(() => {
         console.log("Changing sorting method", sortingMethod);
 
         // Sort projects based on the selected method
-        let sortedProjects = [...PROJECTS_LIST];
+        let sortedProjects = [...Object.values(PROJECTS_DATA)];
 
         if (sortingMethod === 'date-asc') {
             sortedProjects.sort(getProjectDateSortFn(true));

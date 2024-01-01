@@ -1,11 +1,10 @@
+import { getProjectMetadata } from '@/app/projects/projectsData';
 
 import ProjectPage from '@/components/projects/ProjectPage';
 import ProjectVideo from '@/components/projects/ProjectVideo';
 
 
-export const metadata = {
-    title: "Car Evolution v1",
-}
+export const metadata = getProjectMetadata("car-evolution-v1");
 
 export default function Project() {
 

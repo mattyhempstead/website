@@ -1,12 +1,9 @@
-import type { Metadata } from 'next'
+import { getProjectMetadata } from '@/app/projects/projectsData';
 
 import ProjectPage from '@/components/projects/ProjectPage';
 import ProjectIFrame from '@/components/projects/ProjectIFrame';
 
-// TODO: Have a generateProjectMetadata function which reads projectList.jsx
-export const metadata: Metadata = {
-    title: "Soil Shoveller",
-}
+export const metadata = getProjectMetadata("soil-shoveller");
 
 export default function Project() {
 

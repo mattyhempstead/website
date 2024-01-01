@@ -1,11 +1,10 @@
+import { getProjectMetadata } from '@/app/projects/projectsData';
+
 import ProjectPage from '@/components/projects/ProjectPage';
 import ProjectIFrame from '@/components/projects/ProjectIFrame';
 import ProjectVideo from '@/components/projects/ProjectVideo';
 
-
-export const metadata = {
-    title: "Image Evolution",
-}
+export const metadata = getProjectMetadata("image-evolution");
 
 export default function Project() {
 

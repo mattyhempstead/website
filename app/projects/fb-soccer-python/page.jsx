@@ -1,10 +1,10 @@
 import Image from 'next/image';
 
+import { getProjectMetadata } from '@/app/projects/projectsData';
+
 import ProjectPage from '@/components/projects/ProjectPage';
 
-export const metadata = {
-    title: "FB Soccer Python Clone",
-}
+export const metadata = getProjectMetadata("fb-soccer-python");
 
 export default function Project() {
 

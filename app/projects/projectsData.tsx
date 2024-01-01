@@ -1,3 +1,19 @@
+import type { Metadata } from 'next'
+
+
+type ProjectData = {
+    link: string,
+    image: string,
+    title: string,
+    desc: string,
+    date: {
+        year: number,  // year as int
+        month?: number, // (optional) month as integer index at 1
+        string: string,  // the string we render for the date
+    },
+    builtWith: string
+};
+
 
 /**
  * A list of projects for /projects.
@@ -8,8 +24,8 @@
  *     string: the string we render for the date
  * }
  */
-export const PROJECTS_LIST = [
-    {
+export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
+    "soil-shoveller": {
         link: "/projects/soil-shoveller",
         image: "/projects/soil-shoveller/thumbnail.jpg",
         title: "Soil Shoveller",
@@ -20,7 +36,7 @@ export const PROJECTS_LIST = [
         },
         builtWith: "HTML + CSS + JS",
     },
-    {
+    "ev1": {
         link: "/projects/ev1",
         image: "/projects/ev1/thumbnail.png",
         title: "Evolution Simulator v1",
@@ -31,7 +47,7 @@ export const PROJECTS_LIST = [
         },
         builtWith: "HTML + CSS + JS"
     },
-    {
+    "pong": {
         link: "/projects/pong",
         image: "/projects/pong/thumbnail.png",
         title: "Pong",
@@ -42,7 +58,7 @@ export const PROJECTS_LIST = [
         },
         builtWith: "HTML + CSS + JS"
     },
-    {
+    "cat-simulator-2015": {
         link: "/projects/cat-simulator-2015",
         image: "/projects/cat-simulator-2015/thumbnail.jpg",
         title: "Cat Simulator 2015",
@@ -53,7 +69,7 @@ export const PROJECTS_LIST = [
         },
         builtWith: "HTML + CSS + JS"
     },
-    {
+    "superboyboy": {
         link: "/projects/superboyboy",
         image: "/projects/superboyboy/thumbnail.png",
         title: "Super Boy Boy",
@@ -64,7 +80,7 @@ export const PROJECTS_LIST = [
         },
         builtWith: "Python + pygame"
     },
-    {
+    "fb-soccer-python": {
         link: "/projects/fb-soccer-python",
         image: "/projects/fb-soccer-python/thumbnail.png",
         title: "FB Soccer Python",
@@ -75,7 +91,7 @@ export const PROJECTS_LIST = [
         },
         builtWith: "Python + pygame"
     },
-    {
+    "fractal-tree": {
         link: "/projects/fractal-tree",
         image: "/projects/fractal-tree/thumbnail.png",
         title: "Fractal Tree",
@@ -86,7 +102,7 @@ export const PROJECTS_LIST = [
         },
         builtWith: "HTML + CSS + JS"
     },
-    {
+    "image-circle-tiler": {
         link: "/projects/image-circle-tiler",
         image: "/projects/image-circle-tiler/thumbnail.png",
         title: "Image Circle Tiler",
@@ -97,7 +113,7 @@ export const PROJECTS_LIST = [
         },
         builtWith: "HTML + CSS + JS"
     },
-    {
+    "image-pixel-sorter": {
         link: "/projects/image-pixel-sorter",
         image: "/projects/image-pixel-sorter/thumbnail.png",
         title: "Image Pixel Sorter",
@@ -108,7 +124,7 @@ export const PROJECTS_LIST = [
         },
         builtWith: "HTML + CSS + JS"
     },
-    {
+    "pi-estimator": {
         link: "/projects/pi-estimator",
         image: "/projects/pi-estimator/thumbnail.png",
         title: "Pi Estimator",
@@ -119,7 +135,7 @@ export const PROJECTS_LIST = [
         },
         builtWith: "HTML + CSS + JS"
     },
-    {
+    "image-evolution": {
         link: "/projects/image-evolution",
         image: "/projects/image-evolution/thumbnail.png",
         title: "Image Evolution",
@@ -130,7 +146,7 @@ export const PROJECTS_LIST = [
         },
         builtWith: "HTML + CSS + JS"
     },
-    {
+    "car-evolution-v1": {
         link: "/projects/car-evolution-v1",
         image: "/projects/car-evolution-v1/thumbnail.png",
         title: "Car Evolution v1",
@@ -142,7 +158,7 @@ export const PROJECTS_LIST = [
         },
         builtWith: "Python + pygame"
     },
-    {
+    "song-visualiser-fourier": {
         link: "/projects/song-visualiser-fourier",
         image: "/projects/song-visualiser-fourier/thumbnail.png",
         title: "Song Visualiser",
@@ -154,7 +170,7 @@ export const PROJECTS_LIST = [
         },
         builtWith: "Python + pygame"
     },
-    {
+    "double-pendulemon": {
         link: "/projects/double-pendulemon",
         image: "/projects/double-pendulemon/thumbnail.png",
         title: "Double Pendulemon",
@@ -166,4 +182,13 @@ export const PROJECTS_LIST = [
         },
         builtWith: "HTML + CSS + JS"
     },
-];
+};
+
+
+export function getProjectMetadata(projectId: string): Metadata {
+    const project = PROJECTS_DATA[projectId];
+    return {
+        "title": project.title,
+        "description": project.desc,
+    }
+}
