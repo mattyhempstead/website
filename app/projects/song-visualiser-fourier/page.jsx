@@ -36,13 +36,10 @@ export default function Project() {
         </p>
 
 
-
-        <br/>
         <h2>
             Video demo
         </h2>
 
-        
         <ProjectVideo
             videoUrl = 'https://www.youtube.com/embed/XZR_UIu4kRw?si=EcUgsjtZHs2pymKa'
             caption = {<div
@@ -53,7 +50,7 @@ export default function Project() {
             </div>}
         />
 
-        <p>
+        <p className='mt-8'>
             At this point I could probably have gone much further with the visualisation and produced something
             that looks like the <a href="https://www.youtube.com/watch?v=s8XIgR5OGJc">music videos</a>, as I
             had finished the challenging part of getting the core algorithm to work.
