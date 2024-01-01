@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <title>MNIST</title>
+    <style>
+        .graph {
+            width:960px;
+            height: 540px;
+            margin: auto;
+        }
+
+        body {
+            text-align: center;
+            background-color:#111;
+            color:white;
+            font-family: Helvetica;
+        }
+    </style>
+    <body>
+
+    <body style="">
+        <div style="height:10px"></div>
+
+        <b><h2>MNIST</h2></b>
+
+        <canvas id="canvas"></canvas>
+
+        <br>
+
+        <p style="line-height: 1.5">
+            A 99.5% mnist digit recogniser trained in Tensorflow.
+            <br>
+            Click and drag to draw digits on the white square.
+        </p>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script> <!-- tensorflow.js -->
+
+
+        <!-- Basic canvas gui stuff -->
+        <script src="../../canvas-lib-2019/drawFunctions.js"></script>
+        <script src="../../canvas-lib-2019/drawFunctions.js"></script>
+        <script src="../../canvas-lib-2019/button.js"></script>
+        <script src="../../canvas-lib-2019/functions.js"></script>
+
+        <script src="environment.js"></script>
+        <script src="drawCanvas.js"></script>
+        
+        <!-- Once imported this script should start program -->
+        <!-- Be sure to have everything imported first -->
+        <script src="main.js"></script>
+        
+
+    </body>
+</html>

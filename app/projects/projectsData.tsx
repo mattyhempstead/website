@@ -207,6 +207,18 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         },
         builtWith: "HTML + CSS + JS"
     },
+    "mnist": {
+        link: "/projects/mnist",
+        image: "/projects/mnist/thumbnail.png",
+        title: "MNIST Interactive",
+        desc: "An interactive browser-based digit classifier.",
+        date: {
+            year: 2019,
+            month: 7,
+            string: "July 2019"
+        },
+        builtWith: "HTML + CSS + JS + Python + Tensorflow"
+    },
 };
 
 
