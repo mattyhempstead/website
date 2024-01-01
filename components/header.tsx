@@ -46,13 +46,13 @@ export default function Header() {
                 <a href="/projects">projects</a>
             </span>
 
-            <span>
+            {/* <span>
                 <a href="/blog">blog</a>
             </span>
             
             <span>
                 <a href="/microblog">microblog</a>
-            </span>
+            </span> */}
         </div>
 
         <div className='pr-4 flex justify-between w-44'>
