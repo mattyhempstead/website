@@ -84,30 +84,33 @@ function getProjectDateSortFn(newestFirst=true) {
 }
 
 
+function getSortedProjects(sortingMethod: string) {
+    // Sort projects based on the selected method
+    let sortedProjects = [...Object.values(PROJECTS_DATA)];
+
+    if (sortingMethod === 'date-asc') {
+        sortedProjects.sort(getProjectDateSortFn(true));
+    } else if (sortingMethod === 'date-desc') {
+        sortedProjects.sort(getProjectDateSortFn(false));
+    } else if (sortingMethod === 'title-asc') {
+        sortedProjects.sort((a,b) => (a.title > b.title ? 1 : -1));
+    } else {
+        // Default order
+    }
+
+    return sortedProjects;
+}
+
 
 export default function ProjectsList() {
 
-    const [sortingMethod, setSortingMethod] = useState('default');
-    const [sortedProjects, setSortedProjects] = useState(Object.values(PROJECTS_DATA));
+    const [sortingMethod, setSortingMethod] = useState('date-desc');
+    const [sortedProjects, setSortedProjects] = useState(getSortedProjects(sortingMethod));
 
     useEffect(() => {
         console.log("Changing sorting method", sortingMethod);
-
-        // Sort projects based on the selected method
-        let sortedProjects = [...Object.values(PROJECTS_DATA)];
-
-        if (sortingMethod === 'date-asc') {
-            sortedProjects.sort(getProjectDateSortFn(true));
-        } else if (sortingMethod === 'date-desc') {
-            sortedProjects.sort(getProjectDateSortFn(false));
-        } else if (sortingMethod === 'title-asc') {
-            sortedProjects.sort((a,b) => (a.title > b.title ? 1 : -1));
-        } else {
-            // Default order
-        }
-        setSortedProjects(sortedProjects);
-
-    }, [sortingMethod]); // Re-run the effect when sortingMethod changes
+        setSortedProjects(getSortedProjects(sortingMethod));
+    }, [sortingMethod]);
 
 
     return <>
@@ -121,7 +124,7 @@ export default function ProjectsList() {
                     hover:bg-gray-600
                 `}
             >
-                <option value="default">Default</option>
+                {/* <option value="default">Default</option> */}
                 <option value="date-desc">Date (newest first)</option>
                 <option value="date-asc">Date (oldest first)</option>
                 <option value="title-asc">Alphabetical</option>
