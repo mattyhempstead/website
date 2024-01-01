@@ -16,12 +16,12 @@ export default function Project() {
     >
 
         <p>
-            In first year of uni I did one semester of Physics as a science elective.
+            In first semester of uni I did one Physics course as a science elective.
             The course had a module on "chaos theory" that touched on the unpredictability
             of <a href="https://en.wikipedia.org/wiki/Double_pendulum">double pendulums</a>,
             which <abbr 
-                title="More likely is that I was just procrastinating from physics homework...">inspired me
-            </abbr> to try to create my own from scratch.
+                title="More likely is that I was just procrastinating from physics homework...">inspired
+            </abbr> me to try to create my own from scratch.
         </p>
 
         <ProjectIFrame

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <title>Thermo Sim</title>
+    <body style="text-align:center; background-color:#111; color:white">
+        
+        <div style="height:10px"></div>
+
+        <!-- <b><h2>On the State of Matter</h2></b> -->
+
+        <canvas id="canvas"></canvas>
+
+        <br><br>
+
+        <p>
+            Basically just a bunch of particles doing typical particle things with each other while I hope that the 3 states of matter emerge.
+            <br>
+            You gotta spam the cool/heat buttons heaps for it to have any effect.
+            <!-- <br><br>
+            The particles keep undergoing sublimation (and deposition) as they only seem to exist as either solid or gas.
+            <br>
+            Getting liquid phase to appear is really hard and either requires lots more particles or 
+            careful tweaking of all the variables.
+            <br>
+            Maybe having lots more particles will make it easier but this is an O(n<sup>2</sup>) problem and my code is terribly inefficient. -->
+        </p>
+
+        <!-- Basic canvas gui stuff -->
+        <script src="../../canvas-lib-2019/drawFunctions.js"></script>
+        <script src="../../canvas-lib-2019/button.js"></script>
+        <script src="../../canvas-lib-2019/slider.js"></script>
+        <script src="../../canvas-lib-2019/functions.js"></script>
+
+        <script src="thermalSim.js"></script>
+        <script src="main.js"></script>
+
+    </body>
+</html>

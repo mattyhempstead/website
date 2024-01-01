@@ -182,6 +182,19 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         },
         builtWith: "HTML + CSS + JS"
     },
+    "thermo-sim": {
+        link: "/projects/thermo-sim",
+        image: "/projects/thermo-sim/thumbnail.png",
+        title: "Thermo Simulation",
+        desc: "A micro-scale simulation of vibrating molecules with macro-scale emergent properties.",
+        // desc: "A simulation of vibrating molecules transferring heat to one another at a micro scale, producing states of matter at a macro scale.",
+        date: {
+            year: 2019,
+            month: 4,
+            string: "April 2019"
+        },
+        builtWith: "HTML + CSS + JS"
+    },
 };
 
 

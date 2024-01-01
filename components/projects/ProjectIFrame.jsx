@@ -23,11 +23,37 @@ export default function ProjectIFrame({ src, className="" }) {
         }
     }
 
+    /*
+        TODO: Scale iframe to be same size as container.
+        This makes mobile devices handle well.
+
+        iframeRef.current.contentDocument.getElementsByTagName("html")[0].style.zoom = 0.2
+
+
+        Alternatively you can scale the iframe element itself.
+        style={{
+            // 'width': '100%',
+
+            // '-ms-transform': 'scale(0.5)',
+            // '-moz-transform': 'scale(0.5)',
+            // '-o-transform': 'scale(0.5)',
+            // '-webkit-transform': 'scale(0.5)',
+            // 'transform': 'scale(0.5)',
+
+            // '-ms-transform-origin': '0 0',
+            // '-moz-transform-origin': '0 0',
+            // '-o-transform-origin': '0 0',
+            // '-webkit-transform-origin': '0 0',
+            // 'transform-origin': '0 0',
+        }}
+    */
+
     return (
         <div className='flex justify-center mt-8'>
             <div
                 className={`
-                    w-[40rem] h-[40rem]
+                    w-[40rem] max-w-[calc(100vw-3rem)]
+                    h-[40rem]
                     border-2 border-gray-400
                     flex-shrink-0 flex flex-col
                     shadow-[0_0_0.3rem_rgba(134,134,134)]
@@ -65,6 +91,7 @@ export default function ProjectIFrame({ src, className="" }) {
                     src={src}
                     title="Embedded Content"
                     allowFullScreen
+
                 ></iframe>
             </div>
         </div>

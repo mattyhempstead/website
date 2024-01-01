@@ -50,11 +50,11 @@ const ProjectCard = ({ link, image, title, desc, date, builtWith }: ProjectCardP
                 </div>
                 <div className="flex-grow p-3">
                     <div className='flex justify-between'>
-                        <h2 className='text-2xl font-semibold mt-0 mb-4'>{title}</h2>
+                        <h2 className='text-2xl font-semibold mt-0 mb-3'>{title}</h2>
                         <p className='pr-2 mt-0 italic text-gray-500'>{date}</p>
                     </div>
                     <p className='mt-0 mb-2 font-normal'>{desc}</p>
-                    <p className='mt-0 mb-0 font-bold text-green-600'>{builtWith}</p>
+                    <p className='mt-0 mb-0 font-bold text-green-600 text-sm'>{builtWith}</p>
                 </div>
             </div>
         </a>
