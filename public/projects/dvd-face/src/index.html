@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <title>DVD Face</title>
+    <body style="text-align:center">
+        
+        <div style="height:10px"></div>
+
+        <b><h2>DVD screensaver but its actually your face</h2></b>
+
+        <div id="media"></div>
+
+        <br>
+        <button id="mainBtn" onclick="enableWebcam()">Enable Webcam</button>
+
+        <br><br>
+
+
+        <script src="face-api-min.js"></script>
+        <script src="main.js"></script>
+
+        <style>
+            #media {
+                margin-top: 3em;
+            }
+
+            video, canvas {
+                border: 1px solid black;
+            }
+
+            #mainBtn {
+                font-size: 1.5em;
+                padding: 0.2em;
+            }
+        </style>
+
+    </body>
+</html>
