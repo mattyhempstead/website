@@ -24,7 +24,7 @@ export default function Page() {
         {/* <br /> */}
 
         <p>
-            hi stranger
+            hi stranger.
         </p>
         <br/>
 
@@ -40,7 +40,7 @@ export default function Page() {
         <br/>
 
         <p>
-            I've added some stuff below about me.
+            I've added some details about myself below.
         </p>
         {/* If you want  */}
 
