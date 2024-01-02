@@ -163,22 +163,28 @@ function startAnimation(canvas, image, face) {
       colour = randomColour()
     }
 
-    // Draw image
+    // Draw face image
     ctx.drawImage(
-      image, 
-      box.x - face.box.x, 
-      box.y - face.box.y, 
-      canvas.width, 
-      canvas.height
-    )
+      image,
+      face.box.x,
+      face.box.y,
+      face.box.width,
+      face.box.height,
+      box.x,
+      box.y,
+      face.box.width,
+      face.box.height,
+    );
 
 
     // Draw some nice changing colours
     ctx.fillStyle = colour
     ctx.globalAlpha = 0.05
     ctx.fillRect(0, 0, canvas.width, canvas.height)
+
     ctx.globalAlpha = 0.2
-    ctx.fillRect(box.x - face.box.x, box.y - face.box.y, canvas.width, canvas.height)
+    ctx.fillRect(box.x, box.y, face.box.width, face.box.height)
+
     ctx.globalAlpha = 1.0
 
 
