@@ -219,6 +219,18 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         },
         builtWith: "HTML + CSS + JS + Python + Tensorflow"
     },
+    "dvd-face": {
+        link: "/projects/dvd-face",
+        image: "/projects/dvd-face/thumbnail.png",
+        title: "DVD Face",
+        desc: "The DVD screensaver but it's your face.",
+        date: {
+            year: 2019,
+            month: 9,
+            string: "September 2019"
+        },
+        builtWith: "HTML + CSS + JS"
+    },
 };
 
 

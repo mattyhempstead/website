@@ -35,7 +35,7 @@ function enableWebcam() {
       // Add video stream to page
       mediaContainer.appendChild(video)
       video.srcObject = stream
-      video.style.width = '40%'
+      video.style.width = '40rem'
 
       // Make button take a photo
       document.getElementById('mainBtn').innerHTML = 'Take Photo'
