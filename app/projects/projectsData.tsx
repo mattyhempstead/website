@@ -221,7 +221,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
     },
     "dvd-face": {
         link: "/projects/dvd-face",
-        image: "/projects/dvd-face/thumbnail.png",
+        image: "/projects/dvd-face/thumbnail.jpeg",
         title: "DVD Face",
         desc: "The DVD screensaver but it's your face.",
         date: {
