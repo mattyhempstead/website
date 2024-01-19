@@ -57,7 +57,7 @@ class WaterSim {
 
 
 				// Add acceleration towards equilibrium
-				accel += -amplitude * this.MAIN_SPRING
+				// accel += -amplitude * this.MAIN_SPRING
 
 				// Add acceleration towards neighbours
 				if (x>0) accel += this.NEIGHBOUR_SPRING * (this.amplitudeGrid[y][x-1] - amplitude)

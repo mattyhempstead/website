@@ -89,7 +89,7 @@ export default function Project() {
         </p>
 
         <p>
-            A high school understanding of Newtons laws of motions and the equations that govern
+            A high school understanding of Newton's laws of motions and the equations that govern
             attractive/repulsive forces between particles/bodies is all you need to create basic
             simulations including but not limited to:
         </p>
@@ -98,7 +98,7 @@ export default function Project() {
             <li>Softbodies (i.e. squishy blobs)</li>
             <li>Ropes</li>
             <li>Fabric/cloth sheets</li>
-            <li>And double pendulums if you want!</li>
+            <li>And pendulums of the nth degree!</li>
         </ul>
 
 

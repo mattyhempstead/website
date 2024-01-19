@@ -19,6 +19,10 @@ export default function Project() {
             >DVD screensaver</a> animation?
         </p>
 
+        <p className='italic'>
+            You will need a webcam for this program to work.
+        </p>
+
 
         <ProjectIFrame
             src="/projects/dvd-face/src/index.html"

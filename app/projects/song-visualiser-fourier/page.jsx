@@ -47,6 +47,10 @@ export default function Project() {
                        but I needed something that YouTube wouldn't take down.."
             >
                 The first 60 seconds of "Exit the Premises" by Kevin MacLeod.
+
+                <p>
+                    Update: The actual Kevin MacLeod somehow found this video (Content ID?) at 14 views and commented on it.. 😍
+                </p>
             </div>}
         />
 
