@@ -11,8 +11,9 @@ export const metadata: Metadata = {
 
 
 export default function Page() {
-    return <div>
-        {/* <h1>Hello.</h1> */}
+    return <div className={`
+        [&_h2]:mt-20
+    `}>
 
         {/* <Image
             src="/images/alien-dance.gif"
@@ -21,14 +22,19 @@ export default function Page() {
             alt="Alien Dancing"
         /> */}
 
-        {/* <br /> */}
+        <div className='text-center mt-12'>
+            <p>
+                Projects are <a href="/projects">here</a>.
+            </p>
 
-        <p>
-            hi stranger.
-        </p>
-        <br/>
+            <p>
+                The rest is just noise.
+            </p>
+        </div>
 
-        <p>
+        <div className='h-4'></div>
+
+        {/* <p>
             I am a
         </p>
         <ul className='mt-2'>
@@ -37,12 +43,8 @@ export default function Page() {
             <li><Link href="#hobbies">Creator of <i>things</i></Link></li>
         </ul>
 
-        <br/>
+        <br/> */}
 
-        <p>
-            I've added some details about myself below.
-        </p>
-        {/* If you want  */}
 
 
         <h2 id="education">
@@ -50,7 +52,7 @@ export default function Page() {
         </h2>
 
         <p>
-            I am a student at University of Sydney.
+            I am currently a student at University of Sydney.
         </p>
 
         <p>
@@ -58,57 +60,59 @@ export default function Page() {
             and <b>Data Science</b>.
         </p>
 
-        <div>
-            <p>
-                Why Computer Science?
-            </p>
-
-            <Dropdown>
-                I learned to code in my free time during high school and realised pretty quickly
-                that I wanted to do this in University if given the chance.
-
-                <br/><br/>
-
-                Since then I've discovered many practical benefits that CS can offer to both myself
-                and society, although I don't think I need to convince any readers here.
-
-                {/* Stuff about it being the most powerful tool available to humanity, about it giving you an
-                understanding of how the world works at lower levels of abstraction (this also applies to physics!). */}
-            </Dropdown>
-        </div>
-
-
-        <div>
-            <p>
-                Why Data Science?
-            </p>
-
-            <Dropdown>
-                <p className='mt-2'>
-                    I enjoyed physics enough in high school that I was tempted to pick it.
-
-                    However, by that time I had spent a couple years playing with (ML-based)
-                    AI which I could see as a rapidly improving extension
-                    to <a href="https://karpathy.medium.com/software-2-0-a64152b37c35">software</a>.
-                    I decided to go all in on software and utility rather than split my degree in two.
-                </p>
-
+        <ul>
+            <li>
                 <p>
-                    Similar to CS, during my degree I have learned the value of data science
-                    outside of what I originally knew.
-                    For DS, this means the ability to extract knowledge from observation
-                    and reason about its uncertainty (i.e. <i>science</i>).
+                    Why Computer Science?
                 </p>
 
+                <Dropdown>
+                    I learned to code in my free time during high school and realised pretty quickly
+                    that I wanted to do this in University if given the chance.
+
+                    <br/><br/>
+
+                    Since then I've discovered many practical benefits that CS can offer to both myself
+                    and society, although I don't think I need to convince any readers here.
+
+                    {/* Stuff about it being the most powerful tool available to humanity, about it giving you an
+                    understanding of how the world works at lower levels of abstraction (this also applies to physics!). */}
+                </Dropdown>
+            </li>
+
+
+            <li>
                 <p>
-                    I actually still ended up doing a course in Physics during my first semester which
-                    inspired a couple <a
-                        href="/projects/double-pendulemon">
-                        personal projects
-                    </a>.
+                    Why Data Science?
                 </p>
-            </Dropdown>
-        </div>
+
+                <Dropdown>
+                    <p className='mt-2'>
+                        I enjoyed physics enough in high school that I was tempted to pick it.
+
+                        However, by that time I had spent a couple years playing with (ML-based)
+                        AI which I could see as a rapidly improving extension
+                        to <a href="https://karpathy.medium.com/software-2-0-a64152b37c35">software</a>.
+                        I decided to go all in on software and utility rather than split my degree in two.
+                    </p>
+
+                    <p>
+                        Similar to CS, during my degree I have learned the value of data science
+                        outside of what I originally knew.
+                        For DS, this means the ability to extract knowledge from observation
+                        and reason about its uncertainty (i.e. <i>science</i>).
+                    </p>
+
+                    <p>
+                        I actually still ended up doing a course in Physics during my first semester which
+                        inspired a couple <a
+                            href="/projects/double-pendulemon">
+                            personal projects
+                        </a>.
+                    </p>
+                </Dropdown>
+            </li>
+        </ul>
 
         <p>
             More details about my education
@@ -222,17 +226,11 @@ export default function Page() {
         </p>
 
         <ul className='mt-2'>
-            <li>Building things (mostly software)</li>
-            <li>Thinking of more things to build</li>
-            <li>Learning stuff, often for the purpose of allowing me to build more things</li>
-            <li>Trying to improve my mindset, largely for the purpose of building more things</li>
+            <li>Building things (mostly software).</li>
+            <li>Thinking of more things to build.</li>
+            <li>Learning stuff, often for the purpose of allowing me to build more things.</li>
+            <li>Trying to improve my mindset, partly so I am capable of building more things.</li>
         </ul>
-
-        <p>
-            Historically I have been pretty hopeless at documenting what I make,
-            but now that there appears to be more of a benefit from doing so I figured
-            I should make a website (this one) that attempts it.
-        </p>
 
         <p>
             To see some of my projects, go <Link href="/projects">here</Link>.

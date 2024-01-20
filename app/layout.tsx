@@ -33,6 +33,8 @@ export default function RootLayout({
                 [&_h3]:text-slate-200
                 [&_h4]:text-slate-200
                 [&_code]:text-slate-300
+
+                portrait:[&_h2]:mt-20
             `}>
                 <Header />
 
