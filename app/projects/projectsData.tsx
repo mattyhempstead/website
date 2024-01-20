@@ -231,6 +231,18 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         },
         builtWith: "HTML + CSS + JS"
     },
+    "cartpole-evolution": {
+        link: "/projects/cartpole-evolution",
+        image: "/projects/cartpole-evolution/thumbnail.png",
+        title: "Cartpole Evolution",
+        desc: "Evolving neural networks to play cartpole, from scratch.",
+        date: {
+            year: 2019,
+            month: 5, // May to June
+            string: "May 2019"
+        },
+        builtWith: "HTML + CSS + JS"
+    },
 };
 
 

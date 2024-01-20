@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <title>Cartpole Evolution</title>
+    <style>
+        .graph {
+            width:960px;
+            height: 540px;
+            margin: auto;
+        }  
+    </style>
+    <body style="text-align:center; background-color:#111; color:white;">
+        
+        <div style="height:10px"></div>
+
+        <b><h2>AI learns to balance a pendulum</h2></b>
+
+        <canvas id="canvas"></canvas>
+
+        <br><br>
+
+        <div id="graph" class="graph"></div>
+
+
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>    <!-- Plotly.js -->
+
+
+        <!-- Basic canvas gui stuff -->
+        <script src="/projects/canvas-lib-2019/drawFunctions.js"></script>
+        <script src="/projects/canvas-lib-2019/button.js"></script>
+        <script src="/projects/canvas-lib-2019/functions.js"></script>
+
+        <script src="./lib/nn.js"></script>
+        <script src="./lib/node.js"></script>
+        <script src="./lib/spring.js"></script>
+        <script src="./lib/environment.js"></script>
+        <script src="./sim/cart.js"></script>
+        <script src="./sim/sim.js"></script>
+        
+        <!-- Once imported this script should start program -->
+        <!-- Be sure to have everything imported first -->
+        <script src="main.js"></script>
+        
+
+    </body>
+</html>
