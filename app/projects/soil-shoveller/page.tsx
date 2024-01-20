@@ -7,10 +7,7 @@ export const metadata = getProjectMetadata("soil-shoveller");
 
 export default function Project() {
 
-    return <ProjectPage
-        title = "Soil Shoveller"
-        date = "2015"
-    >
+    return <ProjectPage projectId="soil-shoveller">
         <p>
             This game from 2015 might be the first program I ever completed and shared with others.
         </p>

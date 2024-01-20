@@ -7,11 +7,7 @@ export const metadata = getProjectMetadata("cat-simulator-2015");
 
 export default function Project() {
 
-    return <ProjectPage
-        title="Cat Simulator 2015"
-        date = "2015"
-    >
-
+    return <ProjectPage projectId="cat-simulator-2015">
         <p>
             Not my finest work, but it might be the first game(?) I ever put on my website
             after learning to code so I'm gonna archive it here.

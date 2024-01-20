@@ -7,11 +7,7 @@ export const metadata = getProjectMetadata("superboyboy");
 
 export default function Project() {
 
-    return <ProjectPage
-        title="Super Boy Boy"
-        date = "May 2016"
-    >
-
+    return <ProjectPage projectId="superboyboy">
         <p>
             A platformer game I made in high school with Python and <a href="https://www.pygame.org/wiki/about">pygame</a>.
         </p>

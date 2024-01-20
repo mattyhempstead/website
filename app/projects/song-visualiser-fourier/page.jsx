@@ -8,9 +8,8 @@ export const metadata = getProjectMetadata("song-visualiser-fourier");
 export default function Project() {
 
     return <ProjectPage
-        title = "Song Visualiser"
+        projectId="song-visualiser-fourier"
         caption = "or Explorations into the Slow Fourier Transform..."
-        date = "December 2018"
     >
 
         <p>

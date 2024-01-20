@@ -8,10 +8,7 @@ export const metadata = getProjectMetadata("image-evolution");
 
 export default function Project() {
 
-    return <ProjectPage
-        title = "Image Evolution"
-        date = "2017 or 2018 ????"
-    >
+    return <ProjectPage projectId="image-evolution">
         <p>
             An evolution simulation that uses a genetic algorithm to evolves a couple
             hundred triangles to resemble a target image.

@@ -7,11 +7,7 @@ export const metadata = getProjectMetadata("fractal-tree");
 
 export default function Project() {
 
-    return <ProjectPage
-        title = "Fractal Tree"
-        date = "2017 or 2018 ????"
-    >
-
+    return <ProjectPage projectId="fractal-tree">
         <p>
             A procedural tree generator I made during a computer-generated art phase.
         </p>

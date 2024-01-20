@@ -8,8 +8,9 @@ export const metadata = getProjectMetadata("pong");
 export default function Project() {
 
     return <ProjectPage
-        title="Pong"
-        date = "2015 / 2016?"
+        projectId="pong"
+        // title="Pong"
+        // date = "2015 / 2016?"
     >
         <p>
             Just a browser-based pong clone from my early years of programming.

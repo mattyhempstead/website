@@ -8,10 +8,7 @@ export const metadata = getProjectMetadata("dvd-face");
 
 export default function Project() {
 
-    return <ProjectPage
-        title="DVD Face"
-        date = "September 2019"
-    >
+    return <ProjectPage projectId="dvd-face">
 
         <p>
             Remember the <a

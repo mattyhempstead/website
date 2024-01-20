@@ -8,10 +8,7 @@ export const metadata = getProjectMetadata("mnist");
 
 export default function Project() {
 
-    return <ProjectPage
-        title="MNIST Interactive"
-        date = "July 2019"
-    >
+    return <ProjectPage projectId="mnist">
 
         <p>
             An interactive neural network powered digit classifier.

@@ -5,16 +5,12 @@ import { getProjectMetadata } from '@/app/projects/projectsData';
 import ProjectPage from '@/components/projects/ProjectPage';
 import ProjectIFrame from '@/components/projects/ProjectIFrame';
 
-export const metadata = getProjectMetadata("double-pendulemon");
+export const metadata = getProjectMetadata("cartpole-evolution");
 
 
 export default function Project() {
 
-    return <ProjectPage
-        title="Cartpole Evolution"
-        date = "April 2019"
-    >
-
+    return <ProjectPage projectId="cartpole-evolution">
         <p>
             A program where agents (carts) with neural network brains evolve/learn to balance a pendulum (pole) upwards.
         </p>

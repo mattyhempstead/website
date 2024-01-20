@@ -1,16 +1,12 @@
+import { getProjectMetadata } from '@/app/projects/projectsData';
 import ProjectPage from '@/components/projects/ProjectPage';
 
-export const metadata = {
-    title: "canvasLib",
-}
+export const metadata = getProjectMetadata("canvas-lib");
 
 
 export default function Project() {
 
-    return <ProjectPage
-        title="canvasLib"
-        date = "2017"  // I think bc I used it for GAN Studio
-    >
+    return <ProjectPage projectId="canvas-lib">
         <p>
             Framework-less web was the first place I learned to code (i.e. raw HTML, CSS, JS).
             

@@ -8,11 +8,7 @@ export const metadata = getProjectMetadata("ev1");
 
 export default function Project() {
 
-    return <ProjectPage
-        title="Evolution Simulation v1"
-        date = "2015"
-    >
-
+    return <ProjectPage projectId="ev1">
         <p>
             While learning to code, a quickly growing passion of mine was simulations,
             particularly those

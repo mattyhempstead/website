@@ -8,11 +8,7 @@ export const metadata = getProjectMetadata("fb-soccer-python");
 
 export default function Project() {
 
-    return <ProjectPage
-        title="FB Soccer Python Clone"
-        date = "June 2016"
-    >
-
+    return <ProjectPage projectId="fb-soccer-python">
         <p>
             A simple clone of the Facebook messenger soccer game I made in
             high school with Python and <a href="https://www.pygame.org/wiki/about">pygame</a>.

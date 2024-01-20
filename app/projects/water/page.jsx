@@ -8,10 +8,7 @@ export const metadata = getProjectMetadata("water");
 
 export default function Project() {
 
-    return <ProjectPage
-        title="Water"
-        date = "April 2019"
-    >
+    return <ProjectPage projectId="water">
 
         <p>
             A small attempt at water simulation using waves that propagate over a 2D grid.

@@ -10,10 +10,7 @@ export const metadata = getProjectMetadata("double-pendulemon");
 
 export default function Project() {
 
-    return <ProjectPage
-        title="Double Pendulemon"
-        date = "April 2019"
-    >
+    return <ProjectPage projectId="double-pendulemon">
 
         <p>
             In first semester of uni I did one Physics course as a science elective.

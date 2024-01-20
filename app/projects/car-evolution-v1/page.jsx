@@ -8,11 +8,7 @@ export const metadata = getProjectMetadata("car-evolution-v1");
 
 export default function Project() {
 
-    return <ProjectPage
-        title = "Car Evolution v1"
-        date = "August 2016"
-    >
-
+    return <ProjectPage projectId="car-evolution-v1">
         <p>
             A program where cars with tiny brains evolve/learn to drive around a non-linear track.
         </p>

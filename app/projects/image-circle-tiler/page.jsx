@@ -7,11 +7,7 @@ export const metadata = getProjectMetadata("image-circle-tiler");
 
 export default function Project() {
 
-    return <ProjectPage
-        title = "Image Circle Tiler"
-        date = "2017 or 2018 ????"
-    >
-
+    return <ProjectPage projectId="image-circle-tiler">
         <p>
             An image circle effect thing I made during a computer-generated art phase.
         </p>

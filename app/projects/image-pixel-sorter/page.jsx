@@ -10,11 +10,7 @@ export const metadata = getProjectMetadata("image-pixel-sorter");
 
 export default function Project() {
 
-    return <ProjectPage
-        title = "Image Pixel Sorter"
-        date = "2017 or 2018 ????"
-    >
-
+    return <ProjectPage projectId="image-pixel-sorter">
         <p>
             A small web app that performs a live bubble sort of the pixels in an image by their brightness (sum of RGB).
         </p>

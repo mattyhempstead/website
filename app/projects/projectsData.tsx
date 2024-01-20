@@ -1,9 +1,10 @@
-import type { Metadata } from 'next'
+import type { Metadata } from 'next';
 
 
 type ProjectData = {
+    includeInProjectsList: boolean,  // Whether project appears as a card in the /projects list
     link: string,
-    image: string,
+    image?: string,
     title: string,
     desc: string,
     date: {
@@ -26,6 +27,7 @@ type ProjectData = {
  */
 export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
     "soil-shoveller": {
+        includeInProjectsList: true,
         link: "/projects/soil-shoveller",
         image: "/projects/soil-shoveller/thumbnail.jpg",
         title: "Soil Shoveller",
@@ -37,9 +39,10 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         builtWith: "HTML + CSS + JS",
     },
     "ev1": {
+        includeInProjectsList: true,
         link: "/projects/ev1",
         image: "/projects/ev1/thumbnail.png",
-        title: "Evolution Simulator v1",
+        title: "Evolution Simulation v1",
         desc: "The first version of my agent-based evolution simulations.",
         date: {
             year: 2015,
@@ -48,17 +51,19 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         builtWith: "HTML + CSS + JS"
     },
     "pong": {
+        includeInProjectsList: true,
         link: "/projects/pong",
         image: "/projects/pong/thumbnail.png",
         title: "Pong",
         desc: "My first pong.",
         date: {
             year: 2015,
-            string: "2015"
+            string: "2015 / 2016 ?"
         },
         builtWith: "HTML + CSS + JS"
     },
     "cat-simulator-2015": {
+        includeInProjectsList: true,
         link: "/projects/cat-simulator-2015",
         image: "/projects/cat-simulator-2015/thumbnail.jpg",
         title: "Cat Simulator 2015",
@@ -70,28 +75,33 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         builtWith: "HTML + CSS + JS"
     },
     "superboyboy": {
+        includeInProjectsList: true,
         link: "/projects/superboyboy",
         image: "/projects/superboyboy/thumbnail.png",
         title: "Super Boy Boy",
         desc: "A 2D platformer game from high school.",
         date: {
             year: 2016,
-            string: "2016"
+            month: 5,
+            string: "May 2016"
         },
         builtWith: "Python + pygame"
     },
     "fb-soccer-python": {
+        includeInProjectsList: true,
         link: "/projects/fb-soccer-python",
         image: "/projects/fb-soccer-python/thumbnail.png",
         title: "FB Soccer Python",
         desc: "A python clone of the Facebook messenger soccer game.",
         date: {
             year: 2016,
-            string: "2016"
+            month: 6,
+            string: "June 2016"
         },
         builtWith: "Python + pygame"
     },
     "fractal-tree": {
+        includeInProjectsList: true,
         link: "/projects/fractal-tree",
         image: "/projects/fractal-tree/thumbnail.png",
         title: "Fractal Tree",
@@ -103,6 +113,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         builtWith: "HTML + CSS + JS"
     },
     "image-circle-tiler": {
+        includeInProjectsList: true,
         link: "/projects/image-circle-tiler",
         image: "/projects/image-circle-tiler/thumbnail.png",
         title: "Image Circle Tiler",
@@ -114,6 +125,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         builtWith: "HTML + CSS + JS"
     },
     "image-pixel-sorter": {
+        includeInProjectsList: true,
         link: "/projects/image-pixel-sorter",
         image: "/projects/image-pixel-sorter/thumbnail.png",
         title: "Image Pixel Sorter",
@@ -125,6 +137,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         builtWith: "HTML + CSS + JS"
     },
     "pi-estimator": {
+        includeInProjectsList: true,
         link: "/projects/pi-estimator",
         image: "/projects/pi-estimator/thumbnail.png",
         title: "Pi Estimator",
@@ -136,6 +149,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         builtWith: "HTML + CSS + JS"
     },
     "image-evolution": {
+        includeInProjectsList: true,
         link: "/projects/image-evolution",
         image: "/projects/image-evolution/thumbnail.png",
         title: "Image Evolution",
@@ -147,6 +161,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         builtWith: "HTML + CSS + JS"
     },
     "car-evolution-v1": {
+        includeInProjectsList: true,
         link: "/projects/car-evolution-v1",
         image: "/projects/car-evolution-v1/thumbnail.png",
         title: "Car Evolution v1",
@@ -159,6 +174,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         builtWith: "Python + pygame"
     },
     "song-visualiser-fourier": {
+        includeInProjectsList: true,
         link: "/projects/song-visualiser-fourier",
         image: "/projects/song-visualiser-fourier/thumbnail.png",
         title: "Song Visualiser",
@@ -171,6 +187,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         builtWith: "Python + pygame"
     },
     "double-pendulemon": {
+        includeInProjectsList: true,
         link: "/projects/double-pendulemon",
         image: "/projects/double-pendulemon/thumbnail.png",
         title: "Double Pendulemon",
@@ -183,6 +200,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         builtWith: "HTML + CSS + JS"
     },
     "thermo-sim": {
+        includeInProjectsList: true,
         link: "/projects/thermo-sim",
         image: "/projects/thermo-sim/thumbnail.png",
         title: "Thermo Simulation",
@@ -196,6 +214,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         builtWith: "HTML + CSS + JS"
     },
     "water": {
+        includeInProjectsList: true,
         link: "/projects/water",
         image: "/projects/water/thumbnail.png",
         title: "Water",
@@ -208,6 +227,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         builtWith: "HTML + CSS + JS"
     },
     "mnist": {
+        includeInProjectsList: true,
         link: "/projects/mnist",
         image: "/projects/mnist/thumbnail.png",
         title: "MNIST Interactive",
@@ -220,6 +240,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         builtWith: "HTML + CSS + JS + Python + Tensorflow"
     },
     "dvd-face": {
+        includeInProjectsList: true,
         link: "/projects/dvd-face",
         image: "/projects/dvd-face/thumbnail.jpeg",
         title: "DVD Face",
@@ -232,6 +253,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         builtWith: "HTML + CSS + JS"
     },
     "cartpole-evolution": {
+        includeInProjectsList: true,
         link: "/projects/cartpole-evolution",
         image: "/projects/cartpole-evolution/thumbnail.png",
         title: "Cartpole Evolution",
@@ -243,11 +265,34 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         },
         builtWith: "HTML + CSS + JS"
     },
+
+    "canvas-lib": {
+        includeInProjectsList: false,
+        link: "/projects/extra/canvas-lib",
+        title: "canvasLib",
+        desc: "A small UI abstraction I built over time for various projects.",
+        date: {
+            year: 2017,  // I think bc I used it for GAN Studio
+            string: "2017"
+        },
+        builtWith: "HTML + CSS + JS"
+    },
 };
 
 
+export function getProjectData(projectId: string): ProjectData {
+    if (!(projectId in PROJECTS_DATA)) {
+        throw new Error(`No project with ID: ${projectId}`);
+    }
+    return PROJECTS_DATA[projectId];
+}
+
+/**
+ * Returns the NextJS Metadata object for a project page.
+ * https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadata-object
+ */
 export function getProjectMetadata(projectId: string): Metadata {
-    const project = PROJECTS_DATA[projectId];
+    const project = getProjectData(projectId);
     return {
         "title": project.title,
         "description": project.desc,

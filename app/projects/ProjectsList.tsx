@@ -9,7 +9,7 @@ import Image from 'next/image';
 
 type ProjectCardProps = {
     link: string;
-    image: string;
+    image?: string;
     title: string;
     desc: string;
     date: string;
@@ -33,7 +33,7 @@ const ProjectCard = ({ link, image, title, desc, date, builtWith }: ProjectCardP
                 `}>
                     {/* width: calc(100% - 0.6rem); */}
                     <Image
-                        src={image}
+                        src={image || ""}
                         alt={title}
                         layout="fill"
                     />
@@ -86,7 +86,7 @@ function getProjectDateSortFn(newestFirst=true) {
 
 function getSortedProjects(sortingMethod: string) {
     // Sort projects based on the selected method
-    let sortedProjects = [...Object.values(PROJECTS_DATA)];
+    let sortedProjects = [...Object.values(PROJECTS_DATA)].filter(p => p.includeInProjectsList);
 
     if (sortingMethod === 'date-asc') {
         sortedProjects.sort(getProjectDateSortFn(true));

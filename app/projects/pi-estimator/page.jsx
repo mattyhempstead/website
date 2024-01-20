@@ -7,15 +7,10 @@ export const metadata = getProjectMetadata("pi-estimator");
 
 export default function Project() {
 
-    return <ProjectPage
-        title = "Pi Estimator"
-        date = "2017 or 2018 ????"
-    >
-
+    return <ProjectPage projectId="pi-estimator">
         <p>
             A small web app that estimates a few d.p. of the constant π (pi).
         </p>
-
 
         <ProjectIFrame
             src="/projects/pi-estimator/index.html"
