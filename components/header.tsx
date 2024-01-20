@@ -1,11 +1,9 @@
 import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { library, type IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-
-library.add(faEnvelope, faGithub, faFacebook, faLinkedin);
 
 
 import styles from './header.module.css';
@@ -21,8 +19,10 @@ type SocialsLinkProps = {
 
 const SocialsLink = ({ href, title, icon }: SocialsLinkProps) => {
     return (
-        <a href={href} title={title}>
-            <FontAwesomeIcon icon={icon} className='w-7 h-full px-[0.1rem]'/>
+        <a href={href} title={title} className=''>
+            <span className='flex justify-center'>
+                <FontAwesomeIcon icon={icon} className='text-2xl px-[0.1rem]'/>
+            </span>
         </a>
     );
 };

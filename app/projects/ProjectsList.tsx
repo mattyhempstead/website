@@ -1,5 +1,8 @@
 'use client';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCalendarDays } from '@fortawesome/free-solid-svg-icons'
+
 
 import { PROJECTS_DATA } from './projectsData';
 
@@ -51,7 +54,10 @@ const ProjectCard = ({ link, image, title, desc, date, builtWith }: ProjectCardP
                 <div className="flex-grow p-3">
                     <div className='flex justify-between'>
                         <h2 className='text-2xl font-semibold mt-0 mb-3'>{title}</h2>
-                        <p className='pr-2 mt-0 italic text-gray-500'>{date}</p>
+                        <p className='pr-2 mt-0 italic text-gray-500'>
+                            {date}
+                            <FontAwesomeIcon icon={faCalendarDays} className='w-4 h-4 pl-[0.5rem]'/>
+                        </p>
                     </div>
                     <p className='mt-0 mb-2 font-normal'>{desc}</p>
                     <p className='mt-0 mb-0 font-bold text-green-600 text-sm'>{builtWith}</p>
