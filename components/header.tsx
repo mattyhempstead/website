@@ -1,9 +1,8 @@
+'use client';
+
 import React from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { Icon, IconBars, IconGitHub, IconFacebook, IconLinkedIn, IconEnvelope } from '@/components/icons';
 
 
 import styles from './header.module.css';
@@ -14,14 +13,14 @@ import styles from './header.module.css';
 type SocialsLinkProps = {
     href: string;
     title: string;
-    icon: IconDefinition;
+    IconComponent: Icon;
 };
 
-const SocialsLink = ({ href, title, icon }: SocialsLinkProps) => {
+const SocialsLink = ({ href, title, IconComponent }: SocialsLinkProps) => {
     return (
         <a href={href} title={title} className=''>
             <span className='flex justify-center'>
-                <FontAwesomeIcon icon={icon} className='text-2xl px-[0.1rem]'/>
+                <IconComponent className='text-2xl px-[0.1rem]'/>
             </span>
         </a>
     );
@@ -31,7 +30,6 @@ const SocialsLink = ({ href, title, icon }: SocialsLinkProps) => {
 
 export default function Header() {
     return <nav className={styles.header}>
-
         <div className='pl-6'>
             {/* <Link href="/">Matty Hempstead</Link> */}
             <a href="/" className='font-bold text-lg'>mattyhempstead.com</a>
@@ -59,22 +57,22 @@ export default function Header() {
             <SocialsLink
                 href="mailto:matty.hempstead@gmail.com"
                 title="Email"
-                icon={faEnvelope}
+                IconComponent={IconEnvelope}
             />
             <SocialsLink
                 href="https://github.com/mattyhempstead"
                 title="GitHub"
-                icon={faGithub}
+                IconComponent={IconGitHub}
             />
             <SocialsLink
                 href="https://www.linkedin.com/in/matty-hempstead-89a980191/"
                 title="LinkedIn"
-                icon={faLinkedin}
+                IconComponent={IconLinkedIn}
             />
             <SocialsLink
                 href="https://www.facebook.com/mattyhempsteaddotcom/"
                 title="Facebook"
-                icon={faFacebook}
+                IconComponent={IconFacebook}
             />
         </div>
     </nav>;
