@@ -8,6 +8,7 @@ import { PROJECTS_DATA } from './projectsData';
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import build from 'next/dist/build';
 
 
 type ProjectCardProps = {
@@ -16,7 +17,7 @@ type ProjectCardProps = {
     title: string;
     desc: string;
     date: string;
-    builtWith: string;
+    builtWith: string[];
 };
 
 const ProjectCard = ({ link, image, title, desc, date, builtWith }: ProjectCardProps) => {
@@ -59,8 +60,13 @@ const ProjectCard = ({ link, image, title, desc, date, builtWith }: ProjectCardP
                             <FontAwesomeIcon icon={faCalendarDays} className='w-4 h-4 pl-[0.5rem]'/>
                         </p>
                     </div>
-                    <p className='mt-0 mb-2 font-normal'>{desc}</p>
-                    <p className='mt-0 mb-0 font-bold text-green-600 text-sm'>{builtWith}</p>
+                    <p className='mt-0 mb-4 font-normal'>{desc}</p>
+
+                    <div className='mt-0 mb-0 font-bold text-sm'>
+                        {builtWith.map(bw => (
+                            <span className='mr-[0.4rem] px-[0.3rem] py-[0.15rem] rounded-lg text-black bg-blue-700'>{bw}</span>
+                        ))}
+                    </div>
                 </div>
             </div>
         </a>

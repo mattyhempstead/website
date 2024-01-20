@@ -12,7 +12,7 @@ type ProjectData = {
         month?: number, // (optional) month as integer index at 1
         string: string,  // the string we render for the date
     },
-    builtWith: string
+    builtWith: string[]
 };
 
 
@@ -36,7 +36,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
             year: 2015,
             string: "2015"
         },
-        builtWith: "HTML + CSS + JS",
+        builtWith: ["HTML", "CSS", "JavaScript"],
     },
     "ev1": {
         includeInProjectsList: true,
@@ -48,7 +48,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
             year: 2015,
             string: "2015"
         },
-        builtWith: "HTML + CSS + JS"
+        builtWith: ["HTML", "CSS", "JavaScript"],
     },
     "pong": {
         includeInProjectsList: true,
@@ -60,7 +60,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
             year: 2015,
             string: "2015 / 2016 ?"
         },
-        builtWith: "HTML + CSS + JS"
+        builtWith: ["HTML", "CSS", "JavaScript"],
     },
     "cat-simulator-2015": {
         includeInProjectsList: true,
@@ -72,7 +72,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
             year: 2015,
             string: "2015"
         },
-        builtWith: "HTML + CSS + JS"
+        builtWith: ["HTML", "CSS", "JavaScript"],
     },
     "superboyboy": {
         includeInProjectsList: true,
@@ -85,7 +85,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
             month: 5,
             string: "May 2016"
         },
-        builtWith: "Python + pygame"
+        builtWith: ["Python", "Pygame"],
     },
     "fb-soccer-python": {
         includeInProjectsList: true,
@@ -98,7 +98,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
             month: 6,
             string: "June 2016"
         },
-        builtWith: "Python + pygame"
+        builtWith: ["Python", "Pygame"],
     },
     "fractal-tree": {
         includeInProjectsList: true,
@@ -110,7 +110,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
             year: 2017,
             string: "2017 or 2018 ???"
         },
-        builtWith: "HTML + CSS + JS"
+        builtWith: ["HTML", "CSS", "JavaScript"],
     },
     "image-circle-tiler": {
         includeInProjectsList: true,
@@ -122,7 +122,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
             year: 2017,
             string: "2017 or 2018 ???"
         },
-        builtWith: "HTML + CSS + JS"
+        builtWith: ["HTML", "CSS", "JavaScript"],
     },
     "image-pixel-sorter": {
         includeInProjectsList: true,
@@ -134,7 +134,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
             year: 2017,
             string: "2017 or 2018 ???"
         },
-        builtWith: "HTML + CSS + JS"
+        builtWith: ["HTML", "CSS", "JavaScript"],
     },
     "pi-estimator": {
         includeInProjectsList: true,
@@ -146,7 +146,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
             year: 2017,
             string: "2017 or 2018 ???"
         },
-        builtWith: "HTML + CSS + JS"
+        builtWith: ["HTML", "CSS", "JavaScript"],
     },
     "image-evolution": {
         includeInProjectsList: true,
@@ -158,7 +158,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
             year: 2017,
             string: "2017 or 2018 ???"
         },
-        builtWith: "HTML + CSS + JS"
+        builtWith: ["HTML", "CSS", "JavaScript"],
     },
     "car-evolution-v1": {
         includeInProjectsList: true,
@@ -171,7 +171,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
             month: 8,
             string: "August 2016"
         },
-        builtWith: "Python + pygame"
+        builtWith: ["Python", "Pygame"],
     },
     "song-visualiser-fourier": {
         includeInProjectsList: true,
@@ -184,7 +184,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
             month: 12,
             string: "December 2018"
         },
-        builtWith: "Python + pygame"
+        builtWith: ["Python", "Pygame"],
     },
     "double-pendulemon": {
         includeInProjectsList: true,
@@ -197,7 +197,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
             month: 4,
             string: "April 2019"
         },
-        builtWith: "HTML + CSS + JS"
+        builtWith: ["HTML", "CSS", "JavaScript"],
     },
     "thermo-sim": {
         includeInProjectsList: true,
@@ -211,7 +211,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
             month: 4,
             string: "April 2019"
         },
-        builtWith: "HTML + CSS + JS"
+        builtWith: ["HTML", "CSS", "JavaScript"],
     },
     "water": {
         includeInProjectsList: true,
@@ -224,7 +224,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
             month: 4,
             string: "April 2019"
         },
-        builtWith: "HTML + CSS + JS"
+        builtWith: ["HTML", "CSS", "JavaScript"],
     },
     "mnist": {
         includeInProjectsList: true,
@@ -237,7 +237,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
             month: 7,
             string: "July 2019"
         },
-        builtWith: "HTML + CSS + JS + Python + Tensorflow"
+        builtWith: ["HTML", "CSS", "JavaScript", "Python", "Tensorflow"],
     },
     "dvd-face": {
         includeInProjectsList: true,
@@ -250,7 +250,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
             month: 9,
             string: "September 2019"
         },
-        builtWith: "HTML + CSS + JS"
+        builtWith: ["HTML", "CSS", "JavaScript"],
     },
     "cartpole-evolution": {
         includeInProjectsList: true,
@@ -263,7 +263,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
             month: 5, // May to June
             string: "May 2019"
         },
-        builtWith: "HTML + CSS + JS"
+        builtWith: ["HTML", "CSS", "JavaScript"],
     },
 
     "canvas-lib": {
@@ -275,7 +275,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
             year: 2017,  // I think bc I used it for GAN Studio
             string: "2017"
         },
-        builtWith: "HTML + CSS + JS"
+        builtWith: ["JavaScript"],
     },
 };
 
