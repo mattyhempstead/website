@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 
 import Header from '@/components/nav/header';
+import GoogleAnalyticsInit from '@/components/GoogleAnalyticsInit';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -46,6 +47,8 @@ export default function RootLayout({
 
                 portrait:[&_h2]:mt-20
             `}>
+                <GoogleAnalyticsInit />
+
                 <Header />
 
                 <div className='px-4 pt-12 pb-16'>
