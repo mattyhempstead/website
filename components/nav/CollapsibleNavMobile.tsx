@@ -2,10 +2,9 @@
 
 import React from 'react';
 
-import {
-    Icon, IconBars, IconX,
-    IconGitHub, IconFacebook, IconLinkedIn, IconEnvelope
-} from '@/components/icons';
+import { Icon, IconX } from '@/components/icons';
+import { getSocials } from './socials';
+import { getRoutes } from './routes';
 
 import styles from './CollapsibleNavMobile.module.css';
 
@@ -91,49 +90,12 @@ export default function CollapsibleNavMobile({ isOpen, setIsOpen }: CollapsibleN
         </div>
 
         <div className='mt-24 text-3xl font-bold [&>div]:mt-6'>
-            <div>
-                <a href="/">home</a>
-            </div>
-
-            <div>
-                <a href="/projects">projects</a>
-            </div>
-
-            {/* <span>
-                <a href="/blog">blog</a>
-            </span>
-            
-            <span>
-                <a href="/microblog">microblog</a>
-            </span> */}
+            {getRoutes()}
         </div>
-
-
 
         <div className='fixed bottom-0 left-0 w-full px-[20%] pb-24 flex justify-between'>
-            <SocialsLink
-                href="mailto:matty.hempstead@gmail.com"
-                title="Email"
-                IconComponent={IconEnvelope}
-            />
-            <SocialsLink
-                href="https://github.com/mattyhempstead"
-                title="GitHub"
-                IconComponent={IconGitHub}
-            />
-            <SocialsLink
-                href="https://www.linkedin.com/in/matty-hempstead-89a980191/"
-                title="LinkedIn"
-                IconComponent={IconLinkedIn}
-            />
-            <SocialsLink
-                href="https://www.facebook.com/mattyhempsteaddotcom/"
-                title="Facebook"
-                IconComponent={IconFacebook}
-            />
+            {getSocials()}
         </div>
-
-
 
     </div>;
 }
