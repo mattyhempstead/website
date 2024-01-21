@@ -7,8 +7,6 @@ import CollapsibleNavMenu from './CollapsibleNavMobile';
 import { getSocials } from './socials';
 import { getRoutes } from './routes';
 
-import styles from './header.module.css';
-
 
 
 export default function Header() {
@@ -24,13 +22,12 @@ export default function Header() {
         sticky top-0 z-50 h-12 w-full
         bg-slate-500
         shadow-[0_2px_5px_rgba(0,0,0,0.2)]
+        font-mono
 
         flex justify-between items-center
 
         [&_a]:text-black
         [&_a:hover]:text-gray-700
-
-        ${styles.header}
     `}>
 
         <div
