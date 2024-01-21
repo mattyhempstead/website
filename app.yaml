@@ -1,0 +1,22 @@
+## App Engine config for frontend instance
+
+# See for docs:
+# https://cloud.google.com/appengine/docs/flexible/reference/app-yaml?tab=node.js#top
+
+env: standard
+runtime: nodejs20
+
+# env: flex
+# runtime: nodejs
+
+
+instance_class: F1
+
+# automatic_scaling:
+#     max_instances: 1
+
+handlers:
+  - url: /.*
+    script: auto
+    secure: always
+    redirect_http_response_code: 301
