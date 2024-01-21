@@ -13,10 +13,10 @@ export default function ProjectPage({ projectId, caption=null, children }) {
 
             {caption && <p className="italic mb-4 text-slate-500">{caption}</p>}
 
-            <p className="italic font-bold mb-4 text-slate-600">
+            <div className="italic font-bold mb-4 text-slate-600 flex">
                 <IconCalendarDays className='w-4 h-4 pr-[0.4rem]'/>
-                {date.string}
-            </p>
+                <div>{date.string}</div>
+            </div>
 
             <div className='mb-10 font-bold text-sm'>
                 {builtWith.map(bw => (

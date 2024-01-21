@@ -29,6 +29,8 @@ const ProjectCard = ({ link, image, title, desc, date, builtWith }: ProjectCardP
 
                 hover:bg-slate-700
                 [&:hover_.project-card-image]:bg-[rgba(1,1,1,0.0)]
+
+                overflow-auto
             `}>
                 <div className={`
                     bg-gray-100 h-40 relative flex-[0_0_10rem]
@@ -52,12 +54,12 @@ const ProjectCard = ({ link, image, title, desc, date, builtWith }: ProjectCardP
                     ></div>
                 </div>
                 <div className="flex-grow p-3">
-                    <div className='flex justify-between'>
+                    <div className='flex justify-between items-start'>
                         <h2 className='text-2xl font-semibold mt-0 mb-3'>{title}</h2>
-                        <p className='pr-2 mt-0 italic text-gray-500'>
-                            {date}
-                            <IconCalendarDays className='w-4 h-4 pl-[0.5rem]'/>
-                        </p>
+                        <div className='pr-2 mt-0 italic text-gray-500 flex'>
+                            <span>{date}</span>
+                            <IconCalendarDays className='pl-[0.5rem]'/>
+                        </div>
                     </div>
                     <p className='mt-0 mb-4 font-normal'>{desc}</p>
 

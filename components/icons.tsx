@@ -19,7 +19,7 @@ config.autoAddCss = false; /* eslint-disable import/first */
 import { FontAwesomeIcon, FontAwesomeIconProps } from '@fortawesome/react-fontawesome'
 import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
-import { faEnvelope, faBars, faCalendarDays } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faBars, faCalendarDays, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
@@ -31,9 +31,12 @@ export type Icon = React.FC<IconProps>;
 
 
 const IconFactory = (icon: IconDefinition): Icon => {
-    // return ({ className }: { className: string }) => {
     return (props: IconProps) => {
-        return <FontAwesomeIcon {...props} icon={icon} />
+        // Wrap all icons in a flex box that vertically aligns them
+        // There is probably a better way to fix this
+        return <div className='flex items-center'>
+            <FontAwesomeIcon {...props} icon={icon} className={`${props.className || ''}`}/>
+        </div>
     }
 }
 
@@ -42,7 +45,10 @@ const IconFactory = (icon: IconDefinition): Icon => {
 
 /** 3 horizontal lines, also known as a hamburger menu */
 export const IconBars = IconFactory(faBars);
+
 export const IconCalendarDays = IconFactory(faCalendarDays);
+
+export const IconX = IconFactory(faXmark);
 
 
 /// Socials

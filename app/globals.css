@@ -72,6 +72,11 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: rgb(83, 199, 83);
+}
+
+
 li {
     list-style-type: disc;
     margin-left: 1.75rem;
