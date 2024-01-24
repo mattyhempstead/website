@@ -276,6 +276,19 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         },
         builtWith: ["JavaScript"],
     },
+    "yt-comment-sub-count": {
+        includeInProjectsList: true,
+        link: "/projects/yt-comment-sub-count",
+        image: "/projects/yt-comment-sub-count/thumbnail.png",
+        title: "YouTube Browser Extension",
+        desc: "A utility browser extension that adds the number of subscribers next to YouTube comments.",
+        date: {
+            year: 2020,
+            month: 2,
+            string: "Feb 2020"
+        },
+        builtWith: ["HTML", "CSS", "JavaScript", "Browser Extension"],
+    },
 };
 
 
