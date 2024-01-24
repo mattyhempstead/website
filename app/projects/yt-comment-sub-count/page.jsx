@@ -1,9 +1,7 @@
-import Image from 'next/image';
-
 import { getProjectMetadata } from '@/app/projects/projectsData';
 
 import ProjectPage from '@/components/projects/ProjectPage';
-import ProjectVideo from '@/components/projects/ProjectVideo';
+import ProjectImage from '@/components/projects/ProjectImage';
 
 export const metadata = getProjectMetadata("yt-comment-sub-count");
 
@@ -14,23 +12,16 @@ export default function Project() {
             shows the number of subscribers for the author of the comment.
         </p>
 
-        <div className='text-center mb-12 mt-12'>
-            <Image
-                className="mx-auto shadow-[0_0_10px_black]"
-                src="/projects/yt-comment-sub-count/example-screenshot.png"
-                alt="Example Screenshot"
-                width={1920}
-                height={888}
-            />
-            <p className='italic text-center mt-4'>
+        <ProjectImage
+            imageUrl="/projects/yt-comment-sub-count/example-screenshot.png"
+            imageAlt="Example Screenshot"
+            caption={<>
                 One of the use cases is being able to quickly distinguish between comments
                 that are actually contributing and being rewarded with likes, and those 
                 that are just getting likes because the author is well known.
                 {/* An example screenshot of the extension in action (anonymised). */}
-            </p>
-        </div>
-
-
+            </>}
+        />
 
         <p>
             The extension has around 4k users from both platforms as of early 2024.
@@ -52,20 +43,16 @@ export default function Project() {
             Because I find this interesting, I'm sure others will too. So here is the slowly growing user graph over the last 4 years:
         </p>
 
-        <div className='text-center mb-6 mt-6'>
-            <Image
-                className="mx-auto shadow-[0_0_10px_black]"
-                src="/projects/yt-comment-sub-count/weekly-users-graph.png"
-                alt="Example Screenshot"
-                width={1920}
-                height={888}
-            />
-            <p className='italic text-center mt-4'>
+        <ProjectImage
+            imageUrl="/projects/yt-comment-sub-count/weekly-users-graph.png"
+            imageAlt="Example Screenshot"
+            className='mt-6 mb-6'
+            caption={<>
                 Weekly active users graph since 1st March 2020 release.
                 <br/>
                 (Chrome Web Store analytics kinda glitched out in Feb 2021 lol).
-            </p>
-        </div>
+            </>}
+        />
 
         <p>
             Weird how the end of each year seems to have a small drop in active users.

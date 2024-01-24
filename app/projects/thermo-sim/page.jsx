@@ -1,9 +1,8 @@
-import Image from 'next/image';
-
 import { getProjectMetadata } from '@/app/projects/projectsData';
 
 import ProjectPage from '@/components/projects/ProjectPage';
 import ProjectIFrame from '@/components/projects/ProjectIFrame';
+import ProjectImage from '@/components/projects/ProjectImage';
 
 export const metadata = getProjectMetadata("thermo-sim");
 
@@ -57,19 +56,14 @@ export default function Project() {
             them.
         </p>
 
-        <div className='text-center mt-8 mb-8'>
-            <Image
-                className="mx-auto shadow-[0_0_10px_black]"
-                src="/projects/thermo-sim/demo_gas.gif"
-                alt="Demo GIF"
-                width={300}
-                height={559}
-            />
-            <p className='italic text-center mt-4'>
+        <ProjectImage
+            imageUrl="/projects/thermo-sim/demo_gas.gif"
+            imageAlt="Simulating a gas."
+            className='mt-8 mb-8 [&>img]:max-w-[18rem]'
+            caption={<>
                 Simulating a gas.
-            </p>
-        </div>
-
+            </>}
+        />
 
         <p>
             Every now an then a particle will bounce off another particle, but most of the time particles
@@ -97,18 +91,14 @@ export default function Project() {
             velocity/vibrations.
         </p>
 
-        <div className='text-center mt-8 mb-8'>
-            <Image
-                className="mx-auto shadow-[0_0_10px_black]"
-                src="/projects/thermo-sim/demo_solid.gif"
-                alt="Demo GIF"
-                width={300}
-                height={559}
-            />
-            <p className='italic text-center mt-4'>
+        <ProjectImage
+            imageUrl="/projects/thermo-sim/demo_solid.gif"
+            imageAlt="Simulating a solid."
+            className='mt-8 mb-8 [&>img]:max-w-[18rem]'
+            caption={<>
                 Simulating a solid.
-            </p>
-        </div>
+            </>}
+        />
 
         <p>
             When the attractive forces dominate, the particles will settle into a stable low energy state,
@@ -131,20 +121,14 @@ export default function Project() {
             a liquid in the real world.
         </p>
 
-        <div className='text-center mt-8 mb-8'>
-            <Image
-                className="mx-auto shadow-[0_0_10px_black]"
-                src="/projects/thermo-sim/demo_liquid.gif"
-                alt="Demo GIF"
-                width={300}
-                height={559}
-            />
-            <p className='italic text-center mt-4'>
+        <ProjectImage
+            imageUrl="/projects/thermo-sim/demo_liquid.gif"
+            imageAlt="Simulating a liquid (almost)."
+            className='mt-8 mb-8 [&>img]:max-w-[18rem]'
+            caption={<>
                 Simulating a liquid (almost).
-            </p>
-        </div>
-
-
+            </>}
+        />
 
         <p>
             The blob is not a stable lattice structure (and so not a solid), but also isn't gas 
@@ -163,18 +147,14 @@ export default function Project() {
             essentially a vacuum.
         </p>
 
-        <div className='text-center mt-8 mb-8'>
-            <Image
-                className="mx-auto shadow-[0_0_10px_black]"
-                src="/projects/thermo-sim/phase_diagram_of_water.png"
-                alt="Demo GIF"
-                width={488}
-                height={559}
-            />
-            <p className='italic text-center mt-4'>
+        <ProjectImage
+            imageUrl="/projects/thermo-sim/phase_diagram_of_water.png"
+            imageAlt="Phase diagram of water."
+            className='mt-8 mb-8 [&>img]:max-w-[32rem]'
+            caption={<>
                 Notice how in this phase diagram of water, achieving a liquid is impossible if the pressure is low enough.
-            </p>
-        </div>
+            </>}
+        />
 
         <p>
             If I added some kind of external force pushing the particles inwards, perhaps we would see more liquids form.

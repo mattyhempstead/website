@@ -1,10 +1,9 @@
-import Image from 'next/image';
-
 import { getProjectMetadata } from '@/app/projects/projectsData';
 
 import ProjectPage from '@/components/projects/ProjectPage';
 import ProjectVideo from '@/components/projects/ProjectVideo';
 import ProjectIFrame from '@/components/projects/ProjectIFrame';
+import ProjectImage from '@/components/projects/ProjectImage';
 
 export const metadata = getProjectMetadata("image-pixel-sorter");
 
@@ -31,7 +30,6 @@ export default function Project() {
             </div>}
         />
 
-
         <p className='mt-12'>
             Application embedded below if you want to run it yourself on a custom image.
         </p>
@@ -41,18 +39,14 @@ export default function Project() {
             className="w-[70rem] h-[54rem]"
         />
 
-        <div className='text-center mt-16'>
-            <Image
-                className="mx-auto shadow-[0_0_10px_black]"
-                src="/projects/image-pixel-sorter/interesting-meme.png"
-                alt="Demo GIF"
-                width={488}
-                height={559}
-            />
-            <p className='italic text-center mt-4'>
+        <ProjectImage
+            imageUrl="/projects/image-pixel-sorter/interesting-meme.png"
+            imageAlt="A meme"
+            className='mt-24 [&>img]:max-w-[34rem]'
+            caption={<>
                 It's unclear what inspired me to make the pixel sorter.
-            </p>
-        </div>
+            </>}
+        />
 
     </ProjectPage>
 }

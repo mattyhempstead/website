@@ -1,9 +1,9 @@
-import Image from 'next/image';
-
 import { getProjectMetadata } from '@/app/projects/projectsData';
 
 import ProjectPage from '@/components/projects/ProjectPage';
 import ProjectIFrame from '@/components/projects/ProjectIFrame';
+import ProjectImage from '@/components/projects/ProjectImage';
+
 
 export const metadata = getProjectMetadata("double-pendulemon");
 
@@ -98,17 +98,11 @@ export default function Project() {
             <li>And pendulums of the nth degree!</li>
         </ul>
 
-
-        <div className='text-center mb-12 mt-12'>
-            <Image
-                className="mx-auto shadow-[0_0_10px_black]"
-                src="/projects/double-pendulemon/meme-spring-mass-always-has-been.jpg"
-                alt="Demo GIF"
-                width={500}
-                height={888}
-            />
-        </div>
-
+        <ProjectImage
+            imageUrl="/projects/double-pendulemon/meme-spring-mass-always-has-been.jpg"
+            imageAlt="A meme"
+            className='[&>img]:max-w-[34rem]'
+        />
 
         <p>
             Personally, I had always assumed that the math underlying softbodies was necessarily
