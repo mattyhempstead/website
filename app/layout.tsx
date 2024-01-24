@@ -52,7 +52,7 @@ export default function RootLayout({
                 <Header />
 
                 <div className='px-4 pt-12 pb-16'>
-                    <div className='max-w-[40rem] mx-auto'>
+                    <div className='max-w-[44rem] mx-auto'>
                         {children}
                     </div>
                 </div>
