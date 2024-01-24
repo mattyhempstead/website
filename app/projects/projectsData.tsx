@@ -96,7 +96,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         date: {
             year: 2016,
             month: 6,
-            string: "June 2016"
+            string: "Jun 2016"
         },
         builtWith: ["Python", "Pygame"],
     },
@@ -169,7 +169,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         date: {
             year: 2016,
             month: 8,
-            string: "August 2016"
+            string: "Aug 2016"
         },
         builtWith: ["Python", "Pygame"],
     },
@@ -182,7 +182,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         date: {
             year: 2018,
             month: 12,
-            string: "December 2018"
+            string: "Dec 2018"
         },
         builtWith: ["Python", "Pygame"],
     },
@@ -195,7 +195,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         date: {
             year: 2019,
             month: 4,
-            string: "April 2019"
+            string: "Apr 2019"
         },
         builtWith: ["HTML", "CSS", "JavaScript"],
     },
@@ -209,7 +209,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         date: {
             year: 2019,
             month: 4,
-            string: "April 2019"
+            string: "Apr 2019"
         },
         builtWith: ["HTML", "CSS", "JavaScript"],
     },
@@ -222,7 +222,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         date: {
             year: 2019,
             month: 4,
-            string: "April 2019"
+            string: "Apr 2019"
         },
         builtWith: ["HTML", "CSS", "JavaScript"],
     },
@@ -235,7 +235,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         date: {
             year: 2019,
             month: 7,
-            string: "July 2019"
+            string: "Jul 2019"
         },
         builtWith: ["HTML", "CSS", "JavaScript", "Python", "Tensorflow"],
     },
@@ -248,7 +248,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         date: {
             year: 2019,
             month: 9,
-            string: "September 2019"
+            string: "Sep 2019"
         },
         builtWith: ["HTML", "CSS", "JavaScript"],
     },
@@ -265,7 +265,6 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         },
         builtWith: ["HTML", "CSS", "JavaScript"],
     },
-
     "canvas-lib": {
         includeInProjectsList: false,
         link: "/projects/extra/canvas-lib",
