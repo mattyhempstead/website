@@ -289,6 +289,19 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         },
         builtWith: ["HTML", "CSS", "JavaScript", "Browser Extension"],
     },
+    "typeracer-cheat": {
+        includeInProjectsList: true,
+        link: "/projects/typeracer-cheat",
+        image: "/projects/typeracer-cheat/thumbnail.jpg",
+        title: "TypeRacer Cheat",
+        desc: "Building an exploit for typeracer.com to make up for the fact I type slower than my friends.",
+        date: {
+            year: 2020,
+            month: 2,
+            string: "Feb 2020"
+        },
+        builtWith: ["HTML", "JavaScript"],
+    },
 };
 
 
