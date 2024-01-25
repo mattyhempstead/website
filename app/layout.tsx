@@ -51,7 +51,7 @@ export default function RootLayout({
 
                 <Header />
 
-                <div className='px-4 pt-12 pb-16'>
+                <div className='px-4 pt-12 pb-32'>
                     <div className='max-w-[44rem] mx-auto'>
                         {children}
                     </div>
