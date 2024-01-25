@@ -50,7 +50,7 @@ export default function Project() {
 
 
         <p>
-            The source code is available on <a href="https://github.com/mattyhempstead/edhack/tree/master">GitHub</a>.
+            The source code is available on <a href="https://github.com/mattyhempstead/edhack/">GitHub</a>.
 
             I have patched the extension on three separate occasions now after Edstem has pushed an update which breaks it.
 

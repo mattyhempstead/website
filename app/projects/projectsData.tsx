@@ -315,6 +315,19 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         },
         builtWith: ["HTML", "CSS", "JavaScript", "Browser Extension"],
     },
+    "pyfck": {
+        includeInProjectsList: true,
+        link: "/projects/pyfck",
+        image: "/projects/pyfck/thumbnail.png",
+        title: "Pyfck",
+        desc: "A novel method of encoding any python script using only 8 characters.",
+        date: {
+            year: 2023,
+            month: 10,
+            string: "Oct 2023"
+        },
+        builtWith: ["Python"],
+    },
 };
 
 
