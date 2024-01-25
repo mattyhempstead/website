@@ -302,6 +302,19 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         },
         builtWith: ["HTML", "JavaScript"],
     },
+    "edhack": {
+        includeInProjectsList: true,
+        link: "/projects/edhack",
+        image: "/projects/edhack/thumbnail.png",
+        title: "Edhack",
+        desc: "One weird trick to get more views on your edstem posts that tutors don't want you to know!",
+        date: {
+            year: 2019,
+            month: 10,
+            string: "Oct 2019"
+        },
+        builtWith: ["HTML", "CSS", "JavaScript", "Browser Extension"],
+    },
 };
 
 
