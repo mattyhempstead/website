@@ -328,6 +328,19 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         },
         builtWith: ["HTML", "CSS", "JavaScript", "Browser Extension"],
     },
+    "coup-bot": {
+        includeInProjectsList: true,
+        link: "/projects/coup-bot",
+        image: "/projects/coup-bot/thumbnail.png",
+        title: "Competitive Coup Bot",
+        desc: "A program that plays the card game 'Coup' well enough to win a bot battle competition.",
+        date: {
+            year: 2022,
+            month: 9,
+            string: "Sep 2022"
+        },
+        builtWith: ["Python", "Competition", "Team"],
+    },
     "pyfck": {
         includeInProjectsList: true,
         link: "/projects/pyfck",
@@ -339,8 +352,9 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
             month: 10,
             string: "Oct 2023"
         },
-        builtWith: ["Python"],
+        builtWith: ["Python", "Esoteric"],
     },
+
 };
 
 
