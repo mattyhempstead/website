@@ -45,6 +45,8 @@ export default function RootLayout({
                 [&_h4]:text-slate-200
                 [&_code]:text-slate-300
 
+                [&_li_ul]:text-slate-500
+
                 portrait:[&_h2]:mt-20
             `}>
                 <GoogleAnalyticsInit />

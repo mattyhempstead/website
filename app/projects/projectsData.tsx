@@ -315,6 +315,19 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         },
         builtWith: ["HTML", "CSS", "JavaScript", "Browser Extension"],
     },
+    "browser-homepage": {
+        includeInProjectsList: true,
+        link: "/projects/browser-homepage",
+        image: "/projects/browser-homepage/thumbnail.png",
+        title: "Custom New Tab Page",
+        desc: "A Chrome extension which allows you to customise your own New Tab page using static files.",
+        date: {
+            year: 2019,
+            month: 9,
+            string: "Sep 2019"
+        },
+        builtWith: ["HTML", "CSS", "JavaScript", "Browser Extension"],
+    },
     "pyfck": {
         includeInProjectsList: true,
         link: "/projects/pyfck",
