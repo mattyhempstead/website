@@ -1,7 +1,7 @@
 'use client';
 
 import { IconCalendarDays } from '@/components/icons';
-import { getProjectData } from '@/app/projects/projectsData';
+import { getProjectData, getBuiltWithClassName } from '@/app/projects/projectsData';
 
 
 export default function ProjectPage({ projectId, caption=null, children }) {
@@ -20,7 +20,11 @@ export default function ProjectPage({ projectId, caption=null, children }) {
 
             <div className='mb-10 font-bold text-sm'>
                 {builtWith.map(bw => (
-                    <span key={bw} className='mr-[0.4rem] px-[0.3rem] py-[0.15rem] rounded-lg text-black bg-blue-700'>{bw}</span>
+                    <span key={bw} className={`
+                        mr-[0.4rem] px-[0.3rem] py-[0.15rem]
+                        rounded-lg text-black
+                        ${getBuiltWithClassName(bw)}
+                    `}>{bw}</span>
                 ))}
             </div>
 

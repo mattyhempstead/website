@@ -376,3 +376,18 @@ export function getProjectMetadata(projectId: string): Metadata {
         "description": project.desc,
     }
 }
+
+/**
+ * Returns the tailwind className to add to each given builtWith tag.
+ * 
+ * We use this to change things like background color.
+ */
+export function getBuiltWithClassName(builtWith:string): string {
+
+    // Hardcode until softcode is better :)
+    if (["Esoteric", "Competition", "Team"].includes(builtWith)) {
+        return 'bg-cyan-700'
+    }
+
+    return 'bg-blue-700';
+}

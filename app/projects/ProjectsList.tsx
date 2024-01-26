@@ -3,7 +3,7 @@
 import { IconCalendarDays } from '@/components/icons';
 
 
-import { PROJECTS_DATA } from './projectsData';
+import { PROJECTS_DATA, getBuiltWithClassName } from './projectsData';
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
@@ -65,7 +65,11 @@ const ProjectCard = ({ link, image, title, desc, date, builtWith }: ProjectCardP
 
                     <div className='mt-0 mb-0 font-bold text-sm'>
                         {builtWith.map(bw => (
-                            <span key={bw} className='mr-[0.4rem] px-[0.3rem] py-[0.15rem] rounded-lg text-black bg-blue-700'>{bw}</span>
+                            <span key={bw} className={`
+                                mr-[0.4rem] px-[0.3rem] py-[0.15rem]
+                                rounded-lg text-black
+                                ${getBuiltWithClassName(bw)}
+                            `}>{bw}</span>
                         ))}
                     </div>
                 </div>
