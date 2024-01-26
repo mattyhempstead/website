@@ -20,10 +20,17 @@ type ProjectCardProps = {
 };
 
 const ProjectCard = ({ link, image, title, desc, date, builtWith }: ProjectCardProps) => {
+
+    const thumbnailImage = <Image
+        src={image || ""}
+        alt={title}
+        layout="fill"
+    />;
+
     return (
         <a href={link}>
             <div className={`
-                flex mb-6 text-slate-300 bg-slate-800
+                mb-6 text-slate-300 bg-slate-800
                 border-[0.2rem] border-slate-950
                 shadow-[0_0_7px_rgba(0,0,0,0.5)]
 
@@ -32,18 +39,58 @@ const ProjectCard = ({ link, image, title, desc, date, builtWith }: ProjectCardP
 
                 overflow-auto
             `}>
-                <div className={`
-                    bg-gray-100 h-40 relative flex-[0_0_10rem]
-                    border-r-[1px] border-gray-900
-                `}>
-                    {/* width: calc(100% - 0.6rem); */}
-                    <Image
-                        src={image || ""}
-                        alt={title}
-                        layout="fill"
-                    />
+                <div className='flex'>
+                    <div className={`
+                        bg-gray-100 h-40 w-40 relative flex-[0_0_10rem]
+                        border-r-[1px] border-gray-900
+                        portrait:hidden
+                    `}>
+                        {thumbnailImage} 
 
-                    {/* Overlay to make the images appear less bright/contrasting */}
+                        {/* Overlay to make the image appear less bright/contrasting */}
+                        <div
+                            className={`
+                                project-card-image
+
+                                w-full h-full absolute bg-[rgba(1,1,1,0.2)]
+                                shadow-[inset_0_0_1rem_black]
+                            `}
+                        ></div>
+                    </div>
+                    <div className="flex-grow p-3">
+                        <div className='flex justify-between items-start'>
+                            <h2 className='text-2xl font-semibold mt-0 mb-3'>{title}</h2>
+                            <div className='pl-2 pr-2 mt-0 italic text-gray-500 flex flex-shrink-0'>
+                                <span>{date}</span>
+                                <IconCalendarDays className='pl-[0.5rem] pb-[0.25rem]'/>
+                            </div>
+                        </div>
+                        <p className='mt-0 mb-2 font-normal'>{desc}</p>
+
+                        <div className='mt-0 mb-0 font-bold text-sm'>
+                            {builtWith.map(bw => (
+                                <span key={bw} className={`
+                                    mr-[0.4rem] px-[0.3rem] py-[0.15rem] mt-2
+                                    rounded-lg text-black
+                                    inline-block
+                                    ${getBuiltWithClassName(bw)}
+                                `}>{bw}</span>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+
+                <div className={`
+                    landscape:hidden
+                    bg-gray-100 relative
+                    border-[0.2rem] border-gray-900
+                    w-[10rem] aspect-square
+                    mt-4 mx-auto mb-4
+                    rounded-3xl overflow-hidden
+                `}>
+                    {thumbnailImage}
+
+                    {/* Overlay to make the image appear less bright/contrasting */}
                     <div
                         className={`
                             project-card-image
@@ -53,26 +100,8 @@ const ProjectCard = ({ link, image, title, desc, date, builtWith }: ProjectCardP
                         `}
                     ></div>
                 </div>
-                <div className="flex-grow p-3">
-                    <div className='flex justify-between items-start'>
-                        <h2 className='text-2xl font-semibold mt-0 mb-3'>{title}</h2>
-                        <div className='pr-2 mt-0 italic text-gray-500 flex'>
-                            <span>{date}</span>
-                            <IconCalendarDays className='pl-[0.5rem]'/>
-                        </div>
-                    </div>
-                    <p className='mt-0 mb-4 font-normal'>{desc}</p>
 
-                    <div className='mt-0 mb-0 font-bold text-sm'>
-                        {builtWith.map(bw => (
-                            <span key={bw} className={`
-                                mr-[0.4rem] px-[0.3rem] py-[0.15rem]
-                                rounded-lg text-black
-                                ${getBuiltWithClassName(bw)}
-                            `}>{bw}</span>
-                        ))}
-                    </div>
-                </div>
+
             </div>
         </a>
     );
