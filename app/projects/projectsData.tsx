@@ -341,6 +341,19 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         },
         builtWith: ["Python", "Competition", "Team"],
     },
+    "syncs-hack-2022": {
+        includeInProjectsList: true,
+        link: "/projects/syncs-hack-2022",
+        image: "/projects/syncs-hack-2022/thumbnail.jpg",
+        title: "Canva AI Image Extension",
+        desc: "An AI image generator embedded into Canva, built during SYNCS Hack 2022. First place! 🎉",
+        date: {
+            year: 2022,
+            month: 8,
+            string: "Aug 2022"
+        },
+        builtWith: ["Python", "JavaScript", "Hackathon", "Team"],
+    },
     "pyfck": {
         includeInProjectsList: true,
         link: "/projects/pyfck",
@@ -354,7 +367,6 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         },
         builtWith: ["Python", "Esoteric"],
     },
-
 };
 
 
@@ -385,7 +397,7 @@ export function getProjectMetadata(projectId: string): Metadata {
 export function getBuiltWithClassName(builtWith:string): string {
 
     // Hardcode until softcode is better :)
-    if (["Esoteric", "Competition", "Team"].includes(builtWith)) {
+    if (["Esoteric", "Competition", "Team", "Hackathon"].includes(builtWith)) {
         return 'bg-cyan-700'
     }
 
