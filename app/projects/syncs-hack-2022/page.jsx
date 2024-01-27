@@ -67,11 +67,17 @@ export default function Project() {
             caption = {<div>
                 A demo video of the final hackathon project we scrambled to film in the final hour.
             </div>}
-            className='mt-6 mb-10'
+            className='mt-6 mb-8'
         />
 
         <p>
-            Funnily enough, Canva would release a <a
+            It's possible that the reason we were called <i>team non-compete</i> was due to the fact I
+            had recently signed a contract to intern at Canva in the summer holidays of 2022. But it's ok,
+            because surely Canva would not try to compete in that space for a while...
+        </p>
+
+        <p>
+            Anyway, Canva released a <a
                 href="https://medium.com/mlearning-ai/stable-diffusion-arrives-in-canva-da109f6c9c02"
             >nearly identical beta feature</a> into their application just a few weeks later.
 
@@ -115,7 +121,7 @@ export default function Project() {
         </p>
 
         <p>
-            I figured that adding a sidebar filled with controls like an "Image style" dropdown would guide the
+            We figured that adding a sidebar filled with controls like an "Image style" dropdown would guide the
             user towards possible modifications for their image after they type the core objects into
             the prompt box (e.g. a cat at the Colosseum).
 
