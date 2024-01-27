@@ -14,7 +14,7 @@ export default function Project() {
         </p>
 
         <p>
-            In 2022, I competed in the hackathon a team of four to build an AI image generator into <a
+            In 2022, I competed in the hackathon in a team of four to build an AI image generator into <a
                 href="https://canva.com/"
             >Canva</a> via their extension API.
 

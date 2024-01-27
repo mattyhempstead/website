@@ -131,6 +131,8 @@ function getProjectDateSortFn(newestFirst=true) {
 
 
 function getSortedProjects(sortingMethod: string) {
+    // TODO: Add "coolness (coolest first)"
+
     // Sort projects based on the selected method
     let sortedProjects = [...Object.values(PROJECTS_DATA)].filter(p => p.includeInProjectsList);
 

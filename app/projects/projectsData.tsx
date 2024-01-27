@@ -341,6 +341,19 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         },
         builtWith: ["Python", "Competition", "Team"],
     },
+    "syncs-hack-2020": {
+        includeInProjectsList: true,
+        link: "/projects/syncs-hack-2020",
+        image: "/projects/syncs-hack-2020/thumbnail.png",
+        title: "QR Tones",
+        desc: "QR Codes but with sound, built during SYNCS Hack 2020. Second place! 🎉",
+        date: {
+            year: 2020,
+            month: 8,
+            string: "Aug 2020"
+        },
+        builtWith: ["React", "Firebase", "JavaScript", "Hackathon", "Team"],
+    },
     "syncs-hack-2022": {
         includeInProjectsList: true,
         link: "/projects/syncs-hack-2022",
