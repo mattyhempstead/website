@@ -22,7 +22,7 @@ export default function Page() {
             alt="Alien Dancing"
         /> */}
 
-        <div className='text-center mt-12'>
+        <div className='text-center mt-12 text-lg'>
             <p>
                 Projects are <a href="/projects">here</a>.
             </p>
