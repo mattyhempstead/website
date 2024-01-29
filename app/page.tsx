@@ -146,8 +146,8 @@ export default function Page() {
 
                     <Dropdown>
                         <p className='mt-2'>
-                            I think I learned during my first job out of high school than my entire degree,
-                            at least regarding the skills for practical software development.
+                            I think I learned more during my first software job out of high school than my entire degree,
+                            at least regarding the skills for real-world software development at a company.
                         </p>
                         <p>
                             Here I did some frontend work (where I learned React and the Node ecosystem)
@@ -157,9 +157,12 @@ export default function Page() {
                             This was also my first exposure to using Git, Jira and other software 
                             management tools. I was also persuaded into using Linux
                             by my coworkers, which I still use to this day.
+
+                            {/* Admittedly I went a little too deep at first (Arch Linux, Vim, etc), but I have
+                            slowly come to my senses (now I just use Manjaro and VSCode with Vim bindings). */}
                         </p>
                         <p>
-                            <i>React, Node, SQL, .NET, SaaS interaction</i>
+                            <i>React, Node, SQL, .NET, using APIs</i>
                         </p>
                     </Dropdown>
                 </li>
