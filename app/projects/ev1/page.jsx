@@ -78,11 +78,15 @@ export default function Project() {
         <p>
             Over the next few years I totally rewrote and improved the program three more times as I got
             better at programming.
-            The most recent version (v4) is significantly more advanced and I intend to create a more versions
+            The most recent version (v4) is <b>significantly</b> more advanced and I intend to create a more versions
             in the future.
             Once I add the other versions to this website I'll link them here.
         </p>
 
+        <p>
+            Turns out rewriting software from scratch with better abstractions and more advanced features is actually kinda cool.
+            Would recommend. Maybe I will write about this one day.
+        </p>
 
 
     </ProjectPage>

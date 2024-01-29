@@ -19,7 +19,7 @@ export default function Projects() {
             <h1 className='mb-6'>Projects</h1>
 
             <p>
-                An archive of some of the projects I mostly finished going all the way back to
+                An archive of some of the public projects I mostly finished going all the way back to
                 when I first learned to code in ~2015.
 
                 <br/><br/>
