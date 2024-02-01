@@ -10,7 +10,7 @@ export default function Project() {
 
     return <ProjectPage projectId="image-evolution">
         <p>
-            An evolution simulation that uses a genetic algorithm to evolves a couple
+            An evolution simulation that uses a genetic algorithm to evolve a couple
             hundred triangles to resemble a target image.
         </p>
         
