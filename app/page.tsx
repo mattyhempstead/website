@@ -137,21 +137,21 @@ export default function Page() {
                 Canva can use real logo, envisage and others can use other logos. */}
 
                 <li>
-                    A software contracting company.
+                    A software solutions company.
 
                     <Dropdown>
                         <p className='mt-2'>
                             I think I learned more during my first software job out of high school than my entire degree,
-                            at least regarding the skills for real-world software development at a company.
+                            at least regarding the skills for practical software development.
                         </p>
                         <p>
                             Here I did some frontend work (where I learned React and the Node ecosystem)
-                            and some backend database work (where I learned SQL and DBMS).
+                            and some backend database work (where I learned SQL and how to maintain a DBMS).
                         </p>
                         <p>
                             This was also my first exposure to using Git, Jira and other software 
-                            management tools. I was also persuaded into using Linux
-                            by my coworkers, which I still use to this day.
+                            management tools. I was also persuaded by my coworkers to start using Linux,
+                            which I still use to this day.
 
                             {/* Admittedly I went a little too deep at first (Arch Linux, Vim, etc), but I have
                             slowly come to my senses (now I just use Manjaro and VSCode with Vim bindings). */}
