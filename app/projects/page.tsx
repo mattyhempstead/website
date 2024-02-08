@@ -9,7 +9,8 @@ import ProjectsList from './ProjectsList';
 
 
 export const metadata: Metadata = {
-    title: "Projects"
+    title: "Projects",
+    description: "A growing list of personal projects.",
 }
 
 

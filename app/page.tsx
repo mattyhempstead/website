@@ -1,12 +1,14 @@
 import type { Metadata } from 'next'
 import Link from 'next/link';
-import Image from 'next/image';
 
 import Dropdown from '@/components/dropdown';
 
 
 export const metadata: Metadata = {
     title: "Home | Matty Hempstead",
+    alternates: {
+        canonical: "https://mattyhempstead.com",
+    },
 }
 
 
@@ -14,13 +16,6 @@ export default function Page() {
     return <div className={`
         [&_h2]:mt-20
     `}>
-
-        {/* <Image
-            src="/images/alien-dance.gif"
-            width={220/4}
-            height={328/4}
-            alt="Alien Dancing"
-        /> */}
 
         <div className='text-center mt-12 text-lg'>
             <p>
