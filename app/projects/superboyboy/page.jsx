@@ -20,7 +20,7 @@ export default function Project() {
         </p>
 
         <p className='mb-0'>
-            Its also funny just how transparently this game was a product of its time (Year 9, 2016):
+            Its also funny just how transparently this game was a product of its time (Year 10, 2016):
         </p>
         <ul className="mt-0 mb-8 list-disc [&>li]:mb-1">
             <li>
