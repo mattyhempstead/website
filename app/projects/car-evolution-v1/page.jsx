@@ -37,14 +37,13 @@ export default function Project() {
             as the cars micro-optimize within their new niche.
             I believe this effect is called <a
                 href="https://en.wikipedia.org/wiki/Punctuated_equilibrium"
-            >punctuated equilibrium</a> in evolutionary biology.
+            >punctuated equilibrium</a> in evolutionary biology, although it isn't universally accepted.
             I have built a half dozen other evolution simulations in the past and they all seem to experience this trait,
             which I suppose makes me an armchair punctuationist.
         </p>
 
         <p>
-            I find these simulations so incredibly interesting and could talk forever about them.
-            To 
+            I find these simulations so incredibly interesting and could talk about them forever.
         </p>
 
         <p>
@@ -323,6 +322,13 @@ export default function Project() {
             so my programming style and abilities have probably improved since.
         </p>
 
+        <h4>Version 2</h4>
+        <p>
+            I eventually rewrote this as a web app for my old high school website and added some features like fitness graphs.
+        </p>
+        <p>
+            Will link that here if I get around to it.
+        </p>
 
 
     </ProjectPage>
