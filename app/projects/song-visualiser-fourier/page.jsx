@@ -70,14 +70,14 @@ export default function Project() {
             Algorithm
         </h3>
         <p>
-            As mentioned, the entire algorithm is just a visual understanding of the Fourier transform from
+            As mentioned, the entire algorithm is just my visual understanding of the Fourier transform from
             this <a href="https://www.youtube.com/watch?v=spUNpyF58BY">3Blue1Brown video</a>,
-            translated imperatively into code form.
+            translated into code form.
 
-            Being manually written and therefore horribly slow, I'd like to coin the algorithm as I have written
-            it the "Slow Fourier Transform" (in contrast to
-            the <a href="https://en.wikipedia.org/wiki/Fast_Fourier_transform">Fast Fourier Transform</a>,
-            which is actually used for this sort of task).
+            Being manually written and therefore horribly slow, I shall coin the algorithm as I have written
+            it the "Slow Fourier Transform" (in contrast to the <a
+                href="https://en.wikipedia.org/wiki/Fast_Fourier_transform"
+            >Fast Fourier Transform</a>, which is actually used for this sort of task).
         </p>
         <p>
             It is essentially lots of iterative "wrapping" of a waveform (as sourced from the samples of a <code>.wav</code> file)
