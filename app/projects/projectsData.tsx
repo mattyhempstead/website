@@ -160,6 +160,19 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         },
         builtWith: ["HTML", "CSS", "JavaScript"],
     },
+    "gan-studio": {
+        includeInProjectsList: true,
+        link: "/projects/gan-studio",
+        image: "/projects/gan-studio/thumbnail.png",
+        title: "GAN Studio",
+        desc: "A web application for training and generating images with GANs (generative adversarial neural networks).",
+        date: {
+            year: 2018,
+            month: 7,
+            string: "July 2018"
+        },
+        builtWith: ["HTML", "CSS", "JavaScript"],
+    },
     "car-evolution-v1": {
         includeInProjectsList: true,
         link: "/projects/car-evolution-v1",
