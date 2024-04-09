@@ -171,7 +171,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
             month: 7,
             string: "July 2018"
         },
-        builtWith: ["HTML", "CSS", "JavaScript"],
+        builtWith: ["HTML", "CSS", "JavaScript", "AI"],
     },
     "car-evolution-v1": {
         includeInProjectsList: true,
@@ -184,7 +184,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
             month: 8,
             string: "Aug 2016"
         },
-        builtWith: ["Python", "Pygame"],
+        builtWith: ["Python", "Pygame", "AI"],
     },
     "song-visualiser-fourier": {
         includeInProjectsList: true,
@@ -250,7 +250,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
             month: 7,
             string: "Jul 2019"
         },
-        builtWith: ["HTML", "CSS", "JavaScript", "Python", "Tensorflow"],
+        builtWith: ["HTML", "CSS", "JavaScript", "Python", "Tensorflow", "AI"],
     },
     "dvd-face": {
         includeInProjectsList: true,
@@ -276,7 +276,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
             month: 5, // May to June
             string: "May 2019"
         },
-        builtWith: ["HTML", "CSS", "JavaScript"],
+        builtWith: ["HTML", "CSS", "JavaScript", "AI"],
     },
     "canvas-lib": {
         includeInProjectsList: false,
@@ -378,7 +378,7 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
             month: 8,
             string: "Aug 2022"
         },
-        builtWith: ["Python", "JavaScript", "Hackathon", "Team"],
+        builtWith: ["Python", "JavaScript", "Hackathon", "Team", "AI"],
     },
     "pyfck": {
         includeInProjectsList: true,
@@ -392,6 +392,19 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
             string: "Oct 2023"
         },
         builtWith: ["Python", "Esoteric"],
+    },
+    "promptilation": {
+        includeInProjectsList: true,
+        link: "/projects/promptilation",
+        image: "/projects/promptilation/thumbnail.png",
+        title: "Promptilation",
+        desc: "A new kind of programming language, powered by LLMs.",
+        date: {
+            year: 2024,
+            month: 3,
+            string: "Mar 2024"
+        },
+        builtWith: ["Python", "AI"],
     },
 };
 
@@ -423,7 +436,7 @@ export function getProjectMetadata(projectId: string): Metadata {
 export function getBuiltWithClassName(builtWith:string): string {
 
     // Hardcode until softcode is better :)
-    if (["Esoteric", "Competition", "Team", "Hackathon"].includes(builtWith)) {
+    if (["Esoteric", "Competition", "Team", "Hackathon", "AI"].includes(builtWith)) {
         return 'bg-cyan-700'
     }
 
