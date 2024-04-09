@@ -1,8 +1,7 @@
-import Image from 'next/image';
-
 import { getProjectMetadata } from '@/app/projects/projectsData';
 
 import ProjectPage from '@/components/projects/ProjectPage';
+import ProjectImage from '@/components/projects/ProjectImage';
 
 export const metadata = getProjectMetadata("fb-soccer-python");
 
@@ -18,18 +17,16 @@ export default function Project() {
             Source code can be found on <a href="https://github.com/mattyhempstead/fb-soccer-python">Github</a>.
         </p>
 
+        <ProjectImage
+            imageUrl="/projects/fb-soccer-python/demo.gif"
+            imageAlt="Demo GIF"
+            className='[&>img]:max-w-[28rem]'
+        />
 
-        <br/>
-
-        <div className='text-center mb-12'>
-            <Image
-                src="/projects/fb-soccer-python/demo.gif"
-                alt="Demo GIF"
-                width={474} // Set the width of the image
-                height={716} // Set the height of the image
-                className='mx-auto'
-            />
-        </div>
+        <p>
+            Honestly not sure if the original game even exists anymore. I recall it being an easter egg that 
+            had something to do with the soccer ball emoji.
+        </p>
 
 
         <h2>
@@ -37,7 +34,7 @@ export default function Project() {
         </h2>
         <p>
             Just really enjoyed programming at the time (still do!).
-            Saw the Facebook game with its simple yet effective use of gravity and thought to myself
+            Saw the Facebook messenger game with its simple yet effective use of gravity and thought to myself
             one school afternoon "hey I bet I can make this!".
         </p>
 

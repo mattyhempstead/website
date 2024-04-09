@@ -8,7 +8,7 @@ export const metadata = getProjectMetadata("yt-comment-sub-count");
 export default function Project() {
     return <ProjectPage projectId="yt-comment-sub-count">
         <p>
-            I built and released a browser extension that, for every comment under a YouTube video,
+            I built, released, and maintain a browser extension that, for every comment under a YouTube video,
             shows the number of subscribers for the author of the comment.
         </p>
 
