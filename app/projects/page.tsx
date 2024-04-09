@@ -6,6 +6,7 @@ import Image from 'next/image';
 import styles from './index.module.css';
 
 import ProjectsList from './ProjectsList';
+import { getProjectsInProjectsList } from './projectsData';
 
 
 export const metadata: Metadata = {
@@ -20,19 +21,19 @@ export default function Projects() {
             <h1 className='mb-6'>Projects</h1>
 
             <p>
-                An archive of some of the public projects I mostly finished going all the way back to
+                An archive of <b>{getProjectsInProjectsList().length}</b> public projects I mostly finished going all the way back to
                 when I first learned to code in ~2015.
             </p>
 
             <details className='mt-4'>
-                <summary className='cursor-pointer italic'>What is this?</summary>
+                <summary className='cursor-pointer italic'>Why document them?</summary>
 
                 <div className='mt-2 pl-4 border-l-2 border-l-gray-500 ml-1 mb-4'>
                     <p
                         className='mt-0'
                         title="There are a few projects that appear to have been lost :'("
                     >
-                        Many of these projects were created during my first few years of coding
+                        Some of these projects were created during my first few years of coding
                         (before I discovered Github) and whose only location until recently was
                         an unused Windows partition that would have inevitably been destroyed
                         at one point.

@@ -442,3 +442,10 @@ export function getBuiltWithClassName(builtWith:string): string {
 
     return 'bg-blue-700';
 }
+
+/**
+ * A list of the projects filtered to those visible in the projects list.
+ */
+export function getProjectsInProjectsList(): ProjectData[] {
+    return [...Object.values(PROJECTS_DATA)].filter(p => p.includeInProjectsList);
+}

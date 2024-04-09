@@ -3,7 +3,7 @@
 import { IconCalendarDays } from '@/components/icons';
 
 
-import { PROJECTS_DATA, getBuiltWithClassName } from './projectsData';
+import { getProjectsInProjectsList, getBuiltWithClassName } from './projectsData';
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
@@ -134,7 +134,7 @@ function getSortedProjects(sortingMethod: string) {
     // TODO: Add "coolness (coolest first)"
 
     // Sort projects based on the selected method
-    let sortedProjects = [...Object.values(PROJECTS_DATA)].filter(p => p.includeInProjectsList);
+    let sortedProjects = getProjectsInProjectsList();
 
     if (sortingMethod === 'date-asc') {
         sortedProjects.sort(getProjectDateSortFn(true));
@@ -192,6 +192,10 @@ export default function ProjectsList() {
                     builtWith={project.builtWith}
                 />
             ))}
+        </div>
+
+        <div className='text-center mt-12 text-lg'>
+            <span className='font-bold'>{getProjectsInProjectsList().length}</span> projects documented.
         </div>
     </>
 }
