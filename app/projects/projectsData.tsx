@@ -315,6 +315,19 @@ export const PROJECTS_DATA: {[projectId: string]: ProjectData} = {
         },
         builtWith: ["HTML", "JavaScript"],
     },
+    "8-ball-pool": {
+        includeInProjectsList: true,
+        link: "/projects/8-ball-pool",
+        image: "/projects/8-ball-pool/thumbnail.png",
+        title: "8 Ball Pool Aim Assist",
+        desc: "A *very* helpful overlay for the popular Miniclip game 8 ball pool.",
+        date: {
+            year: 2020,
+            month: 7,
+            string: "Jul 2020"
+        },
+        builtWith: ["HTML", "JavaScript", "Python", "Tensorflow", "AI"],
+    },
     "edhack": {
         includeInProjectsList: true,
         link: "/projects/edhack",
