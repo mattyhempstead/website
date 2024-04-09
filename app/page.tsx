@@ -47,7 +47,7 @@ export default function Page() {
         </h2>
 
         <p>
-            I am currently a student at University of Sydney.
+            I am currently a final year honours student at University of Sydney.
         </p>
 
         <p>
@@ -110,10 +110,9 @@ export default function Page() {
         </ul>
 
         <p className='mt-8'>
-            For my final year (2024), I will be doing Honours and writing a thesis related to Large Language Models.
-            Kinda just hoping ChatGPT doesn't get better than me at writing papers before I get to write mine.
+            For honours I am writing my thesis on applying Large Language Models to Bug Localisation
+            (given a bug report, can we automatically find the responsible source code).
         </p>
-
 
         <p>
             More details about my education

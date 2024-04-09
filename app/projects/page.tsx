@@ -21,8 +21,8 @@ export default function Projects() {
             <h1 className='mb-6'>Projects</h1>
 
             <p>
-                An archive of <b>{getProjectsInProjectsList().length}</b> public projects I mostly finished going all the way back to
-                when I first learned to code in ~2015.
+                An archive of <b>{getProjectsInProjectsList().length}</b> personal projects (only the ones that I finished)
+                going all the way back to when I first learned to code in ~2015.
             </p>
 
             <details className='mt-4'>
